@@ -1,0 +1,2 @@
+# Core dependencies — no heavy ML frameworks needed; pure stdlib + these
+numpy>=1.24
