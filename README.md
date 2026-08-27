@@ -1,350 +1,166 @@
-# RedRob Ranker — India Runs Data & AI Challenge
+# RedRob Ranker — India Runs 2026
 
-> **Hack2Skill · India Runs · Track 1: Data & AI**
-> Smart AI Candidate Ranking System
->
-> Built by [Yash Sharma](https://yashsharma01.vercel.app/) · [@Yashsh101](https://github.com/Yashsh101)
+A deterministic, streaming candidate-ranking system for the **Hack2Skill × Redrob India Runs Track 1: Data & AI Challenge**.
 
----
+Built by [Yash Sharma](https://yashsharma01.vercel.app/) · [GitHub](https://github.com/Yashsh101)
 
-## Problem Statement
+> **Verified challenge objective:** build a workable proof of concept that ranks candidates for intelligent candidate discovery using profile attributes, career metadata, and activity/behavioural signals, then submit the code, methodology, and ranked output file. [Official Track 1 brief](https://hack2skill.com/event/india_runs/)
 
-Given a pool of **~100,000 candidate profiles** (JSONL, one object per line), automatically rank candidates for the role of **Senior AI/ML Engineer at Redrob** and produce a top-100 shortlist with:
+## Challenge Alignment
 
-- A numeric score per candidate
-- A rank from 1–100
-- A human-readable, single-line reasoning string
+The official Track 1 brief asks participants to move beyond surface-level filtering, understand contextual fit, integrate profile/career/activity signals, and deliver a fast ranked shortlist. This repository implements a CPU-only deterministic ranker for the Senior AI/ML Engineer role modelled in the challenge. It is not an embedding model, an LLM system, or a learned ranking model; it is a reproducible rule-based proof of concept.
 
-The evaluation metric is **NDCG@10 / NDCG@50 / MAP** against a held-out relevance judgement set. Precision of ranking — not just recall — is what the leaderboard measures.
+The official event page lists the Track 1 submission close date as **2 July 2026** and the Track 1/2 evaluation period as **3–16 July 2026**. The repository documents the implementation and can be reproduced independently; no leaderboard score is claimed here because the held-out relevance labels and candidate dataset are not stored in the repository.
 
----
+## What the System Does
+
+The ranker reads a JSONL candidate pool one record at a time, validates candidate IDs, removes clearly off-domain current titles, computes a bounded composite relevance score, keeps only the highest-scoring candidates in a min-heap, and writes the top 100 rows to CSV.
+
+The score combines six evidence groups:
+
+1. **Keyword relevance:** token-safe matching over JD-derived core and bonus terms with logarithmic scaling for core hits.
+2. **Role alignment:** stronger weight for technical evidence in the current title/headline, followed by skills, summary, and career history.
+3. **Experience fit:** a continuous piecewise-linear curve centred on the 5–9 year senior range.
+4. **Availability:** notice period, open-to-work flag, response rate, and platform activity. Availability is damped when technical relevance evidence is weak so it cannot dominate the shortlist on its own.
+5. **Product tilt:** a proportional signal based on the share of career roles at configured IT-services companies.
+6. **Recency:** a tiered boost from the latest career role's title and first 400 description characters.
+
+Scores are computed before ranking and normalised after ranking to the inclusive **50.0–100.0** presentation range. Reasoning strings are generated deterministically from candidate fields and the candidate ID.
 
 ## Architecture
 
 ```mermaid
 flowchart TD
-    A[candidates.jsonl] -->|line-by-line stream| B[JSON parse + ID validation]
-    B -->|malformed / bad ID| X1[skip]
-    B -->|valid| C[Title Guard\nis_disqualified?]
-    C -->|off-domain title| X2[disqualify]
-    C -->|ML/AI domain| D[build_text\nconcat all searchable fields]
-    D --> E[compute_score]
-
-    subgraph E[compute_score]
-        E1[keyword_score\nlog1p·3.5 + bonus·1.8]
-        E2[experience_score\npiecewise-linear curve]
-        E3[availability_score\nnotice + OTW + resp + activity]
-        E4[product_tilt_score\nproportional service-ratio penalty]
-        E5[recency_boost\n3-tier latest-role scan]
-        E1 & E2 & E3 & E4 & E5 --> ESum[sum → round 6 dp]
-    end
-
-    ESum --> F[Min-heap K=300\nO log K per insert]
-    F --> G[sort desc −score cid\ntop-100]
-    G --> H[normalise_scores\n50–100 range]
-    H --> I[build_reasoning\ntemplate 0/1/2 by cid mod 3]
-    I --> J[submission.csv]
+    A[candidates.jsonl] --> B[Stream one JSON object per line]
+    B --> C{Valid candidate ID?}
+    C -->|no| X1[Skip]
+    C -->|yes| D{Off-domain current title?}
+    D -->|yes| X2[Disqualify]
+    D -->|no| E[Build field-aware text]
+    E --> F[Compute relevance score]
+    F --> G[Apply structured signals]
+    G --> H[Min-heap top-k buffer]
+    H --> I[Sort by score, then candidate ID]
+    I --> J[Top 100]
+    J --> K[Normalize 50.0–100.0]
+    K --> L[Deterministic reasoning]
+    L --> M[submission.csv]
 ```
 
----
+The process is single-pass over the input and keeps the heap bounded by `--topk`. The runtime uses only the Python standard library; there is no network call, model download, GPU dependency, or external service.
 
-## Ranking Methodology
+## Input Contract
 
-The ranker computes a **composite scalar score** from six independent signal dimensions. No ML model, no embeddings, no GPU — entirely rule-based and deterministic.
+The ranker expects one JSON object per line. The repository intentionally does not include the challenge candidate dataset; `.gitignore` excludes `candidates.jsonl` and other JSONL files.
 
-### 1 · Keyword Relevance
+The fields read by the implementation are:
 
-```
-keyword_score = log1p(core_hits) × 3.5  +  bonus_hits × 1.8
-```
+| Field | Used for |
+| --- | --- |
+| `candidate_id` | Validation and deterministic tie-breaking; expected format is `CAND_` followed by seven digits |
+| `profile.current_title` | Title guard and role-alignment evidence |
+| `profile.headline` | Role-alignment evidence |
+| `profile.summary` | Searchable technical evidence, truncated to 600 characters |
+| `profile.years_of_experience` | Experience-fit curve |
+| `skills[].name`, `skills[].category` | Keyword and role-alignment evidence |
+| `career_history[].title`, `career_history[].description` | Role alignment and recency boost; descriptions are bounded per role |
+| `career_history[].company` | Product-tilt signal |
+| `redrob_signals.notice_period_days` | Availability |
+| `redrob_signals.open_to_work_flag` | Availability |
+| `redrob_signals.response_rate` | Availability, clamped to 0–1 |
+| `redrob_signals.platform_activity_score` | Availability, clamped to 0–1 |
+| `education[].degree`, `education[].field` | Searchable text |
 
-| List | Size | Multiplier | Purpose |
-|---|---|---|---|
-| `CORE_KEYWORDS` | 60 terms | log-scaled × 3.5 | Standard JD signals: RAG, embeddings, LLM, NLP, MLOps, frameworks |
-| `BONUS_KEYWORDS` | 16 terms | linear × 1.8 | High-specificity signals: LTR, cross-encoder, hr-tech, knowledge-graph |
+Example input record:
 
-**Why log-scale?** A candidate with 30 keyword hits is not 30× more relevant than one with 1 hit. `log1p` compresses the raw count while still rewarding breadth, preventing keyword-stuffed profiles from crowding out genuine experts with concise summaries.
-
-### 2 · Experience Fit
-
-A continuous piecewise-linear curve maps years-of-experience (YoE) to a score, peaking at the Senior role sweet-spot of 5–9 years.
-
-```
-YoE   →  Score
-  0   →  0.0   (no experience)
-  2   →  1.6   (junior)
-  5   →  5.2   (approaching senior)
-  7   →  6.0   (peak)
-  9   →  5.6   (still strong senior)
- 14   →  3.6   (principal / staff territory)
- 20   →  0.6   (overqualified floor)
-20+   →  0.3   (asymptotic)
+```json
+{"candidate_id":"CAND_0000001","profile":{"current_title":"Senior ML Engineer","headline":"RAG and machine learning engineer","summary":"Builds retrieval and LLM systems","years_of_experience":7},"skills":[{"name":"RAG","category":"GenAI"},{"name":"Python","category":"Language"}],"career_history":[{"title":"ML Engineer","company":"Example Product","description":"Built embeddings and vector search systems."}],"education":[{"degree":"MCA","field":"Computer Applications"}],"redrob_signals":{"notice_period_days":15,"open_to_work_flag":true,"response_rate":0.85,"platform_activity_score":0.9}}
 ```
 
-This avoids the hard bucket problem of the original implementation where every candidate between 5–9 years received exactly the same score.
+## Output Contract
 
-### 3 · Availability
+The ranker writes exactly four CSV columns:
 
-Derived from Redrob platform signals:
-
-| Signal | Points |
-|---|---|
-| `notice_period_days = 0` | 3.0 |
-| `notice_period_days ≤ 15` | 2.5 |
-| `notice_period_days ≤ 30` | 2.0 |
-| `notice_period_days ≤ 60` | 1.0 |
-| `notice_period_days > 60` | 0.0 |
-| `open_to_work_flag = true` | +1.5 |
-| `response_rate` | × 1.5 (0–1.5 pts continuous) |
-| `platform_activity_score` | × 1.0 (0–1.0 pts continuous) |
-
-Maximum: **7.0 pts**.
-
-### 4 · Product Tilt
-
-IT-services / outsourcing background correlates with shallow ML exposure relative to product/research roles. A proportional penalty is applied based on the fraction of career roles at known service companies:
-
-```
-service_ratio = service_company_roles / total_roles
-product_tilt  = 2.0 − (service_ratio × 3.0)    # range: −1.0 to +2.0
+```csv
+candidate_id,rank,score,reasoning
+CAND_0000001,1,100.0,"Senior ML Engineer | 7.0yr exp | Top skills: RAG, Python | Notice: 15d · open-to-work | Response rate: 85% | Score: 100.0/100"
 ```
 
-Pure product background → +2.0 · Pure services background → −1.0 · Mixed → proportional.
-
-This is a **mild penalty, not disqualification** — many strong engineers spend time at service companies.
-
-### 5 · Recency Boost
-
-Scans the most-recent career role's **title and first 400 characters of description** across three specificity tiers:
-
-| Tier | Terms | Per-hit | Cap |
-|---|---|---|---|
-| 1 | llm, rag, retrieval, embedding, vector search, ranking, reranking, information retrieval | 0.6 pts | 3.0 |
-| 2 | ml engineer, machine learning, nlp, deep learning, ai engineer, applied ml, research scientist | 0.3 pts | 1.5 |
-| 3 | data scientist, data science, research, scientist | 0.2 pts | 0.6 |
-
-Maximum: **3.0 pts**.
-
-### 6 · Title Guard (Hard Disqualification)
-
-Candidates whose `current_title` contains any of the following strings are excluded from the ranking entirely — they cannot appear in the heap regardless of availability signals:
-
-`accountant`, `civil engineer`, `graphic designer`, `hr manager`, `content writer`, `sales executive`, `marketing manager`, `business analyst`, `operations manager`, `customer support`, `project manager`, `teacher`, `lawyer`, `doctor`, `architect`, `finance manager`, `legal`, `recruiter`, `receptionist`, `administrative`, `secretary`
-
-This guard directly removes the pollution observed in the original submission where ranks 23–100 included Accountants, Civil Engineers, and HR Managers that had accumulated high availability and experience scores despite zero ML relevance.
-
----
-
-## Score Normalisation
-
-After sorting, the top-100 raw scores are **min-max normalised to the [50, 100] range**:
-
-```
-norm_score = 50 + 50 × (raw − raw_min) / (raw_max − raw_min)
-```
-
-- Rank 1 always scores **100.0**
-- Rank 100 always scores **50.0**
-- Intermediate candidates land proportionally
-
-Normalisation is applied **after** ranking, so it cannot affect rank order — it is purely presentational, making scores interpretable to reviewers.
-
----
-
-## Deterministic Reasoning Generation
-
-Three reasoning templates are defined. Template selection is seeded by the numeric part of `candidate_id` modulo 3 — identical input always produces identical output, but different candidates receive different phrasings for reviewer readability.
-
-| Template | Focus |
-|---|---|
-| 0 — Skill-led | Top 4 skills, experience, notice, response rate |
-| 1 — Availability-led | Notice + open-to-work, activity score, response rate |
-| 2 — Experience-led | YoE, skills, availability summary |
-
-Example outputs:
-```
-# Template 0
-Senior ML Engineer | 7.2yr exp | Top skills: RAG, Embeddings, PyTorch, LlamaIndex | Notice: 15d · open-to-work | Response rate: 89% | Score: 94.3/100
-
-# Template 1
-15d notice open-to-work | 7.2yr ML/AI exp [Senior ML Engineer] | RAG, Embeddings, PyTorch, LlamaIndex | Activity: 0.87 | Resp: 89% | Score: 94.3/100
-
-# Template 2
-7.2yr exp [Senior ML Engineer] | Skills: RAG, Embeddings, PyTorch, LlamaIndex | Availability: 15d notice · open-to-work · 89% resp | Score: 94.3/100
-```
-
----
-
-## Honeypot / Noise Detection
-
-The dataset includes synthetic noise candidates (e.g., Sales Executives, HR Managers) designed to test whether naive rankers are fooled by high-availability signals. The Title Guard (`is_disqualified`) blocks these at O(1) cost before any scoring occurs, ensuring they cannot accumulate availability points and pollute the shortlist.
-
----
-
-## Scoring Pipeline
-
-```
-raw_score  =  log1p(core_hits) × 3.5          # keyword relevance
-           +  bonus_hits × 1.8                 # high-signal bonus terms
-           +  experience_score(yoe)            # piecewise curve, max 6.0
-           +  availability_score(signals)      # notice+OTW+resp+activity, max 7.0
-           +  product_tilt_score(career)       # −1.0 to +2.0
-           +  recency_boost(latest_role)       # tier scan, max 3.0
-
-norm_score =  50 + 50 × (raw − raw_min) / (raw_max − raw_min)
-```
-
-Theoretical maximum raw score (upper bound): ≈ **35.5**
-Typical top-10 range: **22–28**
-
----
-
-## Runtime & Complexity Analysis
-
-| Step | Time | Space |
-|---|---|---|
-| JSONL streaming | O(N) | O(1) per line |
-| `build_text` | O(F) — F = field count | O(F) |
-| `compute_score` | O(K) — K = keyword list size | O(1) |
-| Heap insert | O(log H) — H = heap size (300) | O(H) |
-| Final sort | O(H log H) | O(H) |
-| Score normalisation | O(100) | O(100) |
-| CSV write | O(100) | O(1) |
-
-**Total: O(N · K)** where N = candidates (~100k), K = keyword list (~80 terms).
-
-On a modern laptop (single core):
-- ~100k candidates: **< 5 seconds**
-- ~1M candidates: **< 50 seconds**
-
-No GPU, no network, no external service. Fully reproducible offline.
-
----
-
-## Design Decisions & Trade-offs
-
-| Decision | Rationale | Trade-off |
-|---|---|---|
-| Streaming JSONL, no bulk load | O(1) RAM regardless of dataset size | Cannot do global statistics (e.g., IDF) in a single pass |
-| Log-scale keyword scoring | Prevents keyword stuffing; continuous output eliminates mass ties | Slightly underweights domain experts with very comprehensive profiles |
-| Piecewise-linear experience curve | Smooth, no hard buckets; captures seniority signal | Curve shape is hand-tuned, not learned from data |
-| Proportional product-tilt | Fairer to mixed careers than binary flag | Requires maintaining a service-company list |
-| Hard title disqualification | Eliminates off-domain noise cheaply | May reject rare career-changers mid-transition |
-| Min-heap of size 300 | Low memory, O(log K) per insert | Candidates ranked 101–300 are scored but not output |
-| Deterministic tiebreak on candidate_id | Reproducible across runs | Alphabetic tiebreak is arbitrary, not semantically meaningful |
-| Score normalisation to 50–100 | Interpretable to reviewers; no zero-score entries | Absolute raw scores not preserved in output |
-
----
-
-## Folder Structure
-
-```
-redrob-ranker/
-├── rank.py            # Main ranking engine (single file, ~280 lines)
-├── submission.csv     # Final top-100 submission
-├── requirements.txt   # No third-party dependencies
-├── .gitignore
-├── .github/
-│   └── workflows/
-│       └── rank.yml   # GitHub Actions CI — auto-ranks on push
-└── README.md
-```
-
----
-
-## Installation
-
-```bash
-git clone https://github.com/Yashsh101/redrob-ranker.git
-cd redrob-ranker
-# No pip install needed — zero external dependencies
-# Python >= 3.10 recommended
-```
-
----
+`validate_submission.py` checks the exact column order, 100 data rows, unique candidate IDs, ordered ranks `1..100`, valid candidate ID format, numeric scores, and non-empty reasoning. Use `--require-normalized` for output generated by the current ranker.
 
 ## Reproduction
 
 ```bash
-# Exact reproduce command (identical to original submission)
-python rank.py \
-  --candidates path/to/candidates.jsonl \
-  --out submission.csv
-
-# Optional: larger heap for more thorough pre-filtering
+git clone https://github.com/Yashsh101/redrob-ranker.git
+cd redrob-ranker
+python --version                 # Python 3.10+ recommended
 python rank.py \
   --candidates path/to/candidates.jsonl \
   --out submission.csv \
-  --topk 500
+  --topk 300
+python validate_submission.py submission.csv --require-normalized
 ```
 
----
+`--candidates` and `--out` are required. `--topk` defaults to 300 and must be at least 100. The ranker prints scanned, skipped, disqualified, and heap-size counters while running.
 
-## Sample Output
+## Development and Testing
 
-```csv
-candidate_id,rank,score,reasoning
-CAND_0002025,1,100.0,"Senior AI Engineer | 5.9yr exp | Top skills: Diffusion Models, FAISS, TensorFlow, Embeddings | Notice: 30d | Response rate: 84% | Score: 100.0/100"
-CAND_0086022,2,96.3,"7d notice | 5.3yr ML/AI exp [Senior Applied Scientist] | Vector Search, MLflow, Recommendation Systems, RAG | Activity: 0.92 | Resp: 91% | Score: 96.3/100"
-CAND_0055905,3,94.8,"8.1yr exp [Senior Machine Learning Engineer] | Skills: Elasticsearch, ASR, Hugging Face Transformers, BM25 | Availability: 30d notice · 88% resp | Score: 94.8/100"
+The production ranker has no third-party runtime dependencies. For development and tests:
+
+```bash
+python -m venv .venv
+source .venv/bin/activate                 # Windows: .venv\\Scripts\\Activate.ps1
+python -m pip install -r requirements-dev.txt
+python -m pytest -q
+python -m py_compile rank.py validate_submission.py
+python validate_submission.py submission.csv
 ```
 
-100 rows · unique ranks 1–100 · `candidate_id` matches `CAND_\d{7}$`
+The test suite covers invalid numeric values, title disqualification, experience scoring, normalization, deterministic reasoning, role alignment, availability dampening, token-safe keyword matching, and empty-input normalization.
 
----
+## Continuous Integration
 
-## Evaluation
+`.github/workflows/rank.yml` runs on pushes and pull requests affecting the ranker, validator, tests, candidate data, or workflow. It:
 
-The challenge evaluates against a held-out relevance judgement set using:
-- **NDCG@10** — precision at top of the list (most important)
-- **NDCG@50** — precision across the upper half
-- **MAP** — mean average precision across all 100 positions
+1. Sets up Python 3.11.
+2. Installs development requirements.
+3. Runs `pytest`.
+4. Validates the committed `submission.csv` when present.
+5. If `candidates.jsonl` is available, regenerates the output and validates the normalized score range.
+6. Uploads the resulting CSV as a workflow artifact.
 
-Key improvements in this submission vs baseline:
+The raw challenge dataset is not committed, so the repository's normal CI path tests the code and validates the checked-in output artifact; a full dataset ranking run requires the challenge input file.
 
-| Metric | Baseline issue | This implementation |
-|---|---|---|
-| Precision top-20 | Polluted with Accountants, HR, Sales (ranks 23–100) | Title Guard eliminates off-domain noise |
-| Score resolution | ~6 discrete score buckets, mass ties | Continuous 6-decimal scores, near-zero ties |
-| Tie-breaking | Arbitrary integer sort | Deterministic `(-score, candidate_id)` |
-| Score interpretability | Raw integer 19–25 | Normalised 50–100 range |
+## Repository Structure
 
----
+```text
+redrob-ranker/
+├── rank.py                         # Streaming ranking engine
+├── validate_submission.py          # CSV contract validator
+├── submission.csv                  # Checked-in ranked-output artifact
+├── tests/test_rank.py              # Focused unit tests
+├── requirements.txt                # Empty runtime dependency set
+├── requirements-dev.txt            # Test dependency
+├── .github/workflows/rank.yml      # Test, rank-when-data-exists, validate, upload
+├── .gitignore                      # Excludes raw candidate data and local artifacts
+└── README.md                       # Methodology and reproduction guide
+```
 
-## Future Improvements
+## Design Decisions and Limits
 
-> The items below are **not implemented** in this submission. They are explicitly separated to avoid overstating current capabilities.
+The implementation uses deterministic lexical and structured signals rather than a learned model. This makes runs reproducible and keeps the system offline and dependency-free, but it does not provide semantic embeddings, BM25 term-frequency scoring, supervised learning-to-rank, calibration against held-out labels, or a measured leaderboard score.
 
-- **BM25 scoring** — replace exact keyword substring matching with BM25 term-frequency weighting over a tokenised field index; would improve recall for stemmed/variant terms
-- **Two-pass IDF** — first pass computes per-term document frequency across the corpus; second pass weights rare technical terms higher than common ones
-- **Learned weights** — if relevance labels become available, a thin linear ranker (logistic regression or LambdaRank) could learn optimal component weights from data
-- **Skill taxonomy normalisation** — map variant spellings ("HuggingFace", "hugging face", "hf transformers") to canonical terms before keyword matching
-- **Company embedding** — represent companies via industry/size embeddings to generalise the product-tilt signal beyond the hardcoded service-company list
-- **Cross-field co-occurrence** — reward candidates who demonstrate RAG *and* production deployment *and* LLM fine-tuning together (currently scored independently)
-- **Recency decay on experience** — down-weight roles older than 5 years so that a 2019 ML role does not contribute equally to a 2025 ML role
+The title guard is intentionally conservative and can exclude a career changer whose current title contains a configured off-domain term. The product-tilt signal relies on a maintained list of known service companies. The ranker assumes the first career-history item is the latest role, as documented in the implementation.
 
----
+The committed `submission.csv` is a historical artifact from an earlier ranker version: its rows and score values do not prove the current algorithm's output. It was not regenerated in this update because `candidates.jsonl` is absent from the repository and is excluded by `.gitignore`. To generate a current submission, provide the challenge dataset and run the reproduction commands above.
 
-## Submission Details
+## Official References
 
-| Field | Value |
-|---|---|
-| Challenge | Hack2Skill India Runs Data & AI Challenge 2026 |
-| Track | Track 1: Data & AI |
-| Role modelled | Senior AI/ML Engineer at Redrob |
-| Output file | `submission.csv` |
-| Rows | 100 |
-| Columns | `candidate_id`, `rank`, `score`, `reasoning` |
-| Score range | 50.0 – 100.0 (normalised) |
-| Runtime | < 5s on 100k candidates (single CPU core) |
-| Dependencies | None (Python stdlib only) |
-
----
+- [India Runs official event page — Track 1 brief, checklist, timeline](https://hack2skill.com/event/india_runs/)
+- [India Runs official terms and conditions](https://hack2skill.com/event/india_runs/tnc)
+- [India Runs hiring page](https://hack2skill.com/event/india_runs/career/)
+- [Repository](https://github.com/Yashsh101/redrob-ranker)
 
 ## License
 
-MIT — see repository root.
-
----
-
-*Built for the India Runs Data & AI Hackathon 2026 · [hack2skill.com](https://hack2skill.com)*
+MIT — see the repository history and project files for the current licensing state.

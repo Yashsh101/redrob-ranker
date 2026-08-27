@@ -18,7 +18,12 @@ Signal dimensions
 3. Availability        — notice period + open-to-work flag + response rate + activity
 4. Product tilt        — proportional penalty for IT-services-heavy career history
 5. Recency boost       — tiered keyword scan of most-recent role title + description
-6. Title guard         — hard disqualification of clearly off-domain profiles
+6. Role alignment      — field-aware evidence from title, headline, skills, and career history
+7. Title guard         — hard disqualification of clearly off-domain profiles
+
+The scoring intentionally gives relevance evidence priority over availability. This
+matches the official Track 1 objective: rank contextual fit from profile, career,
+and behavioural signals, rather than letting availability alone dominate precision.
 
 Properties
 ----------
@@ -112,10 +117,30 @@ def safe_float(val: Any, default: float = 0.0) -> float:
         return default
 
 
+def normalise_text(value: Any) -> str:
+    """Lowercase text and make matching punctuation-safe and whitespace-stable."""
+    return re.sub(r"[^a-z0-9]+", " ", str(value or "").lower()).strip()
+
+
+def term_present(normalised_text: str, term: str) -> bool:
+    """Match a keyword as a token/phrase, not as an arbitrary substring."""
+    normalised_term = normalise_text(term)
+    return bool(normalised_term) and bool(
+        re.search(rf"(?<![a-z0-9]){re.escape(normalised_term)}(?![a-z0-9])", normalised_text)
+    )
+
+
+def count_term_hits(text: str, terms: list[str]) -> int:
+    """Count distinct configured terms present in text."""
+    normalised_text = normalise_text(text)
+    return sum(term_present(normalised_text, term) for term in terms)
+
+
 def is_disqualified(c: dict) -> bool:
     """Return True when the candidate's current title is clearly off-domain."""
-    title = str(c.get("profile", {}).get("current_title", "")).lower()
-    return any(token in title for token in DISQUALIFY_TITLES)
+    profile = c.get("profile", {}) or {}
+    title = normalise_text(profile.get("current_title", ""))
+    return any(term_present(title, token) for token in DISQUALIFY_TITLES)
 
 
 def build_text(c: dict) -> str:
@@ -149,18 +174,48 @@ def build_text(c: dict) -> str:
 
 def keyword_score(text: str) -> float:
     """
-    Log-scaled keyword relevance score.
+    Log-scaled keyword relevance score with token-safe matching.
 
     Using log1p prevents a candidate who keyword-stuffs a 5-page summary
     from dominating genuine experts with strong but concise profiles.
     Bonus terms receive a higher per-hit multiplier to reward rare, highly
     specific JD signals.
-
-    Returns a continuous float; typical range 0–18.
     """
-    core  = sum(1 for k in CORE_KEYWORDS  if k in text)
-    bonus = sum(1 for k in BONUS_KEYWORDS if k in text)
+    core = count_term_hits(text, CORE_KEYWORDS)
+    bonus = count_term_hits(text, BONUS_KEYWORDS)
     return math.log1p(core) * 3.5 + bonus * 1.8
+
+
+def role_alignment_score(c: dict) -> float:
+    """Reward explicit role evidence across high-signal candidate fields.
+
+    A title/headline match is stronger evidence than a keyword appearing only
+    in education or a long description. The bounded score adds contextual fit
+    without changing the required output schema.
+    """
+    profile = c.get("profile", {}) or {}
+    title_headline = " ".join(
+        [str(profile.get("current_title", "")), str(profile.get("headline", ""))]
+    )
+    skills = " ".join(
+        f"{s.get('name', '')} {s.get('category', '')}"
+        for s in c.get("skills", []) or []
+    )
+    summary = str(profile.get("summary", ""))
+    career = " ".join(
+        f"{r.get('title', '')} {str(r.get('description', ''))[:400]}"
+        for r in c.get("career_history", []) or []
+    )
+    title_hits = count_term_hits(title_headline, CORE_KEYWORDS)
+    evidence_hits = count_term_hits(f"{skills} {summary} {career}", CORE_KEYWORDS)
+    bonus_hits = count_term_hits(f"{title_headline} {skills} {summary} {career}", BONUS_KEYWORDS)
+
+    score = min(title_hits * 0.9, 3.6)
+    score += min(evidence_hits * 0.25, 2.0)
+    score += min(bonus_hits * 0.5, 1.5)
+    if title_hits == 0 and evidence_hits == 0:
+        score -= 2.0
+    return round(score, 4)
 
 
 def experience_score(yoe: float) -> float:
@@ -218,11 +273,11 @@ def availability_score(c: dict) -> float:
     if sig.get("open_to_work_flag"):
         s += 1.5
 
-    resp = safe_float(sig.get("response_rate"), 0.5)
-    s += resp * 1.5                                        # 0-1.5 pts
+    resp = safe_float(sig.get("response_rate"), 0.0)
+    s += max(0.0, min(resp, 1.0)) * 1.5                    # 0-1.5 pts
 
-    activity = safe_float(sig.get("platform_activity_score"), 0.5)
-    s += activity * 1.0                                    # 0-1.0 pts
+    activity = safe_float(sig.get("platform_activity_score"), 0.0)
+    s += max(0.0, min(activity, 1.0)) * 1.0                # 0-1.0 pts
 
     return s
 
@@ -243,9 +298,6 @@ def product_tilt_score(c: dict) -> float:
     if not roles:
         return 1.0  # neutral for candidates with no history
 
-    companies = " | ".join(
-        str(r.get("company", "")).lower() for r in roles
-    )
     service_hits = sum(1 for r in roles
                        if any(x in str(r.get("company", "")).lower()
                               for x in SERVICE_COMPANIES))
@@ -306,9 +358,17 @@ def compute_score(c: dict, text: str) -> float:
     rounding) to minimise ties and make deterministic tie-breaking
     meaningful rather than an arbitrary sort on candidate_id.
     """
-    s  = keyword_score(text)
-    s += experience_score(safe_float(c.get("profile", {}).get("years_of_experience"), 0))
-    s += availability_score(c)
+    profile = c.get("profile", {}) or {}
+    s = keyword_score(text)
+    s += role_alignment_score(c)
+    s += experience_score(safe_float(profile.get("years_of_experience"), 0))
+
+    # Availability is useful only after relevance evidence exists. This
+    # prevents high activity or short notice from pushing weak-fit profiles
+    # above candidates with stronger technical evidence.
+    core_hits = count_term_hits(text, CORE_KEYWORDS)
+    availability_multiplier = {0: 0.15, 1: 0.45, 2: 0.75}.get(core_hits, 1.0)
+    s += availability_score(c) * availability_multiplier
     s += product_tilt_score(c)
     s += recency_boost(c)
     return round(s, 6)
