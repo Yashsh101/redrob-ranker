@@ -23,6 +23,8 @@ candidates.jsonl
 
 # Local Output & Diagnostics
 data/output/*
+!data/output/submission.csv
+!data/output/diagnostics.json
 !data/output/.gitkeep
 official_run_diagnostics.json
 submission.csv

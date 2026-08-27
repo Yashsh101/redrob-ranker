@@ -1,0 +1,6157 @@
+{
+  "as_of_date": "2026-05-27",
+  "scanned": 100000,
+  "skipped": 0,
+  "disqualified": 63030,
+  "heap_size": 300,
+  "output_rows": 100,
+  "top100": [
+    {
+      "candidate_id": "CAND_0081846",
+      "rank": 1,
+      "raw_score": 39.08737699,
+      "features": {
+        "raw_score": 39.08737699,
+        "fit_score": 32.25,
+        "experience_score": 5.0,
+        "behavior_modifier": 0.9397,
+        "behavior_activity": 0.8563,
+        "role_hits": [
+          "ai engineer"
+        ],
+        "retrieval_hits": [
+          "embedding",
+          "embeddings",
+          "retrieval",
+          "semantic search",
+          "dense retrieval",
+          "faiss",
+          "bm25",
+          "reranking",
+          "ranking"
+        ],
+        "ml_hits": [
+          "llm",
+          "transformers",
+          "machine learning"
+        ],
+        "production_hits": [
+          "serving",
+          "scale",
+          "latency",
+          "monitoring",
+          "pipeline"
+        ],
+        "evaluation_hits": [
+          "ndcg",
+          "mrr",
+          "offline evaluation",
+          "recall"
+        ],
+        "product_hits": [
+          "product",
+          "fintech"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production",
+          "evaluation"
+        ],
+        "matched_skills": [
+          "Information Retrieval",
+          "pgvector",
+          "Elasticsearch",
+          "PyTorch"
+        ],
+        "concerns": [
+          "no major availability concern"
+        ],
+        "title": "Lead AI Engineer",
+        "years": 6.7,
+        "notice_days": 30,
+        "response": 0.73,
+        "inactive_days": 24,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0046064",
+      "rank": 2,
+      "raw_score": 38.22518664,
+      "features": {
+        "raw_score": 38.22518664,
+        "fit_score": 31.649,
+        "experience_score": 4.37,
+        "behavior_modifier": 0.9375,
+        "behavior_activity": 0.8513,
+        "role_hits": [
+          "nlp engineer"
+        ],
+        "retrieval_hits": [
+          "embedding",
+          "embeddings",
+          "retrieval",
+          "dense retrieval",
+          "faiss",
+          "pinecone",
+          "bm25",
+          "reranking",
+          "ranking",
+          "recommendation"
+        ],
+        "ml_hits": [
+          "llm",
+          "lora",
+          "qlora",
+          "nlp"
+        ],
+        "production_hits": [
+          "deployed",
+          "serving",
+          "inference",
+          "latency",
+          "pipeline",
+          "kubernetes"
+        ],
+        "evaluation_hits": [
+          "ndcg",
+          "mrr",
+          "offline evaluation",
+          "recall"
+        ],
+        "product_hits": [
+          "product",
+          "consumer"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production",
+          "evaluation"
+        ],
+        "matched_skills": [
+          "Python",
+          "Pinecone",
+          "BM25",
+          "OpenSearch"
+        ],
+        "concerns": [
+          "no major availability concern"
+        ],
+        "title": "Senior NLP Engineer",
+        "years": 8.9,
+        "notice_days": 30,
+        "response": 0.78,
+        "inactive_days": 31,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0018499",
+      "rank": 3,
+      "raw_score": 38.15636299,
+      "features": {
+        "raw_score": 38.15636299,
+        "fit_score": 30.7466,
+        "experience_score": 5.0,
+        "behavior_modifier": 0.9453,
+        "behavior_activity": 0.8698,
+        "role_hits": [
+          "machine learning engineer"
+        ],
+        "retrieval_hits": [
+          "embeddings",
+          "retrieval",
+          "dense retrieval",
+          "faiss",
+          "bm25",
+          "reranking",
+          "ranking"
+        ],
+        "ml_hits": [
+          "llm",
+          "lora",
+          "qlora",
+          "machine learning"
+        ],
+        "production_hits": [
+          "deployed",
+          "serving",
+          "inference",
+          "latency",
+          "pipeline",
+          "kubernetes"
+        ],
+        "evaluation_hits": [
+          "ndcg",
+          "mrr",
+          "offline evaluation",
+          "recall"
+        ],
+        "product_hits": [
+          "product",
+          "e commerce"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production",
+          "evaluation"
+        ],
+        "matched_skills": [
+          "Deep Learning",
+          "Weaviate",
+          "Recommendation Systems",
+          "Pinecone"
+        ],
+        "concerns": [
+          "no major availability concern"
+        ],
+        "title": "Senior Machine Learning Engineer",
+        "years": 7.2,
+        "notice_days": 15,
+        "response": 0.61,
+        "inactive_days": 14,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0055905",
+      "rank": 4,
+      "raw_score": 37.79842739,
+      "features": {
+        "raw_score": 37.79842739,
+        "fit_score": 31.5524,
+        "experience_score": 4.93,
+        "behavior_modifier": 0.9139,
+        "behavior_activity": 0.795,
+        "role_hits": [
+          "machine learning engineer"
+        ],
+        "retrieval_hits": [
+          "embedding",
+          "embeddings",
+          "retrieval",
+          "semantic search",
+          "dense retrieval",
+          "faiss",
+          "bm25",
+          "reranking",
+          "ranking"
+        ],
+        "ml_hits": [
+          "llm",
+          "transformers",
+          "lora",
+          "qlora",
+          "machine learning"
+        ],
+        "production_hits": [
+          "deployed",
+          "serving",
+          "inference",
+          "scale",
+          "latency",
+          "monitoring",
+          "pipeline",
+          "kubernetes"
+        ],
+        "evaluation_hits": [
+          "ndcg",
+          "mrr",
+          "offline evaluation",
+          "recall"
+        ],
+        "product_hits": [
+          "product",
+          "e commerce"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production",
+          "evaluation"
+        ],
+        "matched_skills": [
+          "Elasticsearch",
+          "Hugging Face Transformers",
+          "Python",
+          "OpenSearch"
+        ],
+        "concerns": [
+          "no major availability concern"
+        ],
+        "title": "Senior Machine Learning Engineer",
+        "years": 8.1,
+        "notice_days": 30,
+        "response": 0.87,
+        "inactive_days": 10,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0005260",
+      "rank": 5,
+      "raw_score": 37.57608812,
+      "features": {
+        "raw_score": 37.57608812,
+        "fit_score": 31.9212,
+        "experience_score": 4.2,
+        "behavior_modifier": 0.9119,
+        "behavior_activity": 0.7903,
+        "role_hits": [
+          "nlp engineer"
+        ],
+        "retrieval_hits": [
+          "embeddings",
+          "retrieval",
+          "dense retrieval",
+          "faiss",
+          "bm25",
+          "reranking",
+          "ranking"
+        ],
+        "ml_hits": [
+          "llm",
+          "lora",
+          "qlora",
+          "nlp"
+        ],
+        "production_hits": [
+          "deployed",
+          "serving",
+          "inference",
+          "latency",
+          "pipeline",
+          "kubernetes"
+        ],
+        "evaluation_hits": [
+          "ndcg",
+          "mrr",
+          "offline evaluation",
+          "recall"
+        ],
+        "product_hits": [
+          "product"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production",
+          "evaluation"
+        ],
+        "matched_skills": [
+          "Prompt Engineering",
+          "Information Retrieval",
+          "Semantic Search",
+          "Deep Learning"
+        ],
+        "concerns": [
+          "notice 60d"
+        ],
+        "title": "Senior NLP Engineer",
+        "years": 5.2,
+        "notice_days": 60,
+        "response": 0.86,
+        "inactive_days": 17,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0008425",
+      "rank": 6,
+      "raw_score": 36.80255541,
+      "features": {
+        "raw_score": 36.80255541,
+        "fit_score": 30.75,
+        "experience_score": 5.0,
+        "behavior_modifier": 0.9123,
+        "behavior_activity": 0.7911,
+        "role_hits": [
+          "nlp engineer"
+        ],
+        "retrieval_hits": [
+          "embedding",
+          "retrieval",
+          "semantic search",
+          "pinecone",
+          "bm25",
+          "ranking",
+          "recommendation"
+        ],
+        "ml_hits": [
+          "transformers",
+          "lora",
+          "qlora",
+          "nlp"
+        ],
+        "production_hits": [
+          "deployed",
+          "serving",
+          "inference",
+          "scale",
+          "latency",
+          "monitoring",
+          "pipeline",
+          "kubernetes"
+        ],
+        "evaluation_hits": [
+          "ndcg"
+        ],
+        "product_hits": [
+          "product",
+          "consumer"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production",
+          "evaluation"
+        ],
+        "matched_skills": [
+          "Qdrant",
+          "pgvector",
+          "Sentence Transformers",
+          "NLP"
+        ],
+        "concerns": [
+          "notice 90d"
+        ],
+        "title": "Senior NLP Engineer",
+        "years": 7.8,
+        "notice_days": 90,
+        "response": 0.66,
+        "inactive_days": 32,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0077337",
+      "rank": 7,
+      "raw_score": 36.23700865,
+      "features": {
+        "raw_score": 36.23700865,
+        "fit_score": 30.4204,
+        "experience_score": 5.0,
+        "behavior_modifier": 0.9556,
+        "behavior_activity": 0.8943,
+        "role_hits": [
+          "machine learning engineer"
+        ],
+        "retrieval_hits": [
+          "embedding",
+          "embeddings",
+          "retrieval",
+          "semantic search",
+          "bm25",
+          "ranking",
+          "recommendation"
+        ],
+        "ml_hits": [
+          "transformers",
+          "nlp",
+          "machine learning"
+        ],
+        "production_hits": [
+          "production",
+          "serving",
+          "shipped",
+          "scale",
+          "latency",
+          "monitoring"
+        ],
+        "evaluation_hits": [
+          "ndcg",
+          "a b test"
+        ],
+        "product_hits": [
+          "product",
+          "fintech",
+          "marketplace",
+          "user"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production",
+          "evaluation"
+        ],
+        "matched_skills": [
+          "Semantic Search",
+          "QLoRA",
+          "pgvector",
+          "Pinecone"
+        ],
+        "concerns": [
+          "notice 60d"
+        ],
+        "title": "Staff Machine Learning Engineer",
+        "years": 7.0,
+        "notice_days": 60,
+        "response": 0.95,
+        "inactive_days": 1,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0086022",
+      "rank": 8,
+      "raw_score": 34.0386476,
+      "features": {
+        "raw_score": 34.0386476,
+        "fit_score": 28.25,
+        "experience_score": 4.3,
+        "behavior_modifier": 0.9111,
+        "behavior_activity": 0.7883,
+        "role_hits": [
+          "applied scientist"
+        ],
+        "retrieval_hits": [
+          "embedding",
+          "embeddings",
+          "retrieval",
+          "dense retrieval",
+          "faiss",
+          "bm25",
+          "reranking",
+          "ranking"
+        ],
+        "ml_hits": [
+          "llm"
+        ],
+        "production_hits": [
+          "serving",
+          "latency",
+          "pipeline"
+        ],
+        "evaluation_hits": [
+          "ndcg",
+          "mrr",
+          "offline evaluation",
+          "recall"
+        ],
+        "product_hits": [
+          "product"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production",
+          "evaluation"
+        ],
+        "matched_skills": [
+          "Vector Search",
+          "Recommendation Systems",
+          "Deep Learning",
+          "pgvector"
+        ],
+        "concerns": [
+          "no major availability concern"
+        ],
+        "title": "Senior Applied Scientist",
+        "years": 5.3,
+        "notice_days": 0,
+        "response": 0.55,
+        "inactive_days": 42,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0027691",
+      "rank": 9,
+      "raw_score": 33.88378451,
+      "features": {
+        "raw_score": 33.88378451,
+        "fit_score": 26.4036,
+        "experience_score": 5.0,
+        "behavior_modifier": 0.9125,
+        "behavior_activity": 0.7916,
+        "role_hits": [
+          "nlp engineer"
+        ],
+        "retrieval_hits": [
+          "retrieval",
+          "semantic search",
+          "faiss",
+          "elasticsearch",
+          "bm25",
+          "ranking"
+        ],
+        "ml_hits": [
+          "transformers",
+          "nlp"
+        ],
+        "production_hits": [
+          "production",
+          "monitoring",
+          "pipeline",
+          "mlflow",
+          "feature store"
+        ],
+        "evaluation_hits": [
+          "experiment"
+        ],
+        "product_hits": [
+          "product",
+          "e commerce",
+          "user"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production",
+          "evaluation"
+        ],
+        "matched_skills": [
+          "LoRA",
+          "PEFT",
+          "Recommendation Systems",
+          "Weaviate"
+        ],
+        "concerns": [
+          "no major availability concern"
+        ],
+        "title": "NLP Engineer",
+        "years": 6.5,
+        "notice_days": 15,
+        "response": 0.68,
+        "inactive_days": 57,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0033861",
+      "rank": 10,
+      "raw_score": 33.79405295,
+      "features": {
+        "raw_score": 33.79405295,
+        "fit_score": 30.0438,
+        "experience_score": 5.0,
+        "behavior_modifier": 0.8192,
+        "behavior_activity": 0.5694,
+        "role_hits": [
+          "nlp engineer"
+        ],
+        "retrieval_hits": [
+          "embedding",
+          "embeddings",
+          "retrieval",
+          "semantic search",
+          "bm25",
+          "ranking",
+          "recommendation"
+        ],
+        "ml_hits": [
+          "transformers",
+          "lora",
+          "qlora",
+          "nlp"
+        ],
+        "production_hits": [
+          "production",
+          "deployed",
+          "serving",
+          "inference",
+          "shipped",
+          "scale",
+          "latency",
+          "monitoring",
+          "pipeline",
+          "kubernetes"
+        ],
+        "evaluation_hits": [
+          "ndcg",
+          "a b test"
+        ],
+        "product_hits": [
+          "product",
+          "fintech",
+          "marketplace",
+          "user"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production",
+          "evaluation"
+        ],
+        "matched_skills": [
+          "Weaviate",
+          "LoRA",
+          "Machine Learning",
+          "TensorFlow"
+        ],
+        "concerns": [
+          "recruiter response 16%"
+        ],
+        "title": "Senior NLP Engineer",
+        "years": 8.0,
+        "notice_days": 30,
+        "response": 0.16,
+        "inactive_days": 100,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0079387",
+      "rank": 11,
+      "raw_score": 33.54621786,
+      "features": {
+        "raw_score": 33.54621786,
+        "fit_score": 27.15,
+        "experience_score": 5.0,
+        "behavior_modifier": 0.9489,
+        "behavior_activity": 0.8784,
+        "role_hits": [
+          "ai engineer"
+        ],
+        "retrieval_hits": [
+          "embedding",
+          "embeddings",
+          "retrieval",
+          "semantic search",
+          "faiss",
+          "pinecone",
+          "elasticsearch",
+          "bm25",
+          "ranking",
+          "recommendation"
+        ],
+        "ml_hits": [
+          "transformers",
+          "nlp"
+        ],
+        "production_hits": [
+          "production",
+          "deployment",
+          "serving",
+          "monitoring",
+          "pipeline",
+          "mlflow",
+          "feature store"
+        ],
+        "evaluation_hits": [
+          "experiment"
+        ],
+        "product_hits": [
+          "user"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production",
+          "evaluation"
+        ],
+        "matched_skills": [
+          "Recommendation Systems",
+          "Python",
+          "Sentence Transformers",
+          "Vector Search"
+        ],
+        "concerns": [
+          "no major availability concern"
+        ],
+        "title": "AI Engineer",
+        "years": 6.9,
+        "notice_days": 30,
+        "response": 0.81,
+        "inactive_days": 32,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0039754",
+      "rank": 12,
+      "raw_score": 33.54379869,
+      "features": {
+        "raw_score": 33.54379869,
+        "fit_score": 31.5,
+        "experience_score": 1.06,
+        "behavior_modifier": 0.9556,
+        "behavior_activity": 0.8942,
+        "role_hits": [
+          "applied scientist"
+        ],
+        "retrieval_hits": [
+          "embedding",
+          "embeddings",
+          "retrieval",
+          "semantic search",
+          "dense retrieval",
+          "faiss",
+          "pinecone",
+          "bm25",
+          "reranking",
+          "ranking",
+          "recommendation"
+        ],
+        "ml_hits": [
+          "llm",
+          "transformers"
+        ],
+        "production_hits": [
+          "serving",
+          "scale",
+          "latency",
+          "monitoring",
+          "pipeline"
+        ],
+        "evaluation_hits": [
+          "ndcg",
+          "mrr",
+          "offline evaluation",
+          "recall"
+        ],
+        "product_hits": [
+          "product",
+          "consumer"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production",
+          "evaluation"
+        ],
+        "matched_skills": [
+          "Fine-tuning LLMs",
+          "Qdrant",
+          "NLP",
+          "OpenSearch"
+        ],
+        "concerns": [
+          "no major availability concern"
+        ],
+        "title": "Senior Applied Scientist",
+        "years": 16.2,
+        "notice_days": 30,
+        "response": 0.81,
+        "inactive_days": 13,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0071974",
+      "rank": 13,
+      "raw_score": 33.21016926,
+      "features": {
+        "raw_score": 33.21016926,
+        "fit_score": 27.85,
+        "experience_score": 5.0,
+        "behavior_modifier": 0.942,
+        "behavior_activity": 0.8619,
+        "role_hits": [
+          "ai engineer"
+        ],
+        "retrieval_hits": [
+          "embedding",
+          "embeddings",
+          "retrieval",
+          "pinecone",
+          "ranking",
+          "recommendation"
+        ],
+        "ml_hits": [
+          "lora",
+          "qlora",
+          "machine learning"
+        ],
+        "production_hits": [
+          "production",
+          "deployed",
+          "inference",
+          "shipped",
+          "latency",
+          "pipeline",
+          "kubernetes"
+        ],
+        "evaluation_hits": [
+          "a b test"
+        ],
+        "product_hits": [
+          "product",
+          "marketplace",
+          "consumer",
+          "user"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production",
+          "evaluation"
+        ],
+        "matched_skills": [
+          "LoRA",
+          "Weaviate",
+          "PEFT",
+          "BM25"
+        ],
+        "concerns": [
+          "notice 45d"
+        ],
+        "title": "Senior AI Engineer",
+        "years": 7.8,
+        "notice_days": 45,
+        "response": 0.76,
+        "inactive_days": 41,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0016163",
+      "rank": 14,
+      "raw_score": 32.15906126,
+      "features": {
+        "raw_score": 32.15906126,
+        "fit_score": 25.1502,
+        "experience_score": 5.0,
+        "behavior_modifier": 0.9308,
+        "behavior_activity": 0.8352,
+        "role_hits": [
+          "ml engineer",
+          "applied ml"
+        ],
+        "retrieval_hits": [
+          "retrieval",
+          "semantic search",
+          "faiss",
+          "elasticsearch",
+          "bm25"
+        ],
+        "ml_hits": [
+          "transformers",
+          "nlp"
+        ],
+        "production_hits": [
+          "production",
+          "monitoring",
+          "mlflow",
+          "feature store"
+        ],
+        "evaluation_hits": [
+          "experiment"
+        ],
+        "product_hits": [
+          "user"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production",
+          "evaluation"
+        ],
+        "matched_skills": [
+          "Hugging Face Transformers",
+          "Weaviate",
+          "Deep Learning",
+          "TensorFlow"
+        ],
+        "concerns": [
+          "notice 120d"
+        ],
+        "title": "Applied ML Engineer",
+        "years": 6.7,
+        "notice_days": 120,
+        "response": 0.72,
+        "inactive_days": 46,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0041611",
+      "rank": 15,
+      "raw_score": 32.10182938,
+      "features": {
+        "raw_score": 32.10182938,
+        "fit_score": 31.45,
+        "experience_score": 5.0,
+        "behavior_modifier": 0.7558,
+        "behavior_activity": 0.4185,
+        "role_hits": [
+          "machine learning engineer"
+        ],
+        "retrieval_hits": [
+          "embedding",
+          "embeddings",
+          "retrieval",
+          "semantic search",
+          "dense retrieval",
+          "faiss",
+          "bm25",
+          "reranking",
+          "ranking"
+        ],
+        "ml_hits": [
+          "llm",
+          "transformers",
+          "machine learning"
+        ],
+        "production_hits": [
+          "serving",
+          "scale",
+          "latency",
+          "monitoring",
+          "pipeline"
+        ],
+        "evaluation_hits": [
+          "ndcg",
+          "mrr",
+          "offline evaluation",
+          "recall"
+        ],
+        "product_hits": [
+          "product"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production",
+          "evaluation"
+        ],
+        "matched_skills": [
+          "Prompt Engineering",
+          "PyTorch",
+          "Qdrant",
+          "NLP"
+        ],
+        "concerns": [
+          "last active 175 days before cutoff",
+          "recruiter response 7%"
+        ],
+        "title": "Staff Machine Learning Engineer",
+        "years": 6.4,
+        "notice_days": 30,
+        "response": 0.07,
+        "inactive_days": 175,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0046525",
+      "rank": 16,
+      "raw_score": 31.38452744,
+      "features": {
+        "raw_score": 31.38452744,
+        "fit_score": 26.2659,
+        "experience_score": 5.0,
+        "behavior_modifier": 0.9411,
+        "behavior_activity": 0.8597,
+        "role_hits": [
+          "machine learning engineer"
+        ],
+        "retrieval_hits": [
+          "embedding",
+          "embeddings",
+          "retrieval",
+          "dense retrieval",
+          "faiss",
+          "bm25",
+          "reranking",
+          "ranking"
+        ],
+        "ml_hits": [
+          "llm",
+          "machine learning"
+        ],
+        "production_hits": [
+          "serving",
+          "latency",
+          "pipeline"
+        ],
+        "evaluation_hits": [
+          "ndcg",
+          "mrr",
+          "offline evaluation",
+          "recall"
+        ],
+        "product_hits": [
+          "product"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production",
+          "evaluation"
+        ],
+        "matched_skills": [
+          "Elasticsearch",
+          "Machine Learning",
+          "Information Retrieval",
+          "TensorFlow"
+        ],
+        "concerns": [
+          "notice 60d"
+        ],
+        "title": "Senior Machine Learning Engineer",
+        "years": 6.1,
+        "notice_days": 60,
+        "response": 0.88,
+        "inactive_days": 4,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0044883",
+      "rank": 17,
+      "raw_score": 31.14543724,
+      "features": {
+        "raw_score": 31.14543724,
+        "fit_score": 26.8805,
+        "experience_score": 5.0,
+        "behavior_modifier": 0.9169,
+        "behavior_activity": 0.802,
+        "role_hits": [
+          "ai engineer"
+        ],
+        "retrieval_hits": [
+          "embedding",
+          "embeddings",
+          "retrieval",
+          "semantic search",
+          "faiss",
+          "pinecone",
+          "elasticsearch",
+          "bm25",
+          "ranking",
+          "recommendation"
+        ],
+        "ml_hits": [
+          "transformers"
+        ],
+        "production_hits": [
+          "production",
+          "deployment",
+          "shipped",
+          "monitoring",
+          "pipeline",
+          "mlflow",
+          "feature store"
+        ],
+        "evaluation_hits": [
+          "a b test",
+          "experiment"
+        ],
+        "product_hits": [
+          "product",
+          "fintech",
+          "e commerce",
+          "user"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production",
+          "evaluation"
+        ],
+        "matched_skills": [
+          "BM25",
+          "Prompt Engineering",
+          "Embeddings",
+          "QLoRA"
+        ],
+        "concerns": [
+          "notice 90d"
+        ],
+        "title": "AI Engineer",
+        "years": 6.3,
+        "notice_days": 90,
+        "response": 0.84,
+        "inactive_days": 20,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0092278",
+      "rank": 18,
+      "raw_score": 31.04957736,
+      "features": {
+        "raw_score": 31.04957736,
+        "fit_score": 30.7,
+        "experience_score": 5.0,
+        "behavior_modifier": 0.7557,
+        "behavior_activity": 0.4183,
+        "role_hits": [
+          "nlp engineer"
+        ],
+        "retrieval_hits": [
+          "embeddings",
+          "retrieval",
+          "dense retrieval",
+          "faiss",
+          "bm25",
+          "reranking",
+          "ranking",
+          "recommendation"
+        ],
+        "ml_hits": [
+          "llm",
+          "nlp"
+        ],
+        "production_hits": [
+          "production",
+          "serving",
+          "shipped",
+          "latency",
+          "pipeline"
+        ],
+        "evaluation_hits": [
+          "ndcg",
+          "mrr",
+          "offline evaluation",
+          "a b test",
+          "recall"
+        ],
+        "product_hits": [
+          "product",
+          "fintech",
+          "marketplace",
+          "user"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production",
+          "evaluation"
+        ],
+        "matched_skills": [
+          "TensorFlow",
+          "Machine Learning",
+          "Hugging Face Transformers",
+          "QLoRA"
+        ],
+        "concerns": [
+          "last active 201 days before cutoff",
+          "recruiter response 7%",
+          "notice 90d"
+        ],
+        "title": "Senior NLP Engineer",
+        "years": 6.8,
+        "notice_days": 90,
+        "response": 0.07,
+        "inactive_days": 201,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0044855",
+      "rank": 19,
+      "raw_score": 30.74167147,
+      "features": {
+        "raw_score": 30.74167147,
+        "fit_score": 25.3942,
+        "experience_score": 5.0,
+        "behavior_modifier": 0.9008,
+        "behavior_activity": 0.7638,
+        "role_hits": [
+          "data scientist"
+        ],
+        "retrieval_hits": [
+          "embedding",
+          "embeddings",
+          "retrieval",
+          "semantic search",
+          "faiss",
+          "pinecone",
+          "elasticsearch",
+          "bm25",
+          "ranking",
+          "recommendation"
+        ],
+        "ml_hits": [
+          "transformers",
+          "machine learning"
+        ],
+        "production_hits": [
+          "deployment",
+          "serving",
+          "pipeline"
+        ],
+        "evaluation_hits": [],
+        "product_hits": [
+          "e commerce",
+          "user"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production"
+        ],
+        "matched_skills": [
+          "Hugging Face Transformers",
+          "OpenSearch",
+          "Information Retrieval",
+          "Pinecone"
+        ],
+        "concerns": [
+          "notice 60d"
+        ],
+        "title": "Senior Data Scientist",
+        "years": 6.6,
+        "notice_days": 60,
+        "response": 0.57,
+        "inactive_days": 33,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0027801",
+      "rank": 20,
+      "raw_score": 30.71285747,
+      "features": {
+        "raw_score": 30.71285747,
+        "fit_score": 23.4876,
+        "experience_score": 5.0,
+        "behavior_modifier": 0.9138,
+        "behavior_activity": 0.7948,
+        "role_hits": [
+          "nlp engineer"
+        ],
+        "retrieval_hits": [
+          "retrieval",
+          "semantic search",
+          "faiss",
+          "elasticsearch",
+          "bm25",
+          "recommendation"
+        ],
+        "ml_hits": [
+          "transformers",
+          "nlp",
+          "machine learning"
+        ],
+        "production_hits": [
+          "production",
+          "monitoring",
+          "mlflow",
+          "feature store"
+        ],
+        "evaluation_hits": [
+          "experiment"
+        ],
+        "product_hits": [
+          "saas",
+          "user"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production",
+          "evaluation"
+        ],
+        "matched_skills": [
+          "FAISS",
+          "Milvus",
+          "QLoRA",
+          "TensorFlow"
+        ],
+        "concerns": [
+          "notice 120d"
+        ],
+        "title": "NLP Engineer",
+        "years": 7.4,
+        "notice_days": 120,
+        "response": 0.65,
+        "inactive_days": 45,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0043228",
+      "rank": 21,
+      "raw_score": 30.64972952,
+      "features": {
+        "raw_score": 30.64972952,
+        "fit_score": 26.1438,
+        "experience_score": 5.0,
+        "behavior_modifier": 0.9014,
+        "behavior_activity": 0.7653,
+        "role_hits": [
+          "ml engineer",
+          "applied ml"
+        ],
+        "retrieval_hits": [
+          "retrieval",
+          "semantic search",
+          "faiss",
+          "elasticsearch",
+          "bm25",
+          "ranking"
+        ],
+        "ml_hits": [
+          "transformers"
+        ],
+        "production_hits": [
+          "production",
+          "monitoring",
+          "pipeline",
+          "mlflow",
+          "feature store"
+        ],
+        "evaluation_hits": [
+          "experiment"
+        ],
+        "product_hits": [
+          "product",
+          "saas",
+          "e commerce",
+          "user"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production",
+          "evaluation"
+        ],
+        "matched_skills": [
+          "NLP",
+          "Hugging Face Transformers",
+          "Machine Learning",
+          "Vector Search"
+        ],
+        "concerns": [
+          "no major availability concern"
+        ],
+        "title": "Applied ML Engineer",
+        "years": 6.8,
+        "notice_days": 30,
+        "response": 0.41,
+        "inactive_days": 5,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0002025",
+      "rank": 22,
+      "raw_score": 30.64881302,
+      "features": {
+        "raw_score": 30.64881302,
+        "fit_score": 23.85,
+        "experience_score": 4.9,
+        "behavior_modifier": 0.9629,
+        "behavior_activity": 0.9117,
+        "role_hits": [
+          "ai engineer"
+        ],
+        "retrieval_hits": [
+          "embeddings",
+          "ranking",
+          "recommendation"
+        ],
+        "ml_hits": [
+          "lora",
+          "qlora"
+        ],
+        "production_hits": [
+          "production",
+          "deployed",
+          "inference",
+          "shipped",
+          "latency",
+          "pipeline",
+          "kubernetes"
+        ],
+        "evaluation_hits": [
+          "a b test"
+        ],
+        "product_hits": [
+          "product",
+          "marketplace",
+          "consumer",
+          "user"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production",
+          "evaluation"
+        ],
+        "matched_skills": [
+          "FAISS",
+          "TensorFlow",
+          "OpenSearch",
+          "Weaviate"
+        ],
+        "concerns": [
+          "no major availability concern"
+        ],
+        "title": "Senior AI Engineer",
+        "years": 5.9,
+        "notice_days": 30,
+        "response": 0.8,
+        "inactive_days": 1,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0039383",
+      "rank": 23,
+      "raw_score": 30.64213906,
+      "features": {
+        "raw_score": 30.64213906,
+        "fit_score": 25.6452,
+        "experience_score": 5.0,
+        "behavior_modifier": 0.9238,
+        "behavior_activity": 0.8187,
+        "role_hits": [
+          "ml engineer",
+          "applied ml"
+        ],
+        "retrieval_hits": [
+          "retrieval",
+          "semantic search",
+          "faiss",
+          "elasticsearch",
+          "bm25",
+          "ranking"
+        ],
+        "ml_hits": [
+          "transformers",
+          "nlp",
+          "machine learning"
+        ],
+        "production_hits": [
+          "shipped"
+        ],
+        "evaluation_hits": [
+          "a b test"
+        ],
+        "product_hits": [
+          "product",
+          "fintech",
+          "e commerce",
+          "user"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production",
+          "evaluation"
+        ],
+        "matched_skills": [
+          "FAISS",
+          "Recommendation Systems",
+          "Hugging Face Transformers",
+          "QLoRA"
+        ],
+        "concerns": [
+          "notice 90d"
+        ],
+        "title": "Applied ML Engineer",
+        "years": 7.1,
+        "notice_days": 90,
+        "response": 0.61,
+        "inactive_days": 69,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0011687",
+      "rank": 24,
+      "raw_score": 30.28256779,
+      "features": {
+        "raw_score": 30.28256779,
+        "fit_score": 24.3147,
+        "experience_score": 5.0,
+        "behavior_modifier": 0.9497,
+        "behavior_activity": 0.8802,
+        "role_hits": [
+          "nlp engineer"
+        ],
+        "retrieval_hits": [
+          "embedding",
+          "retrieval",
+          "pinecone",
+          "ranking",
+          "recommendation"
+        ],
+        "ml_hits": [
+          "lora",
+          "qlora",
+          "nlp",
+          "machine learning"
+        ],
+        "production_hits": [
+          "deployed",
+          "inference",
+          "latency",
+          "pipeline",
+          "kubernetes"
+        ],
+        "evaluation_hits": [],
+        "product_hits": [
+          "product",
+          "consumer"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production"
+        ],
+        "matched_skills": [
+          "TensorFlow",
+          "OpenSearch",
+          "FAISS",
+          "PEFT"
+        ],
+        "concerns": [
+          "no major availability concern"
+        ],
+        "title": "Senior NLP Engineer",
+        "years": 7.8,
+        "notice_days": 15,
+        "response": 0.89,
+        "inactive_days": 17,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0005649",
+      "rank": 25,
+      "raw_score": 30.17092363,
+      "features": {
+        "raw_score": 30.17092363,
+        "fit_score": 26.8489,
+        "experience_score": 5.0,
+        "behavior_modifier": 0.9096,
+        "behavior_activity": 0.7847,
+        "role_hits": [
+          "data scientist"
+        ],
+        "retrieval_hits": [
+          "embedding",
+          "embeddings",
+          "retrieval",
+          "semantic search",
+          "faiss",
+          "pinecone",
+          "elasticsearch",
+          "bm25",
+          "ranking",
+          "recommendation"
+        ],
+        "ml_hits": [
+          "transformers"
+        ],
+        "production_hits": [
+          "production",
+          "deployment",
+          "shipped",
+          "monitoring",
+          "pipeline",
+          "mlflow",
+          "feature store"
+        ],
+        "evaluation_hits": [
+          "a b test",
+          "experiment"
+        ],
+        "product_hits": [
+          "product",
+          "user"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production",
+          "evaluation"
+        ],
+        "matched_skills": [
+          "Prompt Engineering",
+          "Deep Learning",
+          "TensorFlow",
+          "Fine-tuning LLMs"
+        ],
+        "concerns": [
+          "notice 90d"
+        ],
+        "title": "Senior Data Scientist",
+        "years": 7.4,
+        "notice_days": 90,
+        "response": 0.57,
+        "inactive_days": 43,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0083307",
+      "rank": 26,
+      "raw_score": 30.14934244,
+      "features": {
+        "raw_score": 30.14934244,
+        "fit_score": 25.8185,
+        "experience_score": 5.0,
+        "behavior_modifier": 0.9102,
+        "behavior_activity": 0.7861,
+        "role_hits": [
+          "search engineer"
+        ],
+        "retrieval_hits": [
+          "embedding",
+          "embeddings",
+          "retrieval",
+          "semantic search",
+          "faiss",
+          "pinecone",
+          "elasticsearch",
+          "bm25",
+          "ranking"
+        ],
+        "ml_hits": [
+          "transformers",
+          "nlp",
+          "machine learning"
+        ],
+        "production_hits": [
+          "deployment",
+          "pipeline"
+        ],
+        "evaluation_hits": [],
+        "product_hits": [
+          "product",
+          "fintech",
+          "e commerce",
+          "user"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production"
+        ],
+        "matched_skills": [
+          "Embeddings",
+          "QLoRA",
+          "PEFT",
+          "Pinecone"
+        ],
+        "concerns": [
+          "notice 120d"
+        ],
+        "title": "Search Engineer",
+        "years": 7.8,
+        "notice_days": 120,
+        "response": 0.7,
+        "inactive_days": 67,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0068811",
+      "rank": 27,
+      "raw_score": 30.00283271,
+      "features": {
+        "raw_score": 30.00283271,
+        "fit_score": 24.6427,
+        "experience_score": 5.0,
+        "behavior_modifier": 0.8814,
+        "behavior_activity": 0.7176,
+        "role_hits": [
+          "ml engineer",
+          "applied ml"
+        ],
+        "retrieval_hits": [
+          "embedding",
+          "embeddings",
+          "pinecone",
+          "ranking",
+          "recommendation"
+        ],
+        "ml_hits": [],
+        "production_hits": [
+          "production",
+          "deployment",
+          "serving",
+          "monitoring",
+          "pipeline",
+          "mlflow",
+          "feature store"
+        ],
+        "evaluation_hits": [
+          "experiment"
+        ],
+        "product_hits": [
+          "product",
+          "saas",
+          "e commerce"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "production",
+          "evaluation"
+        ],
+        "matched_skills": [
+          "Vector Search",
+          "Qdrant",
+          "TensorFlow",
+          "Embeddings"
+        ],
+        "concerns": [
+          "no major availability concern"
+        ],
+        "title": "Applied ML Engineer",
+        "years": 8.0,
+        "notice_days": 30,
+        "response": 0.42,
+        "inactive_days": 6,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0080766",
+      "rank": 28,
+      "raw_score": 29.98595214,
+      "features": {
+        "raw_score": 29.98595214,
+        "fit_score": 24.6285,
+        "experience_score": 4.44,
+        "behavior_modifier": 0.9033,
+        "behavior_activity": 0.7697,
+        "role_hits": [
+          "machine learning engineer"
+        ],
+        "retrieval_hits": [
+          "embedding",
+          "retrieval",
+          "semantic search",
+          "bm25",
+          "ranking"
+        ],
+        "ml_hits": [
+          "transformers",
+          "machine learning"
+        ],
+        "production_hits": [
+          "production",
+          "serving",
+          "shipped",
+          "scale",
+          "latency",
+          "monitoring",
+          "pipeline"
+        ],
+        "evaluation_hits": [
+          "ndcg"
+        ],
+        "product_hits": [
+          "product",
+          "consumer",
+          "user"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production",
+          "evaluation"
+        ],
+        "matched_skills": [
+          "LoRA",
+          "Information Retrieval Systems",
+          "Elasticsearch",
+          "Deep Learning"
+        ],
+        "concerns": [
+          "no major availability concern"
+        ],
+        "title": "Staff Machine Learning Engineer",
+        "years": 8.8,
+        "notice_days": 0,
+        "response": 0.66,
+        "inactive_days": 48,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0061265",
+      "rank": 29,
+      "raw_score": 29.66346742,
+      "features": {
+        "raw_score": 29.66346742,
+        "fit_score": 25.0313,
+        "experience_score": 5.0,
+        "behavior_modifier": 0.9274,
+        "behavior_activity": 0.8271,
+        "role_hits": [
+          "recommendation systems"
+        ],
+        "retrieval_hits": [
+          "retrieval",
+          "semantic search",
+          "faiss",
+          "elasticsearch",
+          "bm25",
+          "ranking",
+          "recommendation"
+        ],
+        "ml_hits": [
+          "transformers"
+        ],
+        "production_hits": [
+          "production",
+          "monitoring",
+          "pipeline",
+          "mlflow",
+          "feature store"
+        ],
+        "evaluation_hits": [
+          "experiment"
+        ],
+        "product_hits": [
+          "product",
+          "saas",
+          "fintech",
+          "e commerce",
+          "user"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production",
+          "evaluation"
+        ],
+        "matched_skills": [
+          "Qdrant",
+          "SQL",
+          "Vector Search",
+          "Hugging Face Transformers"
+        ],
+        "concerns": [
+          "notice 120d"
+        ],
+        "title": "Recommendation Systems Engineer",
+        "years": 6.6,
+        "notice_days": 120,
+        "response": 0.94,
+        "inactive_days": 63,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0069905",
+      "rank": 30,
+      "raw_score": 29.606043,
+      "features": {
+        "raw_score": 29.606043,
+        "fit_score": 25.1172,
+        "experience_score": 5.0,
+        "behavior_modifier": 0.9299,
+        "behavior_activity": 0.8331,
+        "role_hits": [
+          "ml engineer",
+          "applied ml"
+        ],
+        "retrieval_hits": [
+          "embedding",
+          "embeddings",
+          "retrieval",
+          "semantic search",
+          "faiss",
+          "pinecone",
+          "elasticsearch",
+          "bm25",
+          "recommendation"
+        ],
+        "ml_hits": [
+          "transformers",
+          "machine learning"
+        ],
+        "production_hits": [
+          "deployment",
+          "pipeline"
+        ],
+        "evaluation_hits": [],
+        "product_hits": [
+          "e commerce",
+          "user"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production"
+        ],
+        "matched_skills": [
+          "LoRA",
+          "Recommendation Systems",
+          "Sentence Transformers",
+          "TensorFlow"
+        ],
+        "concerns": [
+          "notice 90d"
+        ],
+        "title": "Applied ML Engineer",
+        "years": 6.6,
+        "notice_days": 90,
+        "response": 0.78,
+        "inactive_days": 36,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0066376",
+      "rank": 31,
+      "raw_score": 29.33280338,
+      "features": {
+        "raw_score": 29.33280338,
+        "fit_score": 24.9332,
+        "experience_score": 4.7,
+        "behavior_modifier": 0.8736,
+        "behavior_activity": 0.6992,
+        "role_hits": [
+          "ml engineer",
+          "applied ml"
+        ],
+        "retrieval_hits": [
+          "embeddings",
+          "retrieval",
+          "semantic search",
+          "faiss",
+          "elasticsearch",
+          "bm25",
+          "ranking",
+          "recommendation"
+        ],
+        "ml_hits": [
+          "transformers"
+        ],
+        "production_hits": [
+          "serving",
+          "pipeline"
+        ],
+        "evaluation_hits": [],
+        "product_hits": [
+          "user"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production"
+        ],
+        "matched_skills": [
+          "Recommendation Systems",
+          "LoRA",
+          "Fine-tuning LLMs",
+          "Deep Learning"
+        ],
+        "concerns": [
+          "notice 90d"
+        ],
+        "title": "Applied ML Engineer",
+        "years": 5.7,
+        "notice_days": 90,
+        "response": 0.51,
+        "inactive_days": 24,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0010685",
+      "rank": 32,
+      "raw_score": 29.14354215,
+      "features": {
+        "raw_score": 29.14354215,
+        "fit_score": 24.4465,
+        "experience_score": 5.0,
+        "behavior_modifier": 0.9024,
+        "behavior_activity": 0.7676,
+        "role_hits": [
+          "nlp engineer"
+        ],
+        "retrieval_hits": [
+          "retrieval",
+          "semantic search",
+          "faiss",
+          "elasticsearch",
+          "bm25",
+          "ranking"
+        ],
+        "ml_hits": [
+          "transformers",
+          "nlp",
+          "machine learning"
+        ],
+        "production_hits": [
+          "production",
+          "shipped",
+          "monitoring",
+          "pipeline",
+          "mlflow",
+          "feature store"
+        ],
+        "evaluation_hits": [
+          "a b test",
+          "experiment"
+        ],
+        "product_hits": [
+          "product",
+          "e commerce",
+          "user"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production",
+          "evaluation"
+        ],
+        "matched_skills": [
+          "Prompt Engineering",
+          "Deep Learning",
+          "PyTorch",
+          "Information Retrieval"
+        ],
+        "concerns": [
+          "no major availability concern"
+        ],
+        "title": "NLP Engineer",
+        "years": 6.7,
+        "notice_days": 30,
+        "response": 0.83,
+        "inactive_days": 72,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0007009",
+      "rank": 33,
+      "raw_score": 28.93146565,
+      "features": {
+        "raw_score": 28.93146565,
+        "fit_score": 23.7145,
+        "experience_score": 5.0,
+        "behavior_modifier": 0.9044,
+        "behavior_activity": 0.7725,
+        "role_hits": [
+          "recommendation systems"
+        ],
+        "retrieval_hits": [
+          "embedding",
+          "embeddings",
+          "retrieval",
+          "semantic search",
+          "faiss",
+          "pinecone",
+          "elasticsearch",
+          "bm25",
+          "recommendation"
+        ],
+        "ml_hits": [
+          "transformers"
+        ],
+        "production_hits": [
+          "deployment",
+          "pipeline"
+        ],
+        "evaluation_hits": [],
+        "product_hits": [
+          "user"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production"
+        ],
+        "matched_skills": [
+          "Weaviate",
+          "Python",
+          "Embeddings",
+          "PEFT"
+        ],
+        "concerns": [
+          "no major availability concern"
+        ],
+        "title": "Recommendation Systems Engineer",
+        "years": 7.9,
+        "notice_days": 30,
+        "response": 0.62,
+        "inactive_days": 69,
+        "product_score": 0.0,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0010257",
+      "rank": 34,
+      "raw_score": 28.93091016,
+      "features": {
+        "raw_score": 28.93091016,
+        "fit_score": 21.047,
+        "experience_score": 5.0,
+        "behavior_modifier": 0.9351,
+        "behavior_activity": 0.8455,
+        "role_hits": [
+          "data scientist"
+        ],
+        "retrieval_hits": [
+          "embeddings",
+          "ranking",
+          "recommendation"
+        ],
+        "ml_hits": [],
+        "production_hits": [
+          "production",
+          "serving",
+          "shipped",
+          "monitoring",
+          "pipeline",
+          "mlflow",
+          "feature store"
+        ],
+        "evaluation_hits": [
+          "a b test",
+          "experiment"
+        ],
+        "product_hits": [
+          "product",
+          "user"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "production",
+          "evaluation"
+        ],
+        "matched_skills": [
+          "Milvus",
+          "TensorFlow",
+          "Python",
+          "OpenSearch"
+        ],
+        "concerns": [
+          "notice 120d"
+        ],
+        "title": "Senior Data Scientist",
+        "years": 6.5,
+        "notice_days": 120,
+        "response": 0.72,
+        "inactive_days": 14,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0054123",
+      "rank": 35,
+      "raw_score": 28.90521365,
+      "features": {
+        "raw_score": 28.90521365,
+        "fit_score": 24.948,
+        "experience_score": 3.525,
+        "behavior_modifier": 0.9144,
+        "behavior_activity": 0.7963,
+        "role_hits": [
+          "ml engineer",
+          "applied ml"
+        ],
+        "retrieval_hits": [
+          "embeddings",
+          "retrieval",
+          "semantic search",
+          "faiss",
+          "elasticsearch",
+          "bm25",
+          "ranking",
+          "recommendation"
+        ],
+        "ml_hits": [
+          "transformers"
+        ],
+        "production_hits": [
+          "serving",
+          "pipeline"
+        ],
+        "evaluation_hits": [],
+        "product_hits": [
+          "fintech",
+          "user"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production"
+        ],
+        "matched_skills": [
+          "pgvector",
+          "Python",
+          "Weaviate",
+          "Qdrant"
+        ],
+        "concerns": [
+          "notice 60d"
+        ],
+        "title": "Applied ML Engineer",
+        "years": 4.7,
+        "notice_days": 60,
+        "response": 0.87,
+        "inactive_days": 19,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0094056",
+      "rank": 36,
+      "raw_score": 28.86481748,
+      "features": {
+        "raw_score": 28.86481748,
+        "fit_score": 25.1092,
+        "experience_score": 4.9,
+        "behavior_modifier": 0.9046,
+        "behavior_activity": 0.773,
+        "role_hits": [
+          "nlp engineer"
+        ],
+        "retrieval_hits": [
+          "retrieval",
+          "semantic search",
+          "faiss",
+          "elasticsearch",
+          "bm25",
+          "recommendation"
+        ],
+        "ml_hits": [
+          "transformers",
+          "nlp"
+        ],
+        "production_hits": [
+          "production",
+          "monitoring",
+          "mlflow",
+          "feature store"
+        ],
+        "evaluation_hits": [
+          "experiment"
+        ],
+        "product_hits": [
+          "user"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production",
+          "evaluation"
+        ],
+        "matched_skills": [
+          "Pinecone",
+          "Milvus",
+          "Hugging Face Transformers",
+          "PEFT"
+        ],
+        "concerns": [
+          "notice 120d"
+        ],
+        "title": "NLP Engineer",
+        "years": 5.9,
+        "notice_days": 120,
+        "response": 0.82,
+        "inactive_days": 41,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0094759",
+      "rank": 37,
+      "raw_score": 28.80927796,
+      "features": {
+        "raw_score": 28.80927796,
+        "fit_score": 27.4011,
+        "experience_score": 4.58,
+        "behavior_modifier": 0.8155,
+        "behavior_activity": 0.5607,
+        "role_hits": [
+          "ai engineer"
+        ],
+        "retrieval_hits": [
+          "embedding",
+          "embeddings",
+          "retrieval",
+          "dense retrieval",
+          "faiss",
+          "bm25",
+          "reranking",
+          "ranking"
+        ],
+        "ml_hits": [
+          "llm",
+          "nlp"
+        ],
+        "production_hits": [
+          "serving",
+          "latency",
+          "pipeline"
+        ],
+        "evaluation_hits": [
+          "ndcg",
+          "mrr",
+          "offline evaluation",
+          "recall"
+        ],
+        "product_hits": [
+          "product",
+          "consumer"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production",
+          "evaluation"
+        ],
+        "matched_skills": [
+          "Prompt Engineering",
+          "Hugging Face Transformers",
+          "Semantic Search",
+          "Qdrant"
+        ],
+        "concerns": [
+          "last active 139 days before cutoff",
+          "recruiter response 11%"
+        ],
+        "title": "Lead AI Engineer",
+        "years": 8.6,
+        "notice_days": 30,
+        "response": 0.11,
+        "inactive_days": 139,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0075249",
+      "rank": 38,
+      "raw_score": 28.65666449,
+      "features": {
+        "raw_score": 28.65666449,
+        "fit_score": 23.1928,
+        "experience_score": 5.0,
+        "behavior_modifier": 0.9047,
+        "behavior_activity": 0.773,
+        "role_hits": [
+          "ml engineer",
+          "applied ml"
+        ],
+        "retrieval_hits": [
+          "embeddings",
+          "retrieval",
+          "semantic search",
+          "faiss",
+          "elasticsearch",
+          "bm25",
+          "ranking",
+          "recommendation"
+        ],
+        "ml_hits": [
+          "transformers"
+        ],
+        "production_hits": [
+          "serving",
+          "pipeline"
+        ],
+        "evaluation_hits": [],
+        "product_hits": [
+          "user"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production"
+        ],
+        "matched_skills": [
+          "Sentence Transformers",
+          "Milvus",
+          "Machine Learning",
+          "Fine-tuning LLMs"
+        ],
+        "concerns": [
+          "notice 45d"
+        ],
+        "title": "Applied ML Engineer",
+        "years": 6.2,
+        "notice_days": 45,
+        "response": 0.82,
+        "inactive_days": 48,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0020877",
+      "rank": 39,
+      "raw_score": 28.62446644,
+      "features": {
+        "raw_score": 28.62446644,
+        "fit_score": 25.7039,
+        "experience_score": 4.1,
+        "behavior_modifier": 0.8971,
+        "behavior_activity": 0.7549,
+        "role_hits": [
+          "ml engineer",
+          "applied ml"
+        ],
+        "retrieval_hits": [
+          "embedding",
+          "embeddings",
+          "retrieval",
+          "semantic search",
+          "faiss",
+          "pinecone",
+          "elasticsearch",
+          "bm25"
+        ],
+        "ml_hits": [
+          "transformers"
+        ],
+        "production_hits": [
+          "deployment",
+          "pipeline"
+        ],
+        "evaluation_hits": [],
+        "product_hits": [
+          "fintech",
+          "user"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production"
+        ],
+        "matched_skills": [
+          "QLoRA",
+          "Elasticsearch",
+          "PyTorch",
+          "OpenSearch"
+        ],
+        "concerns": [
+          "notice 60d"
+        ],
+        "title": "Applied ML Engineer",
+        "years": 5.1,
+        "notice_days": 60,
+        "response": 0.66,
+        "inactive_days": 54,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0028793",
+      "rank": 40,
+      "raw_score": 28.50415745,
+      "features": {
+        "raw_score": 28.50415745,
+        "fit_score": 24.1222,
+        "experience_score": 5.0,
+        "behavior_modifier": 0.9226,
+        "behavior_activity": 0.8156,
+        "role_hits": [
+          "search engineer"
+        ],
+        "retrieval_hits": [
+          "embedding",
+          "embeddings",
+          "retrieval",
+          "semantic search",
+          "faiss",
+          "pinecone",
+          "elasticsearch",
+          "bm25",
+          "ranking"
+        ],
+        "ml_hits": [
+          "transformers",
+          "machine learning"
+        ],
+        "production_hits": [
+          "deployment",
+          "shipped",
+          "pipeline"
+        ],
+        "evaluation_hits": [
+          "a b test"
+        ],
+        "product_hits": [
+          "product",
+          "e commerce",
+          "user"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production",
+          "evaluation"
+        ],
+        "matched_skills": [
+          "Embeddings",
+          "LoRA",
+          "Information Retrieval",
+          "PEFT"
+        ],
+        "concerns": [
+          "notice 120d"
+        ],
+        "title": "Search Engineer",
+        "years": 7.2,
+        "notice_days": 120,
+        "response": 0.57,
+        "inactive_days": 44,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0057563",
+      "rank": 41,
+      "raw_score": 28.42082095,
+      "features": {
+        "raw_score": 28.42082095,
+        "fit_score": 23.2699,
+        "experience_score": 5.0,
+        "behavior_modifier": 0.9134,
+        "behavior_activity": 0.7938,
+        "role_hits": [
+          "nlp engineer"
+        ],
+        "retrieval_hits": [
+          "embeddings",
+          "retrieval",
+          "semantic search",
+          "faiss",
+          "elasticsearch",
+          "bm25",
+          "ranking",
+          "recommendation"
+        ],
+        "ml_hits": [
+          "transformers",
+          "nlp",
+          "machine learning"
+        ],
+        "production_hits": [
+          "serving",
+          "pipeline"
+        ],
+        "evaluation_hits": [],
+        "product_hits": [
+          "product",
+          "saas",
+          "e commerce",
+          "user"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production"
+        ],
+        "matched_skills": [
+          "Deep Learning",
+          "Elasticsearch",
+          "OpenSearch",
+          "SQL"
+        ],
+        "concerns": [
+          "notice 60d"
+        ],
+        "title": "NLP Engineer",
+        "years": 6.8,
+        "notice_days": 60,
+        "response": 0.83,
+        "inactive_days": 36,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0081686",
+      "rank": 42,
+      "raw_score": 28.21930562,
+      "features": {
+        "raw_score": 28.21930562,
+        "fit_score": 23.3522,
+        "experience_score": 5.0,
+        "behavior_modifier": 0.9208,
+        "behavior_activity": 0.8114,
+        "role_hits": [
+          "search engineer"
+        ],
+        "retrieval_hits": [
+          "embeddings",
+          "retrieval",
+          "semantic search",
+          "faiss",
+          "elasticsearch",
+          "bm25",
+          "ranking",
+          "recommendation"
+        ],
+        "ml_hits": [
+          "transformers"
+        ],
+        "production_hits": [
+          "serving",
+          "pipeline"
+        ],
+        "evaluation_hits": [],
+        "product_hits": [
+          "product",
+          "saas",
+          "e commerce",
+          "user"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production"
+        ],
+        "matched_skills": [
+          "Machine Learning",
+          "Embeddings",
+          "FAISS",
+          "Milvus"
+        ],
+        "concerns": [
+          "notice 60d"
+        ],
+        "title": "Search Engineer",
+        "years": 6.0,
+        "notice_days": 60,
+        "response": 0.91,
+        "inactive_days": 32,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0081053",
+      "rank": 43,
+      "raw_score": 28.18078816,
+      "features": {
+        "raw_score": 28.18078816,
+        "fit_score": 21.3987,
+        "experience_score": 4.4,
+        "behavior_modifier": 0.9221,
+        "behavior_activity": 0.8144,
+        "role_hits": [
+          "nlp engineer"
+        ],
+        "retrieval_hits": [
+          "embeddings",
+          "ranking",
+          "recommendation"
+        ],
+        "ml_hits": [
+          "nlp",
+          "machine learning"
+        ],
+        "production_hits": [
+          "production",
+          "serving",
+          "monitoring",
+          "pipeline",
+          "mlflow",
+          "feature store"
+        ],
+        "evaluation_hits": [
+          "experiment"
+        ],
+        "product_hits": [],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production",
+          "evaluation"
+        ],
+        "matched_skills": [
+          "LoRA",
+          "QLoRA",
+          "Qdrant",
+          "Machine Learning"
+        ],
+        "concerns": [
+          "notice 90d"
+        ],
+        "title": "NLP Engineer",
+        "years": 5.4,
+        "notice_days": 90,
+        "response": 0.83,
+        "inactive_days": 57,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0007411",
+      "rank": 44,
+      "raw_score": 27.85163647,
+      "features": {
+        "raw_score": 27.85163647,
+        "fit_score": 25.4146,
+        "experience_score": 5.0,
+        "behavior_modifier": 0.8011,
+        "behavior_activity": 0.5265,
+        "role_hits": [
+          "machine learning engineer"
+        ],
+        "retrieval_hits": [
+          "embedding",
+          "retrieval",
+          "pinecone",
+          "ranking",
+          "recommendation"
+        ],
+        "ml_hits": [
+          "lora",
+          "qlora",
+          "machine learning"
+        ],
+        "production_hits": [
+          "deployed",
+          "inference",
+          "latency",
+          "pipeline",
+          "kubernetes"
+        ],
+        "evaluation_hits": [],
+        "product_hits": [
+          "product",
+          "consumer"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production"
+        ],
+        "matched_skills": [
+          "OpenSearch",
+          "Prompt Engineering",
+          "Fine-tuning LLMs",
+          "Vector Search"
+        ],
+        "concerns": [
+          "last active 176 days before cutoff",
+          "recruiter response 12%"
+        ],
+        "title": "Senior Machine Learning Engineer",
+        "years": 8.0,
+        "notice_days": 15,
+        "response": 0.12,
+        "inactive_days": 176,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0030953",
+      "rank": 45,
+      "raw_score": 27.70119158,
+      "features": {
+        "raw_score": 27.70119158,
+        "fit_score": 24.4697,
+        "experience_score": 5.0,
+        "behavior_modifier": 0.8756,
+        "behavior_activity": 0.7039,
+        "role_hits": [
+          "search engineer"
+        ],
+        "retrieval_hits": [
+          "embedding",
+          "embeddings",
+          "retrieval",
+          "semantic search",
+          "faiss",
+          "pinecone",
+          "elasticsearch",
+          "bm25",
+          "ranking",
+          "recommendation"
+        ],
+        "ml_hits": [
+          "transformers",
+          "nlp",
+          "machine learning"
+        ],
+        "production_hits": [
+          "deployment",
+          "serving",
+          "shipped",
+          "pipeline"
+        ],
+        "evaluation_hits": [
+          "a b test"
+        ],
+        "product_hits": [
+          "product",
+          "e commerce",
+          "user"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production",
+          "evaluation"
+        ],
+        "matched_skills": [
+          "Qdrant",
+          "Python",
+          "Hugging Face Transformers",
+          "pgvector"
+        ],
+        "concerns": [
+          "notice 45d"
+        ],
+        "title": "Search Engineer",
+        "years": 7.8,
+        "notice_days": 45,
+        "response": 0.63,
+        "inactive_days": 46,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0052328",
+      "rank": 46,
+      "raw_score": 27.5578066,
+      "features": {
+        "raw_score": 27.5578066,
+        "fit_score": 20.7278,
+        "experience_score": 5.0,
+        "behavior_modifier": 0.9299,
+        "behavior_activity": 0.8331,
+        "role_hits": [
+          "recommendation systems"
+        ],
+        "retrieval_hits": [
+          "embedding",
+          "embeddings",
+          "pinecone",
+          "recommendation"
+        ],
+        "ml_hits": [],
+        "production_hits": [
+          "production",
+          "deployment",
+          "monitoring",
+          "pipeline",
+          "mlflow",
+          "feature store"
+        ],
+        "evaluation_hits": [
+          "experiment"
+        ],
+        "product_hits": [],
+        "evidence": [
+          "retrieval/ranking",
+          "production",
+          "evaluation"
+        ],
+        "matched_skills": [
+          "LoRA",
+          "OpenSearch",
+          "QLoRA",
+          "Recommendation Systems"
+        ],
+        "concerns": [
+          "no major availability concern"
+        ],
+        "title": "Recommendation Systems Engineer",
+        "years": 6.5,
+        "notice_days": 30,
+        "response": 0.79,
+        "inactive_days": 57,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0058575",
+      "rank": 47,
+      "raw_score": 27.51445541,
+      "features": {
+        "raw_score": 27.51445541,
+        "fit_score": 24.1057,
+        "experience_score": 4.8,
+        "behavior_modifier": 0.8904,
+        "behavior_activity": 0.7391,
+        "role_hits": [
+          "ai engineer"
+        ],
+        "retrieval_hits": [
+          "embedding",
+          "embeddings",
+          "retrieval",
+          "semantic search",
+          "faiss",
+          "pinecone",
+          "elasticsearch",
+          "bm25"
+        ],
+        "ml_hits": [
+          "transformers"
+        ],
+        "production_hits": [
+          "production",
+          "deployment",
+          "monitoring",
+          "pipeline",
+          "mlflow",
+          "feature store"
+        ],
+        "evaluation_hits": [
+          "experiment"
+        ],
+        "product_hits": [
+          "user"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production",
+          "evaluation"
+        ],
+        "matched_skills": [
+          "Machine Learning",
+          "Recommendation Systems",
+          "Pinecone",
+          "PyTorch"
+        ],
+        "concerns": [
+          "notice 90d"
+        ],
+        "title": "AI Engineer",
+        "years": 5.8,
+        "notice_days": 90,
+        "response": 0.69,
+        "inactive_days": 52,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0064904",
+      "rank": 48,
+      "raw_score": 27.48198381,
+      "features": {
+        "raw_score": 27.48198381,
+        "fit_score": 21.3631,
+        "experience_score": 3.675,
+        "behavior_modifier": 0.9155,
+        "behavior_activity": 0.7987,
+        "role_hits": [
+          "ai engineer"
+        ],
+        "retrieval_hits": [
+          "embeddings",
+          "ranking",
+          "recommendation"
+        ],
+        "ml_hits": [],
+        "production_hits": [
+          "production",
+          "serving",
+          "monitoring",
+          "pipeline",
+          "mlflow",
+          "feature store"
+        ],
+        "evaluation_hits": [
+          "experiment"
+        ],
+        "product_hits": [
+          "saas"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "production",
+          "evaluation"
+        ],
+        "matched_skills": [
+          "Embeddings",
+          "Hugging Face Transformers",
+          "Elasticsearch",
+          "Prompt Engineering"
+        ],
+        "concerns": [
+          "notice 90d"
+        ],
+        "title": "AI Engineer",
+        "years": 4.9,
+        "notice_days": 90,
+        "response": 0.78,
+        "inactive_days": 71,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0030031",
+      "rank": 49,
+      "raw_score": 27.4653457,
+      "features": {
+        "raw_score": 27.4653457,
+        "fit_score": 21.4053,
+        "experience_score": 4.7,
+        "behavior_modifier": 0.9335,
+        "behavior_activity": 0.8417,
+        "role_hits": [
+          "ai engineer"
+        ],
+        "retrieval_hits": [
+          "embeddings",
+          "ranking",
+          "recommendation"
+        ],
+        "ml_hits": [],
+        "production_hits": [
+          "production",
+          "serving",
+          "shipped",
+          "monitoring",
+          "pipeline",
+          "mlflow",
+          "feature store"
+        ],
+        "evaluation_hits": [
+          "a b test",
+          "experiment"
+        ],
+        "product_hits": [
+          "product",
+          "user"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "production",
+          "evaluation"
+        ],
+        "matched_skills": [
+          "Information Retrieval",
+          "PyTorch",
+          "Python",
+          "NLP"
+        ],
+        "concerns": [
+          "no major availability concern"
+        ],
+        "title": "AI Engineer",
+        "years": 5.7,
+        "notice_days": 30,
+        "response": 0.94,
+        "inactive_days": 5,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0041610",
+      "rank": 50,
+      "raw_score": 27.33627411,
+      "features": {
+        "raw_score": 27.33627411,
+        "fit_score": 22.8191,
+        "experience_score": 5.0,
+        "behavior_modifier": 0.9051,
+        "behavior_activity": 0.774,
+        "role_hits": [
+          "recommendation systems"
+        ],
+        "retrieval_hits": [
+          "embedding",
+          "embeddings",
+          "pinecone",
+          "ranking",
+          "recommendation"
+        ],
+        "ml_hits": [
+          "machine learning"
+        ],
+        "production_hits": [
+          "production",
+          "deployment",
+          "monitoring",
+          "pipeline",
+          "mlflow",
+          "feature store"
+        ],
+        "evaluation_hits": [
+          "experiment"
+        ],
+        "product_hits": [
+          "product",
+          "saas",
+          "e commerce"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production",
+          "evaluation"
+        ],
+        "matched_skills": [
+          "LoRA",
+          "Elasticsearch",
+          "OpenSearch",
+          "BM25"
+        ],
+        "concerns": [
+          "no major availability concern"
+        ],
+        "title": "Recommendation Systems Engineer",
+        "years": 6.7,
+        "notice_days": 30,
+        "response": 0.52,
+        "inactive_days": 13,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0074735",
+      "rank": 51,
+      "raw_score": 27.32619098,
+      "features": {
+        "raw_score": 27.32619098,
+        "fit_score": 21.7871,
+        "experience_score": 4.5,
+        "behavior_modifier": 0.9398,
+        "behavior_activity": 0.8567,
+        "role_hits": [
+          "ml engineer",
+          "applied ml"
+        ],
+        "retrieval_hits": [
+          "embedding",
+          "embeddings",
+          "pinecone"
+        ],
+        "ml_hits": [
+          "nlp"
+        ],
+        "production_hits": [
+          "production",
+          "deployment",
+          "monitoring",
+          "pipeline",
+          "mlflow",
+          "feature store"
+        ],
+        "evaluation_hits": [
+          "experiment"
+        ],
+        "product_hits": [],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production",
+          "evaluation"
+        ],
+        "matched_skills": [
+          "Prompt Engineering",
+          "Machine Learning",
+          "Weaviate",
+          "Information Retrieval"
+        ],
+        "concerns": [
+          "notice 90d"
+        ],
+        "title": "Applied ML Engineer",
+        "years": 5.5,
+        "notice_days": 90,
+        "response": 0.77,
+        "inactive_days": 60,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0072660",
+      "rank": 52,
+      "raw_score": 27.2861646,
+      "features": {
+        "raw_score": 27.2861646,
+        "fit_score": 20.2715,
+        "experience_score": 5.0,
+        "behavior_modifier": 0.9004,
+        "behavior_activity": 0.7629,
+        "role_hits": [
+          "machine learning engineer"
+        ],
+        "retrieval_hits": [
+          "ranking"
+        ],
+        "ml_hits": [
+          "nlp",
+          "machine learning"
+        ],
+        "production_hits": [
+          "production",
+          "monitoring",
+          "pipeline",
+          "mlflow",
+          "feature store"
+        ],
+        "evaluation_hits": [
+          "experiment"
+        ],
+        "product_hits": [
+          "product",
+          "e commerce"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production",
+          "evaluation"
+        ],
+        "matched_skills": [
+          "LoRA",
+          "pgvector",
+          "PyTorch",
+          "Information Retrieval"
+        ],
+        "concerns": [
+          "no major availability concern"
+        ],
+        "title": "Machine Learning Engineer",
+        "years": 7.1,
+        "notice_days": 30,
+        "response": 0.53,
+        "inactive_days": 3,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0077285",
+      "rank": 53,
+      "raw_score": 27.2519147,
+      "features": {
+        "raw_score": 27.2519147,
+        "fit_score": 22.9879,
+        "experience_score": 4.5,
+        "behavior_modifier": 0.9085,
+        "behavior_activity": 0.7822,
+        "role_hits": [
+          "recommendation systems"
+        ],
+        "retrieval_hits": [
+          "embedding",
+          "embeddings",
+          "pinecone",
+          "ranking",
+          "recommendation"
+        ],
+        "ml_hits": [],
+        "production_hits": [
+          "production",
+          "deployment",
+          "shipped",
+          "monitoring",
+          "pipeline",
+          "mlflow",
+          "feature store"
+        ],
+        "evaluation_hits": [
+          "a b test",
+          "experiment"
+        ],
+        "product_hits": [
+          "product",
+          "e commerce",
+          "user"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "production",
+          "evaluation"
+        ],
+        "matched_skills": [
+          "LoRA",
+          "Pinecone",
+          "Sentence Transformers",
+          "Embeddings"
+        ],
+        "concerns": [
+          "notice 60d"
+        ],
+        "title": "Recommendation Systems Engineer",
+        "years": 5.5,
+        "notice_days": 60,
+        "response": 0.56,
+        "inactive_days": 24,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0060054",
+      "rank": 54,
+      "raw_score": 27.15758706,
+      "features": {
+        "raw_score": 27.15758706,
+        "fit_score": 22.9519,
+        "experience_score": 5.0,
+        "behavior_modifier": 0.8873,
+        "behavior_activity": 0.7317,
+        "role_hits": [
+          "ai engineer"
+        ],
+        "retrieval_hits": [
+          "embeddings",
+          "retrieval",
+          "semantic search",
+          "faiss",
+          "elasticsearch",
+          "bm25",
+          "ranking",
+          "recommendation"
+        ],
+        "ml_hits": [
+          "transformers"
+        ],
+        "production_hits": [
+          "serving",
+          "shipped",
+          "pipeline"
+        ],
+        "evaluation_hits": [
+          "a b test"
+        ],
+        "product_hits": [
+          "product",
+          "user"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production",
+          "evaluation"
+        ],
+        "matched_skills": [
+          "TensorFlow",
+          "Weaviate",
+          "FAISS",
+          "Prompt Engineering"
+        ],
+        "concerns": [
+          "no major availability concern"
+        ],
+        "title": "AI Engineer",
+        "years": 6.4,
+        "notice_days": 15,
+        "response": 0.86,
+        "inactive_days": 71,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0089552",
+      "rank": 55,
+      "raw_score": 27.14240571,
+      "features": {
+        "raw_score": 27.14240571,
+        "fit_score": 22.55,
+        "experience_score": 5.0,
+        "behavior_modifier": 0.8644,
+        "behavior_activity": 0.6772,
+        "role_hits": [
+          "machine learning engineer"
+        ],
+        "retrieval_hits": [
+          "embedding",
+          "embeddings",
+          "pinecone",
+          "ranking",
+          "recommendation"
+        ],
+        "ml_hits": [
+          "machine learning"
+        ],
+        "production_hits": [
+          "deployment",
+          "serving",
+          "pipeline"
+        ],
+        "evaluation_hits": [],
+        "product_hits": [],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production"
+        ],
+        "matched_skills": [
+          "Weaviate",
+          "TensorFlow",
+          "Qdrant",
+          "Semantic Search"
+        ],
+        "concerns": [
+          "notice 120d"
+        ],
+        "title": "Machine Learning Engineer",
+        "years": 6.0,
+        "notice_days": 120,
+        "response": 0.49,
+        "inactive_days": 30,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0051630",
+      "rank": 56,
+      "raw_score": 27.1295386,
+      "features": {
+        "raw_score": 27.1295386,
+        "fit_score": 23.75,
+        "experience_score": 5.0,
+        "behavior_modifier": 0.8623,
+        "behavior_activity": 0.6721,
+        "role_hits": [
+          "machine learning engineer"
+        ],
+        "retrieval_hits": [
+          "retrieval",
+          "semantic search",
+          "faiss",
+          "elasticsearch",
+          "bm25",
+          "ranking"
+        ],
+        "ml_hits": [
+          "transformers",
+          "machine learning"
+        ],
+        "production_hits": [
+          "pipeline"
+        ],
+        "evaluation_hits": [],
+        "product_hits": [
+          "product",
+          "fintech",
+          "e commerce",
+          "user"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production"
+        ],
+        "matched_skills": [
+          "Elasticsearch",
+          "Hugging Face Transformers",
+          "Embeddings",
+          "Recommendation Systems"
+        ],
+        "concerns": [
+          "notice 90d"
+        ],
+        "title": "Machine Learning Engineer",
+        "years": 6.0,
+        "notice_days": 90,
+        "response": 0.51,
+        "inactive_days": 53,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0011162",
+      "rank": 57,
+      "raw_score": 27.04970655,
+      "features": {
+        "raw_score": 27.04970655,
+        "fit_score": 21.9431,
+        "experience_score": 4.8,
+        "behavior_modifier": 0.9251,
+        "behavior_activity": 0.8217,
+        "role_hits": [
+          "recommendation systems"
+        ],
+        "retrieval_hits": [
+          "ranking",
+          "recommendation"
+        ],
+        "ml_hits": [
+          "machine learning"
+        ],
+        "production_hits": [
+          "production",
+          "shipped",
+          "monitoring",
+          "pipeline",
+          "mlflow",
+          "feature store"
+        ],
+        "evaluation_hits": [
+          "a b test",
+          "experiment"
+        ],
+        "product_hits": [
+          "product",
+          "e commerce",
+          "user"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production",
+          "evaluation"
+        ],
+        "matched_skills": [
+          "FAISS",
+          "Vector Search",
+          "LoRA",
+          "Milvus"
+        ],
+        "concerns": [
+          "notice 90d"
+        ],
+        "title": "Recommendation Systems Engineer",
+        "years": 5.8,
+        "notice_days": 90,
+        "response": 0.75,
+        "inactive_days": 17,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0096172",
+      "rank": 58,
+      "raw_score": 27.0368679,
+      "features": {
+        "raw_score": 27.0368679,
+        "fit_score": 24.2827,
+        "experience_score": 4.2,
+        "behavior_modifier": 0.888,
+        "behavior_activity": 0.7332,
+        "role_hits": [
+          "nlp engineer"
+        ],
+        "retrieval_hits": [
+          "embeddings",
+          "retrieval",
+          "semantic search",
+          "faiss",
+          "elasticsearch",
+          "bm25",
+          "ranking",
+          "recommendation"
+        ],
+        "ml_hits": [
+          "transformers",
+          "nlp",
+          "machine learning"
+        ],
+        "production_hits": [
+          "serving",
+          "pipeline"
+        ],
+        "evaluation_hits": [],
+        "product_hits": [
+          "user"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production"
+        ],
+        "matched_skills": [
+          "OpenSearch",
+          "Elasticsearch",
+          "Semantic Search",
+          "Python"
+        ],
+        "concerns": [
+          "notice 45d"
+        ],
+        "title": "NLP Engineer",
+        "years": 5.2,
+        "notice_days": 45,
+        "response": 0.47,
+        "inactive_days": 24,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0086151",
+      "rank": 59,
+      "raw_score": 27.03359542,
+      "features": {
+        "raw_score": 27.03359542,
+        "fit_score": 22.6359,
+        "experience_score": 5.0,
+        "behavior_modifier": 0.8872,
+        "behavior_activity": 0.7315,
+        "role_hits": [
+          "recommendation systems"
+        ],
+        "retrieval_hits": [
+          "embeddings",
+          "retrieval",
+          "semantic search",
+          "faiss",
+          "elasticsearch",
+          "bm25",
+          "ranking",
+          "recommendation"
+        ],
+        "ml_hits": [
+          "transformers"
+        ],
+        "production_hits": [
+          "serving",
+          "pipeline"
+        ],
+        "evaluation_hits": [],
+        "product_hits": [
+          "product",
+          "e commerce",
+          "user"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production"
+        ],
+        "matched_skills": [
+          "Recommendation Systems",
+          "Qdrant",
+          "OpenSearch",
+          "Embeddings"
+        ],
+        "concerns": [
+          "notice 120d"
+        ],
+        "title": "Recommendation Systems Engineer",
+        "years": 7.7,
+        "notice_days": 120,
+        "response": 0.52,
+        "inactive_days": 65,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0042506",
+      "rank": 60,
+      "raw_score": 27.01657611,
+      "features": {
+        "raw_score": 27.01657611,
+        "fit_score": 22.5423,
+        "experience_score": 3.15,
+        "behavior_modifier": 0.9083,
+        "behavior_activity": 0.7816,
+        "role_hits": [
+          "search engineer"
+        ],
+        "retrieval_hits": [
+          "embedding",
+          "embeddings",
+          "pinecone",
+          "ranking",
+          "recommendation"
+        ],
+        "ml_hits": [
+          "machine learning"
+        ],
+        "production_hits": [
+          "deployment",
+          "serving",
+          "pipeline"
+        ],
+        "evaluation_hits": [],
+        "product_hits": [
+          "e commerce"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production"
+        ],
+        "matched_skills": [
+          "PEFT",
+          "Semantic Search",
+          "Fine-tuning LLMs",
+          "TensorFlow"
+        ],
+        "concerns": [
+          "no major availability concern"
+        ],
+        "title": "Search Engineer",
+        "years": 4.2,
+        "notice_days": 15,
+        "response": 0.48,
+        "inactive_days": 5,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0070398",
+      "rank": 61,
+      "raw_score": 27.01611806,
+      "features": {
+        "raw_score": 27.01611806,
+        "fit_score": 23.3664,
+        "experience_score": 5.0,
+        "behavior_modifier": 0.8887,
+        "behavior_activity": 0.735,
+        "role_hits": [
+          "machine learning engineer"
+        ],
+        "retrieval_hits": [
+          "retrieval",
+          "semantic search",
+          "faiss",
+          "elasticsearch",
+          "bm25",
+          "ranking"
+        ],
+        "ml_hits": [
+          "transformers",
+          "machine learning"
+        ],
+        "production_hits": [
+          "shipped"
+        ],
+        "evaluation_hits": [
+          "a b test"
+        ],
+        "product_hits": [
+          "product",
+          "user"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production",
+          "evaluation"
+        ],
+        "matched_skills": [
+          "BM25",
+          "FAISS",
+          "Embeddings",
+          "PyTorch"
+        ],
+        "concerns": [
+          "notice 120d"
+        ],
+        "title": "Machine Learning Engineer",
+        "years": 7.2,
+        "notice_days": 120,
+        "response": 0.6,
+        "inactive_days": 43,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0052682",
+      "rank": 62,
+      "raw_score": 26.93950851,
+      "features": {
+        "raw_score": 26.93950851,
+        "fit_score": 20.2587,
+        "experience_score": 5.0,
+        "behavior_modifier": 0.9456,
+        "behavior_activity": 0.8704,
+        "role_hits": [
+          "nlp engineer"
+        ],
+        "retrieval_hits": [
+          "embedding",
+          "embeddings",
+          "pinecone",
+          "ranking",
+          "recommendation"
+        ],
+        "ml_hits": [
+          "nlp"
+        ],
+        "production_hits": [
+          "deployment",
+          "serving",
+          "pipeline"
+        ],
+        "evaluation_hits": [],
+        "product_hits": [],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production"
+        ],
+        "matched_skills": [
+          "QLoRA",
+          "Semantic Search",
+          "FAISS",
+          "PyTorch"
+        ],
+        "concerns": [
+          "no major availability concern"
+        ],
+        "title": "NLP Engineer",
+        "years": 6.6,
+        "notice_days": 30,
+        "response": 0.88,
+        "inactive_days": 60,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0015528",
+      "rank": 63,
+      "raw_score": 26.93717663,
+      "features": {
+        "raw_score": 26.93717663,
+        "fit_score": 21.9205,
+        "experience_score": 5.0,
+        "behavior_modifier": 0.8738,
+        "behavior_activity": 0.6995,
+        "role_hits": [
+          "ml engineer",
+          "applied ml"
+        ],
+        "retrieval_hits": [
+          "embeddings",
+          "ranking",
+          "recommendation"
+        ],
+        "ml_hits": [],
+        "production_hits": [
+          "production",
+          "serving",
+          "monitoring",
+          "pipeline",
+          "mlflow",
+          "feature store"
+        ],
+        "evaluation_hits": [
+          "experiment"
+        ],
+        "product_hits": [],
+        "evidence": [
+          "retrieval/ranking",
+          "production",
+          "evaluation"
+        ],
+        "matched_skills": [
+          "Weaviate",
+          "pgvector",
+          "TensorFlow",
+          "Information Retrieval"
+        ],
+        "concerns": [
+          "no major availability concern"
+        ],
+        "title": "Applied ML Engineer",
+        "years": 7.4,
+        "notice_days": 30,
+        "response": 0.53,
+        "inactive_days": 41,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0093547",
+      "rank": 64,
+      "raw_score": 26.84076316,
+      "features": {
+        "raw_score": 26.84076316,
+        "fit_score": 24.9703,
+        "experience_score": 2.175,
+        "behavior_modifier": 0.913,
+        "behavior_activity": 0.793,
+        "role_hits": [
+          "machine learning engineer"
+        ],
+        "retrieval_hits": [
+          "embedding",
+          "retrieval",
+          "pinecone",
+          "ranking",
+          "recommendation"
+        ],
+        "ml_hits": [
+          "lora",
+          "qlora",
+          "machine learning"
+        ],
+        "production_hits": [
+          "deployed",
+          "inference",
+          "latency",
+          "pipeline",
+          "kubernetes"
+        ],
+        "evaluation_hits": [],
+        "product_hits": [
+          "product",
+          "fintech",
+          "consumer"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production"
+        ],
+        "matched_skills": [
+          "Python",
+          "QLoRA",
+          "PEFT",
+          "Machine Learning"
+        ],
+        "concerns": [
+          "notice 60d"
+        ],
+        "title": "Senior Machine Learning Engineer",
+        "years": 2.9,
+        "notice_days": 60,
+        "response": 0.75,
+        "inactive_days": 47,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0053695",
+      "rank": 65,
+      "raw_score": 26.82269638,
+      "features": {
+        "raw_score": 26.82269638,
+        "fit_score": 22.2812,
+        "experience_score": 4.8,
+        "behavior_modifier": 0.89,
+        "behavior_activity": 0.7382,
+        "role_hits": [
+          "recommendation systems"
+        ],
+        "retrieval_hits": [
+          "retrieval",
+          "semantic search",
+          "faiss",
+          "elasticsearch",
+          "bm25",
+          "ranking",
+          "recommendation"
+        ],
+        "ml_hits": [
+          "transformers",
+          "machine learning"
+        ],
+        "production_hits": [
+          "shipped",
+          "pipeline"
+        ],
+        "evaluation_hits": [
+          "a b test"
+        ],
+        "product_hits": [
+          "product",
+          "e commerce",
+          "user"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production",
+          "evaluation"
+        ],
+        "matched_skills": [
+          "Pinecone",
+          "Recommendation Systems",
+          "TensorFlow",
+          "pgvector"
+        ],
+        "concerns": [
+          "no major availability concern"
+        ],
+        "title": "Recommendation Systems Engineer",
+        "years": 5.8,
+        "notice_days": 15,
+        "response": 0.6,
+        "inactive_days": 55,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0075574",
+      "rank": 66,
+      "raw_score": 26.79729921,
+      "features": {
+        "raw_score": 26.79729921,
+        "fit_score": 21.9373,
+        "experience_score": 4.7,
+        "behavior_modifier": 0.9085,
+        "behavior_activity": 0.7822,
+        "role_hits": [
+          "machine learning engineer"
+        ],
+        "retrieval_hits": [
+          "embedding",
+          "embeddings",
+          "pinecone",
+          "ranking"
+        ],
+        "ml_hits": [
+          "nlp",
+          "machine learning"
+        ],
+        "production_hits": [
+          "deployment",
+          "shipped",
+          "pipeline"
+        ],
+        "evaluation_hits": [
+          "a b test"
+        ],
+        "product_hits": [
+          "product",
+          "e commerce",
+          "user"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production",
+          "evaluation"
+        ],
+        "matched_skills": [
+          "Hugging Face Transformers",
+          "pgvector",
+          "Weaviate",
+          "Recommendation Systems"
+        ],
+        "concerns": [
+          "notice 60d"
+        ],
+        "title": "Machine Learning Engineer",
+        "years": 5.7,
+        "notice_days": 60,
+        "response": 0.58,
+        "inactive_days": 10,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0051292",
+      "rank": 67,
+      "raw_score": 26.78712407,
+      "features": {
+        "raw_score": 26.78712407,
+        "fit_score": 23.4741,
+        "experience_score": 4.2,
+        "behavior_modifier": 0.8735,
+        "behavior_activity": 0.6987,
+        "role_hits": [
+          "ml engineer",
+          "applied ml"
+        ],
+        "retrieval_hits": [
+          "embedding",
+          "embeddings",
+          "retrieval",
+          "semantic search",
+          "faiss",
+          "pinecone",
+          "elasticsearch",
+          "bm25",
+          "ranking"
+        ],
+        "ml_hits": [
+          "transformers"
+        ],
+        "production_hits": [
+          "deployment",
+          "pipeline"
+        ],
+        "evaluation_hits": [],
+        "product_hits": [
+          "product",
+          "saas",
+          "e commerce",
+          "user"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production"
+        ],
+        "matched_skills": [
+          "pgvector",
+          "FAISS",
+          "Vector Search",
+          "PEFT"
+        ],
+        "concerns": [
+          "no major availability concern"
+        ],
+        "title": "Applied ML Engineer",
+        "years": 5.2,
+        "notice_days": 30,
+        "response": 0.52,
+        "inactive_days": 45,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0040887",
+      "rank": 68,
+      "raw_score": 26.64855423,
+      "features": {
+        "raw_score": 26.64855423,
+        "fit_score": 22.9502,
+        "experience_score": 3.525,
+        "behavior_modifier": 0.9491,
+        "behavior_activity": 0.8788,
+        "role_hits": [
+          "machine learning engineer"
+        ],
+        "retrieval_hits": [
+          "embedding",
+          "embeddings",
+          "retrieval",
+          "semantic search",
+          "faiss",
+          "pinecone",
+          "elasticsearch",
+          "bm25"
+        ],
+        "ml_hits": [
+          "transformers",
+          "machine learning"
+        ],
+        "production_hits": [
+          "deployment",
+          "pipeline"
+        ],
+        "evaluation_hits": [],
+        "product_hits": [
+          "user"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production"
+        ],
+        "matched_skills": [
+          "FAISS",
+          "LoRA",
+          "Python",
+          "PEFT"
+        ],
+        "concerns": [
+          "no major availability concern"
+        ],
+        "title": "Machine Learning Engineer",
+        "years": 4.7,
+        "notice_days": 15,
+        "response": 0.84,
+        "inactive_days": 3,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0041669",
+      "rank": 69,
+      "raw_score": 26.6479198,
+      "features": {
+        "raw_score": 26.6479198,
+        "fit_score": 20.8111,
+        "experience_score": 5.0,
+        "behavior_modifier": 0.9265,
+        "behavior_activity": 0.825,
+        "role_hits": [
+          "recommendation systems"
+        ],
+        "retrieval_hits": [
+          "embedding",
+          "embeddings",
+          "pinecone",
+          "ranking",
+          "recommendation"
+        ],
+        "ml_hits": [
+          "nlp"
+        ],
+        "production_hits": [
+          "deployment",
+          "serving",
+          "pipeline"
+        ],
+        "evaluation_hits": [],
+        "product_hits": [
+          "product",
+          "fintech",
+          "e commerce"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production"
+        ],
+        "matched_skills": [
+          "FAISS",
+          "Milvus",
+          "PEFT",
+          "QLoRA"
+        ],
+        "concerns": [
+          "notice 60d"
+        ],
+        "title": "Recommendation Systems Engineer",
+        "years": 8.0,
+        "notice_days": 60,
+        "response": 0.77,
+        "inactive_days": 51,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0088025",
+      "rank": 70,
+      "raw_score": 26.59866337,
+      "features": {
+        "raw_score": 26.59866337,
+        "fit_score": 21.4,
+        "experience_score": 4.58,
+        "behavior_modifier": 0.9518,
+        "behavior_activity": 0.8853,
+        "role_hits": [
+          "machine learning engineer"
+        ],
+        "retrieval_hits": [
+          "embedding",
+          "retrieval",
+          "pinecone",
+          "ranking",
+          "recommendation"
+        ],
+        "ml_hits": [
+          "machine learning"
+        ],
+        "production_hits": [
+          "pipeline"
+        ],
+        "evaluation_hits": [],
+        "product_hits": [
+          "product",
+          "consumer"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production"
+        ],
+        "matched_skills": [
+          "Pinecone",
+          "QLoRA",
+          "Hugging Face Transformers",
+          "TensorFlow"
+        ],
+        "concerns": [
+          "notice 90d"
+        ],
+        "title": "Staff Machine Learning Engineer",
+        "years": 8.6,
+        "notice_days": 90,
+        "response": 0.83,
+        "inactive_days": 13,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0079064",
+      "rank": 71,
+      "raw_score": 26.46144346,
+      "features": {
+        "raw_score": 26.46144346,
+        "fit_score": 22.1662,
+        "experience_score": 4.2,
+        "behavior_modifier": 0.9389,
+        "behavior_activity": 0.8545,
+        "role_hits": [
+          "data scientist"
+        ],
+        "retrieval_hits": [
+          "embedding",
+          "embeddings",
+          "retrieval",
+          "semantic search",
+          "faiss",
+          "pinecone",
+          "elasticsearch",
+          "bm25"
+        ],
+        "ml_hits": [
+          "transformers",
+          "nlp"
+        ],
+        "production_hits": [
+          "deployment",
+          "pipeline"
+        ],
+        "evaluation_hits": [],
+        "product_hits": [
+          "fintech",
+          "user"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production"
+        ],
+        "matched_skills": [
+          "OpenSearch",
+          "NLP",
+          "Semantic Search",
+          "Fine-tuning LLMs"
+        ],
+        "concerns": [
+          "notice 120d"
+        ],
+        "title": "Senior Data Scientist",
+        "years": 5.2,
+        "notice_days": 120,
+        "response": 0.91,
+        "inactive_days": 44,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0029367",
+      "rank": 72,
+      "raw_score": 26.45514127,
+      "features": {
+        "raw_score": 26.45514127,
+        "fit_score": 22.9895,
+        "experience_score": 4.7,
+        "behavior_modifier": 0.905,
+        "behavior_activity": 0.7738,
+        "role_hits": [
+          "data scientist"
+        ],
+        "retrieval_hits": [
+          "embedding",
+          "embeddings",
+          "retrieval",
+          "semantic search",
+          "faiss",
+          "pinecone",
+          "elasticsearch",
+          "bm25"
+        ],
+        "ml_hits": [
+          "transformers"
+        ],
+        "production_hits": [
+          "deployment",
+          "pipeline"
+        ],
+        "evaluation_hits": [],
+        "product_hits": [
+          "fintech",
+          "user"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production"
+        ],
+        "matched_skills": [
+          "TensorFlow",
+          "QLoRA",
+          "FAISS",
+          "Sentence Transformers"
+        ],
+        "concerns": [
+          "notice 90d"
+        ],
+        "title": "Senior Data Scientist",
+        "years": 5.7,
+        "notice_days": 90,
+        "response": 0.77,
+        "inactive_days": 7,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0045250",
+      "rank": 73,
+      "raw_score": 26.39336687,
+      "features": {
+        "raw_score": 26.39336687,
+        "fit_score": 21.0513,
+        "experience_score": 5.0,
+        "behavior_modifier": 0.8884,
+        "behavior_activity": 0.7343,
+        "role_hits": [
+          "ml engineer",
+          "applied ml"
+        ],
+        "retrieval_hits": [
+          "ranking"
+        ],
+        "ml_hits": [],
+        "production_hits": [
+          "production",
+          "shipped",
+          "monitoring",
+          "mlflow",
+          "feature store"
+        ],
+        "evaluation_hits": [
+          "a b test",
+          "experiment"
+        ],
+        "product_hits": [
+          "product",
+          "fintech",
+          "user"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "production",
+          "evaluation"
+        ],
+        "matched_skills": [
+          "Sentence Transformers",
+          "Milvus",
+          "LoRA",
+          "Embeddings"
+        ],
+        "concerns": [
+          "no major availability concern"
+        ],
+        "title": "Applied ML Engineer",
+        "years": 6.6,
+        "notice_days": 15,
+        "response": 0.74,
+        "inactive_days": 28,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0093331",
+      "rank": 74,
+      "raw_score": 26.36265789,
+      "features": {
+        "raw_score": 26.36265789,
+        "fit_score": 23.4227,
+        "experience_score": 1.105,
+        "behavior_modifier": 0.8869,
+        "behavior_activity": 0.7308,
+        "role_hits": [
+          "nlp engineer"
+        ],
+        "retrieval_hits": [
+          "retrieval",
+          "semantic search",
+          "faiss",
+          "elasticsearch",
+          "bm25",
+          "recommendation"
+        ],
+        "ml_hits": [
+          "transformers",
+          "nlp"
+        ],
+        "production_hits": [
+          "production",
+          "monitoring",
+          "mlflow",
+          "feature store"
+        ],
+        "evaluation_hits": [
+          "experiment"
+        ],
+        "product_hits": [
+          "user"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production",
+          "evaluation"
+        ],
+        "matched_skills": [
+          "PyTorch",
+          "Prompt Engineering",
+          "QLoRA",
+          "Embeddings"
+        ],
+        "concerns": [
+          "no major availability concern"
+        ],
+        "title": "NLP Engineer",
+        "years": 16.1,
+        "notice_days": 30,
+        "response": 0.41,
+        "inactive_days": 49,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0017960",
+      "rank": 75,
+      "raw_score": 26.32015,
+      "features": {
+        "raw_score": 26.32015,
+        "fit_score": 20.6989,
+        "experience_score": 5.0,
+        "behavior_modifier": 0.9253,
+        "behavior_activity": 0.8222,
+        "role_hits": [
+          "recommendation systems"
+        ],
+        "retrieval_hits": [
+          "embedding",
+          "embeddings",
+          "pinecone",
+          "ranking",
+          "recommendation"
+        ],
+        "ml_hits": [
+          "nlp"
+        ],
+        "production_hits": [
+          "deployment",
+          "shipped",
+          "pipeline"
+        ],
+        "evaluation_hits": [
+          "a b test"
+        ],
+        "product_hits": [
+          "product",
+          "e commerce",
+          "user"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production",
+          "evaluation"
+        ],
+        "matched_skills": [
+          "QLoRA",
+          "Hugging Face Transformers",
+          "Machine Learning",
+          "Qdrant"
+        ],
+        "concerns": [
+          "notice 60d"
+        ],
+        "title": "Recommendation Systems Engineer",
+        "years": 7.7,
+        "notice_days": 60,
+        "response": 0.72,
+        "inactive_days": 30,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0064326",
+      "rank": 76,
+      "raw_score": 26.30638252,
+      "features": {
+        "raw_score": 26.30638252,
+        "fit_score": 20.3596,
+        "experience_score": 5.0,
+        "behavior_modifier": 0.9495,
+        "behavior_activity": 0.8798,
+        "role_hits": [
+          "search engineer"
+        ],
+        "retrieval_hits": [
+          "embedding",
+          "embeddings",
+          "pinecone",
+          "ranking"
+        ],
+        "ml_hits": [
+          "machine learning"
+        ],
+        "production_hits": [
+          "deployment",
+          "shipped",
+          "pipeline"
+        ],
+        "evaluation_hits": [
+          "a b test"
+        ],
+        "product_hits": [
+          "product",
+          "saas",
+          "e commerce",
+          "consumer",
+          "user"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production",
+          "evaluation"
+        ],
+        "matched_skills": [
+          "PyTorch",
+          "Milvus",
+          "Deep Learning",
+          "Semantic Search"
+        ],
+        "concerns": [
+          "notice 45d"
+        ],
+        "title": "Search Engineer",
+        "years": 7.6,
+        "notice_days": 45,
+        "response": 0.94,
+        "inactive_days": 6,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0074225",
+      "rank": 77,
+      "raw_score": 26.2244582,
+      "features": {
+        "raw_score": 26.2244582,
+        "fit_score": 22.0896,
+        "experience_score": 3.225,
+        "behavior_modifier": 0.9529,
+        "behavior_activity": 0.8879,
+        "role_hits": [
+          "machine learning engineer"
+        ],
+        "retrieval_hits": [
+          "embedding",
+          "embeddings",
+          "pinecone",
+          "ranking"
+        ],
+        "ml_hits": [
+          "machine learning"
+        ],
+        "production_hits": [
+          "deployment",
+          "shipped",
+          "pipeline"
+        ],
+        "evaluation_hits": [
+          "a b test"
+        ],
+        "product_hits": [
+          "product",
+          "user"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production",
+          "evaluation"
+        ],
+        "matched_skills": [
+          "Recommendation Systems",
+          "Semantic Search",
+          "Elasticsearch",
+          "Milvus"
+        ],
+        "concerns": [
+          "notice 120d"
+        ],
+        "title": "Machine Learning Engineer",
+        "years": 4.3,
+        "notice_days": 120,
+        "response": 0.91,
+        "inactive_days": 7,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0001610",
+      "rank": 78,
+      "raw_score": 26.12907315,
+      "features": {
+        "raw_score": 26.12907315,
+        "fit_score": 25.0595,
+        "experience_score": 2.25,
+        "behavior_modifier": 0.903,
+        "behavior_activity": 0.7691,
+        "role_hits": [
+          "machine learning engineer"
+        ],
+        "retrieval_hits": [
+          "embeddings",
+          "retrieval",
+          "semantic search",
+          "faiss",
+          "elasticsearch",
+          "bm25",
+          "ranking",
+          "recommendation"
+        ],
+        "ml_hits": [
+          "transformers",
+          "machine learning"
+        ],
+        "production_hits": [
+          "serving",
+          "shipped",
+          "pipeline"
+        ],
+        "evaluation_hits": [
+          "a b test"
+        ],
+        "product_hits": [
+          "product",
+          "saas",
+          "e commerce",
+          "user"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production",
+          "evaluation"
+        ],
+        "matched_skills": [
+          "Deep Learning",
+          "Pinecone",
+          "Fine-tuning LLMs",
+          "Milvus"
+        ],
+        "concerns": [
+          "notice 90d"
+        ],
+        "title": "Machine Learning Engineer",
+        "years": 3.0,
+        "notice_days": 90,
+        "response": 0.57,
+        "inactive_days": 45,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0007412",
+      "rank": 79,
+      "raw_score": 26.10261276,
+      "features": {
+        "raw_score": 26.10261276,
+        "fit_score": 20.3945,
+        "experience_score": 5.0,
+        "behavior_modifier": 0.9293,
+        "behavior_activity": 0.8317,
+        "role_hits": [
+          "ml engineer",
+          "applied ml"
+        ],
+        "retrieval_hits": [
+          "embedding",
+          "embeddings",
+          "pinecone",
+          "ranking",
+          "recommendation"
+        ],
+        "ml_hits": [
+          "machine learning"
+        ],
+        "production_hits": [
+          "deployment",
+          "shipped",
+          "pipeline"
+        ],
+        "evaluation_hits": [
+          "a b test"
+        ],
+        "product_hits": [
+          "product",
+          "saas",
+          "e commerce",
+          "user"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production",
+          "evaluation"
+        ],
+        "matched_skills": [
+          "Pinecone",
+          "Milvus",
+          "PyTorch",
+          "BM25"
+        ],
+        "concerns": [
+          "notice 120d"
+        ],
+        "title": "Applied ML Engineer",
+        "years": 7.4,
+        "notice_days": 120,
+        "response": 0.76,
+        "inactive_days": 38,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0098846",
+      "rank": 80,
+      "raw_score": 26.08595769,
+      "features": {
+        "raw_score": 26.08595769,
+        "fit_score": 20.1835,
+        "experience_score": 5.0,
+        "behavior_modifier": 0.932,
+        "behavior_activity": 0.8381,
+        "role_hits": [
+          "ai engineer"
+        ],
+        "retrieval_hits": [
+          "embedding",
+          "embeddings",
+          "pinecone",
+          "ranking"
+        ],
+        "ml_hits": [
+          "machine learning"
+        ],
+        "production_hits": [
+          "production",
+          "deployment",
+          "monitoring",
+          "pipeline",
+          "mlflow",
+          "feature store"
+        ],
+        "evaluation_hits": [
+          "experiment"
+        ],
+        "product_hits": [
+          "product",
+          "e commerce"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production",
+          "evaluation"
+        ],
+        "matched_skills": [
+          "Hugging Face Transformers",
+          "PEFT",
+          "QLoRA",
+          "Machine Learning"
+        ],
+        "concerns": [
+          "notice 45d"
+        ],
+        "title": "AI Engineer",
+        "years": 7.6,
+        "notice_days": 45,
+        "response": 0.62,
+        "inactive_days": 34,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0095528",
+      "rank": 81,
+      "raw_score": 25.99749083,
+      "features": {
+        "raw_score": 25.99749083,
+        "fit_score": 21.4836,
+        "experience_score": 4.3,
+        "behavior_modifier": 0.8854,
+        "behavior_activity": 0.7272,
+        "role_hits": [
+          "data scientist"
+        ],
+        "retrieval_hits": [
+          "embeddings",
+          "ranking",
+          "recommendation"
+        ],
+        "ml_hits": [],
+        "production_hits": [
+          "production",
+          "serving",
+          "monitoring",
+          "pipeline",
+          "mlflow",
+          "feature store"
+        ],
+        "evaluation_hits": [
+          "experiment"
+        ],
+        "product_hits": [],
+        "evidence": [
+          "retrieval/ranking",
+          "production",
+          "evaluation"
+        ],
+        "matched_skills": [
+          "OpenSearch",
+          "PyTorch",
+          "Semantic Search",
+          "Vector Search"
+        ],
+        "concerns": [
+          "notice 45d"
+        ],
+        "title": "Senior Data Scientist",
+        "years": 5.3,
+        "notice_days": 45,
+        "response": 0.55,
+        "inactive_days": 24,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0013613",
+      "rank": 82,
+      "raw_score": 25.94102014,
+      "features": {
+        "raw_score": 25.94102014,
+        "fit_score": 23.6042,
+        "experience_score": 3.525,
+        "behavior_modifier": 0.9066,
+        "behavior_activity": 0.7776,
+        "role_hits": [
+          "machine learning engineer"
+        ],
+        "retrieval_hits": [
+          "embeddings",
+          "retrieval",
+          "semantic search",
+          "faiss",
+          "elasticsearch",
+          "bm25",
+          "ranking",
+          "recommendation"
+        ],
+        "ml_hits": [
+          "transformers",
+          "machine learning"
+        ],
+        "production_hits": [
+          "serving",
+          "shipped",
+          "pipeline"
+        ],
+        "evaluation_hits": [
+          "a b test"
+        ],
+        "product_hits": [
+          "product",
+          "fintech",
+          "user"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production",
+          "evaluation"
+        ],
+        "matched_skills": [
+          "LoRA",
+          "TensorFlow",
+          "Weaviate",
+          "Sentence Transformers"
+        ],
+        "concerns": [
+          "notice 60d"
+        ],
+        "title": "Machine Learning Engineer",
+        "years": 4.7,
+        "notice_days": 60,
+        "response": 0.73,
+        "inactive_days": 65,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0050454",
+      "rank": 83,
+      "raw_score": 25.929728,
+      "features": {
+        "raw_score": 25.929728,
+        "fit_score": 21.03,
+        "experience_score": 5.0,
+        "behavior_modifier": 0.9057,
+        "behavior_activity": 0.7754,
+        "role_hits": [
+          "ai engineer"
+        ],
+        "retrieval_hits": [
+          "retrieval",
+          "semantic search",
+          "faiss",
+          "elasticsearch",
+          "bm25",
+          "ranking"
+        ],
+        "ml_hits": [
+          "transformers",
+          "machine learning"
+        ],
+        "production_hits": [
+          "pipeline"
+        ],
+        "evaluation_hits": [],
+        "product_hits": [
+          "product",
+          "e commerce",
+          "user"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production"
+        ],
+        "matched_skills": [
+          "PyTorch",
+          "QLoRA",
+          "Fine-tuning LLMs",
+          "FAISS"
+        ],
+        "concerns": [
+          "no major availability concern"
+        ],
+        "title": "AI Engineer",
+        "years": 6.8,
+        "notice_days": 30,
+        "response": 0.77,
+        "inactive_days": 30,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0018722",
+      "rank": 84,
+      "raw_score": 25.88383377,
+      "features": {
+        "raw_score": 25.88383377,
+        "fit_score": 21.2254,
+        "experience_score": 5.0,
+        "behavior_modifier": 0.9462,
+        "behavior_activity": 0.8719,
+        "role_hits": [
+          "recommendation systems"
+        ],
+        "retrieval_hits": [
+          "retrieval",
+          "semantic search",
+          "faiss",
+          "elasticsearch",
+          "bm25",
+          "ranking",
+          "recommendation"
+        ],
+        "ml_hits": [
+          "transformers",
+          "machine learning"
+        ],
+        "production_hits": [
+          "pipeline"
+        ],
+        "evaluation_hits": [],
+        "product_hits": [
+          "product",
+          "e commerce",
+          "user"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production"
+        ],
+        "matched_skills": [
+          "Weaviate",
+          "Python",
+          "Recommendation Systems",
+          "TensorFlow"
+        ],
+        "concerns": [
+          "notice 90d"
+        ],
+        "title": "Recommendation Systems Engineer",
+        "years": 6.6,
+        "notice_days": 90,
+        "response": 0.79,
+        "inactive_days": 33,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0039838",
+      "rank": 85,
+      "raw_score": 25.65458283,
+      "features": {
+        "raw_score": 25.65458283,
+        "fit_score": 19.9517,
+        "experience_score": 3.675,
+        "behavior_modifier": 0.9137,
+        "behavior_activity": 0.7945,
+        "role_hits": [
+          "recommendation systems"
+        ],
+        "retrieval_hits": [
+          "ranking",
+          "recommendation"
+        ],
+        "ml_hits": [
+          "nlp"
+        ],
+        "production_hits": [
+          "production",
+          "shipped",
+          "monitoring",
+          "mlflow",
+          "feature store"
+        ],
+        "evaluation_hits": [
+          "a b test",
+          "experiment"
+        ],
+        "product_hits": [
+          "product",
+          "user"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production",
+          "evaluation"
+        ],
+        "matched_skills": [
+          "Embeddings",
+          "Semantic Search",
+          "LoRA",
+          "Milvus"
+        ],
+        "concerns": [
+          "notice 90d"
+        ],
+        "title": "Recommendation Systems Engineer",
+        "years": 4.9,
+        "notice_days": 90,
+        "response": 0.8,
+        "inactive_days": 36,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0067866",
+      "rank": 86,
+      "raw_score": 25.65174366,
+      "features": {
+        "raw_score": 25.65174366,
+        "fit_score": 18.9278,
+        "experience_score": 5.0,
+        "behavior_modifier": 0.9374,
+        "behavior_activity": 0.851,
+        "role_hits": [
+          "software engineer"
+        ],
+        "retrieval_hits": [
+          "ranking",
+          "recommendation"
+        ],
+        "ml_hits": [
+          "pytorch",
+          "fine tuning",
+          "fine tuning",
+          "nlp"
+        ],
+        "production_hits": [
+          "production",
+          "deployment",
+          "serving",
+          "model serving",
+          "api",
+          "feature store"
+        ],
+        "evaluation_hits": [],
+        "product_hits": [
+          "product",
+          "startup",
+          "saas",
+          "fintech",
+          "platform"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production"
+        ],
+        "matched_skills": [
+          "Embeddings",
+          "pgvector",
+          "Elasticsearch",
+          "LoRA"
+        ],
+        "concerns": [
+          "notice 45d"
+        ],
+        "title": "Senior Software Engineer (ML)",
+        "years": 6.4,
+        "notice_days": 45,
+        "response": 0.79,
+        "inactive_days": 5,
+        "product_score": 0.5333333333333334,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0044222",
+      "rank": 87,
+      "raw_score": 25.65055769,
+      "features": {
+        "raw_score": 25.65055769,
+        "fit_score": 21.2379,
+        "experience_score": 5.0,
+        "behavior_modifier": 0.9174,
+        "behavior_activity": 0.8034,
+        "role_hits": [
+          "ai engineer"
+        ],
+        "retrieval_hits": [
+          "retrieval",
+          "semantic search",
+          "faiss",
+          "elasticsearch",
+          "bm25",
+          "ranking"
+        ],
+        "ml_hits": [
+          "transformers"
+        ],
+        "production_hits": [
+          "shipped"
+        ],
+        "evaluation_hits": [
+          "a b test"
+        ],
+        "product_hits": [
+          "product",
+          "user"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production",
+          "evaluation"
+        ],
+        "matched_skills": [
+          "Vector Search",
+          "OpenSearch",
+          "Qdrant",
+          "Weaviate"
+        ],
+        "concerns": [
+          "notice 60d"
+        ],
+        "title": "AI Engineer",
+        "years": 7.7,
+        "notice_days": 60,
+        "response": 0.6,
+        "inactive_days": 12,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0036184",
+      "rank": 88,
+      "raw_score": 25.63058741,
+      "features": {
+        "raw_score": 25.63058741,
+        "fit_score": 20.3161,
+        "experience_score": 5.0,
+        "behavior_modifier": 0.9474,
+        "behavior_activity": 0.8747,
+        "role_hits": [
+          "recommendation systems"
+        ],
+        "retrieval_hits": [
+          "retrieval",
+          "semantic search",
+          "faiss",
+          "elasticsearch",
+          "bm25",
+          "recommendation"
+        ],
+        "ml_hits": [
+          "transformers"
+        ],
+        "production_hits": [],
+        "evaluation_hits": [],
+        "product_hits": [
+          "fintech",
+          "user"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM"
+        ],
+        "matched_skills": [
+          "QLoRA",
+          "FAISS",
+          "Hugging Face Transformers",
+          "Semantic Search"
+        ],
+        "concerns": [
+          "no major availability concern"
+        ],
+        "title": "Recommendation Systems Engineer",
+        "years": 6.0,
+        "notice_days": 30,
+        "response": 0.9,
+        "inactive_days": 1,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0062247",
+      "rank": 89,
+      "raw_score": 25.60158358,
+      "features": {
+        "raw_score": 25.60158358,
+        "fit_score": 20.6462,
+        "experience_score": 5.0,
+        "behavior_modifier": 0.9163,
+        "behavior_activity": 0.8007,
+        "role_hits": [
+          "ai engineer"
+        ],
+        "retrieval_hits": [
+          "retrieval",
+          "semantic search",
+          "faiss",
+          "elasticsearch",
+          "bm25",
+          "ranking"
+        ],
+        "ml_hits": [
+          "transformers",
+          "nlp"
+        ],
+        "production_hits": [
+          "pipeline"
+        ],
+        "evaluation_hits": [],
+        "product_hits": [
+          "product",
+          "e commerce",
+          "user"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production"
+        ],
+        "matched_skills": [
+          "Pinecone",
+          "Vector Search",
+          "Qdrant",
+          "PEFT"
+        ],
+        "concerns": [
+          "no major availability concern"
+        ],
+        "title": "AI Engineer",
+        "years": 7.3,
+        "notice_days": 30,
+        "response": 0.78,
+        "inactive_days": 34,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0049538",
+      "rank": 90,
+      "raw_score": 25.40504843,
+      "features": {
+        "raw_score": 25.40504843,
+        "fit_score": 20.1801,
+        "experience_score": 4.8,
+        "behavior_modifier": 0.9178,
+        "behavior_activity": 0.8043,
+        "role_hits": [
+          "ml engineer",
+          "applied ml"
+        ],
+        "retrieval_hits": [
+          "ranking",
+          "recommendation"
+        ],
+        "ml_hits": [],
+        "production_hits": [
+          "production",
+          "monitoring",
+          "pipeline",
+          "mlflow",
+          "feature store"
+        ],
+        "evaluation_hits": [
+          "experiment"
+        ],
+        "product_hits": [
+          "product",
+          "saas",
+          "e commerce"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "production",
+          "evaluation"
+        ],
+        "matched_skills": [
+          "OpenSearch",
+          "Vector Search",
+          "Milvus",
+          "QLoRA"
+        ],
+        "concerns": [
+          "no major availability concern"
+        ],
+        "title": "Applied ML Engineer",
+        "years": 5.8,
+        "notice_days": 30,
+        "response": 0.72,
+        "inactive_days": 0,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0030348",
+      "rank": 91,
+      "raw_score": 25.38168708,
+      "features": {
+        "raw_score": 25.38168708,
+        "fit_score": 22.6189,
+        "experience_score": 3.375,
+        "behavior_modifier": 0.8945,
+        "behavior_activity": 0.7487,
+        "role_hits": [
+          "machine learning engineer"
+        ],
+        "retrieval_hits": [
+          "embeddings",
+          "retrieval",
+          "semantic search",
+          "faiss",
+          "elasticsearch",
+          "bm25",
+          "ranking",
+          "recommendation"
+        ],
+        "ml_hits": [
+          "transformers",
+          "machine learning"
+        ],
+        "production_hits": [
+          "serving",
+          "pipeline"
+        ],
+        "evaluation_hits": [],
+        "product_hits": [
+          "user"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production"
+        ],
+        "matched_skills": [
+          "Deep Learning",
+          "PyTorch",
+          "Embeddings",
+          "Vector Search"
+        ],
+        "concerns": [
+          "notice 45d"
+        ],
+        "title": "Machine Learning Engineer",
+        "years": 4.5,
+        "notice_days": 45,
+        "response": 0.54,
+        "inactive_days": 58,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0009691",
+      "rank": 92,
+      "raw_score": 25.16606545,
+      "features": {
+        "raw_score": 25.16606545,
+        "fit_score": 18.9846,
+        "experience_score": 5.0,
+        "behavior_modifier": 0.9226,
+        "behavior_activity": 0.8158,
+        "role_hits": [
+          "ml engineer",
+          "applied ml"
+        ],
+        "retrieval_hits": [
+          "embeddings",
+          "ranking",
+          "recommendation"
+        ],
+        "ml_hits": [
+          "nlp"
+        ],
+        "production_hits": [
+          "serving",
+          "pipeline"
+        ],
+        "evaluation_hits": [],
+        "product_hits": [],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production"
+        ],
+        "matched_skills": [
+          "Prompt Engineering",
+          "Recommendation Systems",
+          "Fine-tuning LLMs",
+          "LoRA"
+        ],
+        "concerns": [
+          "notice 120d"
+        ],
+        "title": "Applied ML Engineer",
+        "years": 6.2,
+        "notice_days": 120,
+        "response": 0.64,
+        "inactive_days": 11,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0042029",
+      "rank": 93,
+      "raw_score": 25.1254419,
+      "features": {
+        "raw_score": 25.1254419,
+        "fit_score": 19.7093,
+        "experience_score": 5.0,
+        "behavior_modifier": 0.8955,
+        "behavior_activity": 0.7513,
+        "role_hits": [
+          "data scientist"
+        ],
+        "retrieval_hits": [
+          "embedding",
+          "embeddings",
+          "pinecone",
+          "ranking"
+        ],
+        "ml_hits": [
+          "machine learning"
+        ],
+        "production_hits": [
+          "deployment",
+          "shipped",
+          "pipeline"
+        ],
+        "evaluation_hits": [
+          "a b test"
+        ],
+        "product_hits": [
+          "product",
+          "e commerce",
+          "user"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production",
+          "evaluation"
+        ],
+        "matched_skills": [
+          "PyTorch",
+          "NLP",
+          "Elasticsearch",
+          "Embeddings"
+        ],
+        "concerns": [
+          "notice 45d"
+        ],
+        "title": "Senior Data Scientist",
+        "years": 6.5,
+        "notice_days": 45,
+        "response": 0.67,
+        "inactive_days": 44,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0058688",
+      "rank": 94,
+      "raw_score": 25.11673463,
+      "features": {
+        "raw_score": 25.11673463,
+        "fit_score": 17.4933,
+        "experience_score": 5.0,
+        "behavior_modifier": 0.9132,
+        "behavior_activity": 0.7934,
+        "role_hits": [
+          "ai engineer"
+        ],
+        "retrieval_hits": [
+          "embeddings",
+          "ranking",
+          "recommendation"
+        ],
+        "ml_hits": [],
+        "production_hits": [
+          "production",
+          "serving",
+          "monitoring",
+          "pipeline",
+          "mlflow",
+          "feature store"
+        ],
+        "evaluation_hits": [
+          "experiment"
+        ],
+        "product_hits": [
+          "consumer"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "production",
+          "evaluation"
+        ],
+        "matched_skills": [
+          "Embeddings",
+          "TensorFlow",
+          "Information Retrieval",
+          "Milvus"
+        ],
+        "concerns": [
+          "no major availability concern"
+        ],
+        "title": "AI Engineer",
+        "years": 6.7,
+        "notice_days": 15,
+        "response": 0.74,
+        "inactive_days": 60,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0026532",
+      "rank": 95,
+      "raw_score": 25.11340462,
+      "features": {
+        "raw_score": 25.11340462,
+        "fit_score": 23.1064,
+        "experience_score": 3.6,
+        "behavior_modifier": 0.877,
+        "behavior_activity": 0.707,
+        "role_hits": [
+          "recommendation systems"
+        ],
+        "retrieval_hits": [
+          "embeddings",
+          "retrieval",
+          "semantic search",
+          "faiss",
+          "elasticsearch",
+          "bm25",
+          "ranking",
+          "recommendation"
+        ],
+        "ml_hits": [
+          "transformers"
+        ],
+        "production_hits": [
+          "serving",
+          "pipeline"
+        ],
+        "evaluation_hits": [],
+        "product_hits": [
+          "user"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production"
+        ],
+        "matched_skills": [
+          "Prompt Engineering",
+          "pgvector",
+          "LoRA",
+          "PEFT"
+        ],
+        "concerns": [
+          "notice 90d"
+        ],
+        "title": "Recommendation Systems Engineer",
+        "years": 4.8,
+        "notice_days": 90,
+        "response": 0.52,
+        "inactive_days": 60,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0055992",
+      "rank": 96,
+      "raw_score": 24.82416684,
+      "features": {
+        "raw_score": 24.82416684,
+        "fit_score": 24.2838,
+        "experience_score": 0.745,
+        "behavior_modifier": 0.9209,
+        "behavior_activity": 0.8116,
+        "role_hits": [
+          "ai engineer"
+        ],
+        "retrieval_hits": [
+          "embedding",
+          "embeddings",
+          "retrieval",
+          "semantic search",
+          "faiss",
+          "pinecone",
+          "elasticsearch",
+          "bm25",
+          "ranking",
+          "recommendation"
+        ],
+        "ml_hits": [
+          "transformers",
+          "machine learning"
+        ],
+        "production_hits": [
+          "deployment",
+          "serving",
+          "pipeline"
+        ],
+        "evaluation_hits": [],
+        "product_hits": [
+          "product",
+          "fintech",
+          "e commerce",
+          "user"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production"
+        ],
+        "matched_skills": [
+          "Information Retrieval",
+          "FAISS",
+          "SQL",
+          "OpenSearch"
+        ],
+        "concerns": [
+          "notice 60d"
+        ],
+        "title": "AI Engineer",
+        "years": 16.9,
+        "notice_days": 60,
+        "response": 0.72,
+        "inactive_days": 60,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0040178",
+      "rank": 97,
+      "raw_score": 24.80353098,
+      "features": {
+        "raw_score": 24.80353098,
+        "fit_score": 18.5246,
+        "experience_score": 4.0,
+        "behavior_modifier": 0.8819,
+        "behavior_activity": 0.7188,
+        "role_hits": [
+          "ml engineer"
+        ],
+        "retrieval_hits": [
+          "ranking",
+          "recommendation"
+        ],
+        "ml_hits": [
+          "pytorch",
+          "fine tuning",
+          "fine tuning",
+          "nlp"
+        ],
+        "production_hits": [
+          "production",
+          "deployment",
+          "serving",
+          "model serving",
+          "api",
+          "feature store"
+        ],
+        "evaluation_hits": [],
+        "product_hits": [
+          "product",
+          "startup",
+          "e commerce",
+          "platform"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production"
+        ],
+        "matched_skills": [
+          "Weaviate",
+          "Fine-tuning LLMs",
+          "Vector Search",
+          "Prompt Engineering"
+        ],
+        "concerns": [
+          "notice 60d"
+        ],
+        "title": "ML Engineer",
+        "years": 5.0,
+        "notice_days": 60,
+        "response": 0.55,
+        "inactive_days": 78,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0076251",
+      "rank": 98,
+      "raw_score": 24.80175608,
+      "features": {
+        "raw_score": 24.80175608,
+        "fit_score": 21.0885,
+        "experience_score": 5.0,
+        "behavior_modifier": 0.8694,
+        "behavior_activity": 0.6891,
+        "role_hits": [
+          "search engineer"
+        ],
+        "retrieval_hits": [
+          "retrieval",
+          "semantic search",
+          "faiss",
+          "elasticsearch",
+          "bm25"
+        ],
+        "ml_hits": [
+          "transformers",
+          "machine learning"
+        ],
+        "production_hits": [
+          "production",
+          "monitoring",
+          "mlflow",
+          "feature store"
+        ],
+        "evaluation_hits": [
+          "experiment"
+        ],
+        "product_hits": [
+          "fintech",
+          "user"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production",
+          "evaluation"
+        ],
+        "matched_skills": [
+          "Fine-tuning LLMs",
+          "Hugging Face Transformers",
+          "Weaviate",
+          "Elasticsearch"
+        ],
+        "concerns": [
+          "notice 60d"
+        ],
+        "title": "Search Engineer",
+        "years": 7.6,
+        "notice_days": 60,
+        "response": 0.51,
+        "inactive_days": 42,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0041568",
+      "rank": 99,
+      "raw_score": 24.67399015,
+      "features": {
+        "raw_score": 24.67399015,
+        "fit_score": 21.8,
+        "experience_score": 4.2,
+        "behavior_modifier": 0.8704,
+        "behavior_activity": 0.6913,
+        "role_hits": [
+          "search engineer"
+        ],
+        "retrieval_hits": [
+          "embedding",
+          "embeddings",
+          "pinecone",
+          "ranking",
+          "recommendation"
+        ],
+        "ml_hits": [],
+        "production_hits": [
+          "deployment",
+          "serving",
+          "pipeline"
+        ],
+        "evaluation_hits": [],
+        "product_hits": [
+          "product",
+          "e commerce"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "production"
+        ],
+        "matched_skills": [
+          "PEFT",
+          "Weaviate",
+          "Vector Search",
+          "TensorFlow"
+        ],
+        "concerns": [
+          "notice 90d"
+        ],
+        "title": "Search Engineer",
+        "years": 5.2,
+        "notice_days": 90,
+        "response": 0.52,
+        "inactive_days": 51,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    },
+    {
+      "candidate_id": "CAND_0081852",
+      "rank": 100,
+      "raw_score": 24.66349738,
+      "features": {
+        "raw_score": 24.66349738,
+        "fit_score": 17.9525,
+        "experience_score": 4.9,
+        "behavior_modifier": 0.924,
+        "behavior_activity": 0.8191,
+        "role_hits": [
+          "data scientist"
+        ],
+        "retrieval_hits": [
+          "embedding",
+          "embeddings",
+          "pinecone"
+        ],
+        "ml_hits": [],
+        "production_hits": [
+          "production",
+          "deployment",
+          "monitoring",
+          "pipeline",
+          "mlflow",
+          "feature store"
+        ],
+        "evaluation_hits": [
+          "experiment"
+        ],
+        "product_hits": [
+          "e commerce"
+        ],
+        "evidence": [
+          "retrieval/ranking",
+          "production",
+          "evaluation"
+        ],
+        "matched_skills": [
+          "Semantic Search",
+          "Milvus",
+          "pgvector",
+          "Weaviate"
+        ],
+        "concerns": [
+          "notice 45d"
+        ],
+        "title": "Senior Data Scientist",
+        "years": 5.9,
+        "notice_days": 45,
+        "response": 0.44,
+        "inactive_days": 4,
+        "product_score": 0.8,
+        "suspicious_skills": 0
+      }
+    }
+  ]
+}
