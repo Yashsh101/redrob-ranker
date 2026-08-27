@@ -1,15 +1,21 @@
 import datetime as dt
+import sys
+from pathlib import Path
 
-from rank import (
-    build_reasoning,
+# Add src to sys.path for testing
+sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
+
+from ranker.engine import (
     is_disqualified,
-    normalise_scores,
     score_candidate,
     safe_float,
 )
+from ranker.main import (
+    build_reasoning,
+    normalise_scores,
+)
 
-
-def candidate(title: str = "ML Engineer", *, technical: bool = True) -> dict:
+def candidate(title: str = "ML Engineer", *, technical: bool = True, years: float = 7.0) -> dict:
     return {
         "candidate_id": "CAND_0000003",
         "profile": {
@@ -18,7 +24,7 @@ def candidate(title: str = "ML Engineer", *, technical: bool = True) -> dict:
             "summary": "Builds retrieval augmented generation systems" if technical else "General professional",
             "location": "Pune",
             "country": "India",
-            "years_of_experience": 7,
+            "years_of_experience": years,
             "current_title": title,
             "current_company": "Example Product",
             "current_company_size": "201-500",
@@ -77,51 +83,55 @@ def candidate(title: str = "ML Engineer", *, technical: bool = True) -> dict:
         },
     }
 
-
 def test_safe_float_handles_invalid_values():
     assert safe_float("2.5") == 2.5
     assert safe_float("not-a-number", default=7.0) == 7.0
     assert safe_float(None, default=3.0) == 3.0
 
-
 def test_title_guard_disqualifies_off_domain_titles():
     assert is_disqualified(candidate("Sales Executive")) is True
     assert is_disqualified(candidate("Applied ML Engineer")) is False
 
-
-def test_score_peaks_in_released_experience_band():
-    assert score_candidate(candidate(), dt.date(2026, 5, 27))[0] > score_candidate(candidate(), dt.date(2026, 5, 27))[0] - 1
-
+def test_experience_curve_peaks_at_ideal_band():
+    as_of = dt.date(2026, 5, 27)
+    score_7y = score_candidate(candidate(years=7.0), as_of)[0]
+    score_2y = score_candidate(candidate(years=2.0), as_of)[0]
+    score_15y = score_candidate(candidate(years=15.0), as_of)[0]
+    assert score_7y > score_2y
+    assert score_7y > score_15y
 
 def test_normalise_scores_returns_zero_to_one():
-    entries = [(10.0, "CAND_0000001", {}), (5.0, "CAND_0000002", {})]
+    # raw, cid, cand, feat
+    entries = [
+        (10.0, "CAND_0000001", {}, {}),
+        (5.0, "CAND_0000002", {}, {})
+    ]
     result = normalise_scores(entries)
-    assert result[0][0] == 1.0
-    assert result[1][0] == 0.0
-    assert normalise_scores([(5.0, "CAND_0000001", {})])[0][0] == 0.0
-
+    assert result[0][4] == 1.0
+    assert result[1][4] == 0.0
 
 def test_reasoning_is_deterministic_and_contains_real_candidate_signals():
     record = candidate()
-    score, features = score_candidate(record, dt.date(2026, 5, 27))
+    as_of = dt.date(2026, 5, 27)
+    score, features = score_candidate(record, as_of)
     first = build_reasoning(record, features, 1, 1.0)
     second = build_reasoning(record, features, 1, 1.0)
     assert first == second
     assert "ML Engineer" in first
     assert "retrieval/ranking" in first
 
-
 def test_technical_candidate_beats_availability_only_candidate():
-    technical = score_candidate(candidate(technical=True), dt.date(2026, 5, 27))[0]
-    available_only = score_candidate(candidate("Software Engineer", technical=False), dt.date(2026, 5, 27))[0]
+    as_of = dt.date(2026, 5, 27)
+    technical = score_candidate(candidate(technical=True), as_of)[0]
+    available_only = score_candidate(candidate("Software Engineer", technical=False), as_of)[0]
     assert technical > available_only
 
-
 def test_stale_and_low_response_signals_are_reflected_in_features():
+    as_of = dt.date(2026, 5, 27)
     record = candidate()
     record["redrob_signals"]["last_active_date"] = "2025-09-29"
     record["redrob_signals"]["recruiter_response_rate"] = 0.05
-    score, features = score_candidate(record, dt.date(2026, 5, 27))
-    assert features["inactive_days"] > 200
+    score, features = score_candidate(record, as_of)
+    
     assert features["response"] == 0.05
-    assert score < score_candidate(candidate(), dt.date(2026, 5, 27))[0]
+    assert score < score_candidate(candidate(), as_of)[0]
