@@ -16,42 +16,6 @@
         "experience_score": 5.0,
         "behavior_modifier": 0.9397,
         "behavior_activity": 0.8563,
-        "role_hits": [
-          "ai engineer"
-        ],
-        "retrieval_hits": [
-          "embedding",
-          "embeddings",
-          "retrieval",
-          "semantic search",
-          "dense retrieval",
-          "faiss",
-          "bm25",
-          "reranking",
-          "ranking"
-        ],
-        "ml_hits": [
-          "llm",
-          "transformers",
-          "machine learning"
-        ],
-        "production_hits": [
-          "serving",
-          "scale",
-          "latency",
-          "monitoring",
-          "pipeline"
-        ],
-        "evaluation_hits": [
-          "ndcg",
-          "mrr",
-          "offline evaluation",
-          "recall"
-        ],
-        "product_hits": [
-          "product",
-          "fintech"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -62,7 +26,16 @@
           "Information Retrieval",
           "pgvector",
           "Elasticsearch",
-          "PyTorch"
+          "PyTorch",
+          "Vector Search",
+          "Deep Learning",
+          "Recommendation Systems",
+          "Python",
+          "Embeddings",
+          "Semantic Search",
+          "BM25",
+          "Machine Learning",
+          "Qdrant"
         ],
         "concerns": [
           "no major availability concern"
@@ -71,9 +44,7 @@
         "years": 6.7,
         "notice_days": 30,
         "response": 0.73,
-        "inactive_days": 24,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 24
       }
     },
     {
@@ -86,45 +57,6 @@
         "experience_score": 4.37,
         "behavior_modifier": 0.9375,
         "behavior_activity": 0.8513,
-        "role_hits": [
-          "nlp engineer"
-        ],
-        "retrieval_hits": [
-          "embedding",
-          "embeddings",
-          "retrieval",
-          "dense retrieval",
-          "faiss",
-          "pinecone",
-          "bm25",
-          "reranking",
-          "ranking",
-          "recommendation"
-        ],
-        "ml_hits": [
-          "llm",
-          "lora",
-          "qlora",
-          "nlp"
-        ],
-        "production_hits": [
-          "deployed",
-          "serving",
-          "inference",
-          "latency",
-          "pipeline",
-          "kubernetes"
-        ],
-        "evaluation_hits": [
-          "ndcg",
-          "mrr",
-          "offline evaluation",
-          "recall"
-        ],
-        "product_hits": [
-          "product",
-          "consumer"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -135,7 +67,12 @@
           "Python",
           "Pinecone",
           "BM25",
-          "OpenSearch"
+          "OpenSearch",
+          "PEFT",
+          "Deep Learning",
+          "Elasticsearch",
+          "QLoRA",
+          "Semantic Search"
         ],
         "concerns": [
           "no major availability concern"
@@ -144,9 +81,7 @@
         "years": 8.9,
         "notice_days": 30,
         "response": 0.78,
-        "inactive_days": 31,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 31
       }
     },
     {
@@ -159,42 +94,6 @@
         "experience_score": 5.0,
         "behavior_modifier": 0.9453,
         "behavior_activity": 0.8698,
-        "role_hits": [
-          "machine learning engineer"
-        ],
-        "retrieval_hits": [
-          "embeddings",
-          "retrieval",
-          "dense retrieval",
-          "faiss",
-          "bm25",
-          "reranking",
-          "ranking"
-        ],
-        "ml_hits": [
-          "llm",
-          "lora",
-          "qlora",
-          "machine learning"
-        ],
-        "production_hits": [
-          "deployed",
-          "serving",
-          "inference",
-          "latency",
-          "pipeline",
-          "kubernetes"
-        ],
-        "evaluation_hits": [
-          "ndcg",
-          "mrr",
-          "offline evaluation",
-          "recall"
-        ],
-        "product_hits": [
-          "product",
-          "e commerce"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -205,7 +104,12 @@
           "Deep Learning",
           "Weaviate",
           "Recommendation Systems",
-          "Pinecone"
+          "Pinecone",
+          "Information Retrieval",
+          "Milvus",
+          "QLoRA",
+          "Embeddings",
+          "BM25"
         ],
         "concerns": [
           "no major availability concern"
@@ -214,9 +118,7 @@
         "years": 7.2,
         "notice_days": 15,
         "response": 0.61,
-        "inactive_days": 14,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 14
       }
     },
     {
@@ -229,47 +131,6 @@
         "experience_score": 4.93,
         "behavior_modifier": 0.9139,
         "behavior_activity": 0.795,
-        "role_hits": [
-          "machine learning engineer"
-        ],
-        "retrieval_hits": [
-          "embedding",
-          "embeddings",
-          "retrieval",
-          "semantic search",
-          "dense retrieval",
-          "faiss",
-          "bm25",
-          "reranking",
-          "ranking"
-        ],
-        "ml_hits": [
-          "llm",
-          "transformers",
-          "lora",
-          "qlora",
-          "machine learning"
-        ],
-        "production_hits": [
-          "deployed",
-          "serving",
-          "inference",
-          "scale",
-          "latency",
-          "monitoring",
-          "pipeline",
-          "kubernetes"
-        ],
-        "evaluation_hits": [
-          "ndcg",
-          "mrr",
-          "offline evaluation",
-          "recall"
-        ],
-        "product_hits": [
-          "product",
-          "e commerce"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -280,7 +141,11 @@
           "Elasticsearch",
           "Hugging Face Transformers",
           "Python",
-          "OpenSearch"
+          "OpenSearch",
+          "Fine-tuning LLMs",
+          "Information Retrieval",
+          "Embeddings",
+          "Vector Search"
         ],
         "concerns": [
           "no major availability concern"
@@ -289,9 +154,7 @@
         "years": 8.1,
         "notice_days": 30,
         "response": 0.87,
-        "inactive_days": 10,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 10
       }
     },
     {
@@ -304,41 +167,6 @@
         "experience_score": 4.2,
         "behavior_modifier": 0.9119,
         "behavior_activity": 0.7903,
-        "role_hits": [
-          "nlp engineer"
-        ],
-        "retrieval_hits": [
-          "embeddings",
-          "retrieval",
-          "dense retrieval",
-          "faiss",
-          "bm25",
-          "reranking",
-          "ranking"
-        ],
-        "ml_hits": [
-          "llm",
-          "lora",
-          "qlora",
-          "nlp"
-        ],
-        "production_hits": [
-          "deployed",
-          "serving",
-          "inference",
-          "latency",
-          "pipeline",
-          "kubernetes"
-        ],
-        "evaluation_hits": [
-          "ndcg",
-          "mrr",
-          "offline evaluation",
-          "recall"
-        ],
-        "product_hits": [
-          "product"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -349,7 +177,13 @@
           "Prompt Engineering",
           "Information Retrieval",
           "Semantic Search",
-          "Deep Learning"
+          "Deep Learning",
+          "Python",
+          "NLP",
+          "LoRA",
+          "pgvector",
+          "Hugging Face Transformers",
+          "Embeddings"
         ],
         "concerns": [
           "notice 60d"
@@ -358,9 +192,7 @@
         "years": 5.2,
         "notice_days": 60,
         "response": 0.86,
-        "inactive_days": 17,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 17
       }
     },
     {
@@ -373,41 +205,6 @@
         "experience_score": 5.0,
         "behavior_modifier": 0.9123,
         "behavior_activity": 0.7911,
-        "role_hits": [
-          "nlp engineer"
-        ],
-        "retrieval_hits": [
-          "embedding",
-          "retrieval",
-          "semantic search",
-          "pinecone",
-          "bm25",
-          "ranking",
-          "recommendation"
-        ],
-        "ml_hits": [
-          "transformers",
-          "lora",
-          "qlora",
-          "nlp"
-        ],
-        "production_hits": [
-          "deployed",
-          "serving",
-          "inference",
-          "scale",
-          "latency",
-          "monitoring",
-          "pipeline",
-          "kubernetes"
-        ],
-        "evaluation_hits": [
-          "ndcg"
-        ],
-        "product_hits": [
-          "product",
-          "consumer"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -418,7 +215,15 @@
           "Qdrant",
           "pgvector",
           "Sentence Transformers",
-          "NLP"
+          "NLP",
+          "TensorFlow",
+          "Python",
+          "Prompt Engineering",
+          "Semantic Search",
+          "LoRA",
+          "Recommendation Systems",
+          "Information Retrieval",
+          "Hugging Face Transformers"
         ],
         "concerns": [
           "notice 90d"
@@ -427,9 +232,7 @@
         "years": 7.8,
         "notice_days": 90,
         "response": 0.66,
-        "inactive_days": 32,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 32
       }
     },
     {
@@ -442,41 +245,6 @@
         "experience_score": 5.0,
         "behavior_modifier": 0.9556,
         "behavior_activity": 0.8943,
-        "role_hits": [
-          "machine learning engineer"
-        ],
-        "retrieval_hits": [
-          "embedding",
-          "embeddings",
-          "retrieval",
-          "semantic search",
-          "bm25",
-          "ranking",
-          "recommendation"
-        ],
-        "ml_hits": [
-          "transformers",
-          "nlp",
-          "machine learning"
-        ],
-        "production_hits": [
-          "production",
-          "serving",
-          "shipped",
-          "scale",
-          "latency",
-          "monitoring"
-        ],
-        "evaluation_hits": [
-          "ndcg",
-          "a b test"
-        ],
-        "product_hits": [
-          "product",
-          "fintech",
-          "marketplace",
-          "user"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -487,7 +255,14 @@
           "Semantic Search",
           "QLoRA",
           "pgvector",
-          "Pinecone"
+          "Pinecone",
+          "BM25",
+          "Information Retrieval",
+          "Qdrant",
+          "Recommendation Systems",
+          "Sentence Transformers",
+          "Python",
+          "OpenSearch"
         ],
         "concerns": [
           "notice 60d"
@@ -496,9 +271,7 @@
         "years": 7.0,
         "notice_days": 60,
         "response": 0.95,
-        "inactive_days": 1,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 1
       }
     },
     {
@@ -511,36 +284,6 @@
         "experience_score": 4.3,
         "behavior_modifier": 0.9111,
         "behavior_activity": 0.7883,
-        "role_hits": [
-          "applied scientist"
-        ],
-        "retrieval_hits": [
-          "embedding",
-          "embeddings",
-          "retrieval",
-          "dense retrieval",
-          "faiss",
-          "bm25",
-          "reranking",
-          "ranking"
-        ],
-        "ml_hits": [
-          "llm"
-        ],
-        "production_hits": [
-          "serving",
-          "latency",
-          "pipeline"
-        ],
-        "evaluation_hits": [
-          "ndcg",
-          "mrr",
-          "offline evaluation",
-          "recall"
-        ],
-        "product_hits": [
-          "product"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -551,7 +294,17 @@
           "Vector Search",
           "Recommendation Systems",
           "Deep Learning",
-          "pgvector"
+          "pgvector",
+          "Fine-tuning LLMs",
+          "Elasticsearch",
+          "QLoRA",
+          "Pinecone",
+          "Embeddings",
+          "PyTorch",
+          "TensorFlow",
+          "NLP",
+          "Sentence Transformers",
+          "LoRA"
         ],
         "concerns": [
           "no major availability concern"
@@ -560,9 +313,7 @@
         "years": 5.3,
         "notice_days": 0,
         "response": 0.55,
-        "inactive_days": 42,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 42
       }
     },
     {
@@ -575,36 +326,6 @@
         "experience_score": 5.0,
         "behavior_modifier": 0.9125,
         "behavior_activity": 0.7916,
-        "role_hits": [
-          "nlp engineer"
-        ],
-        "retrieval_hits": [
-          "retrieval",
-          "semantic search",
-          "faiss",
-          "elasticsearch",
-          "bm25",
-          "ranking"
-        ],
-        "ml_hits": [
-          "transformers",
-          "nlp"
-        ],
-        "production_hits": [
-          "production",
-          "monitoring",
-          "pipeline",
-          "mlflow",
-          "feature store"
-        ],
-        "evaluation_hits": [
-          "experiment"
-        ],
-        "product_hits": [
-          "product",
-          "e commerce",
-          "user"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -615,7 +336,12 @@
           "LoRA",
           "PEFT",
           "Recommendation Systems",
-          "Weaviate"
+          "Weaviate",
+          "Embeddings",
+          "QLoRA",
+          "TensorFlow",
+          "Semantic Search",
+          "Python"
         ],
         "concerns": [
           "no major availability concern"
@@ -624,9 +350,7 @@
         "years": 6.5,
         "notice_days": 15,
         "response": 0.68,
-        "inactive_days": 57,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 57
       }
     },
     {
@@ -639,46 +363,6 @@
         "experience_score": 5.0,
         "behavior_modifier": 0.8192,
         "behavior_activity": 0.5694,
-        "role_hits": [
-          "nlp engineer"
-        ],
-        "retrieval_hits": [
-          "embedding",
-          "embeddings",
-          "retrieval",
-          "semantic search",
-          "bm25",
-          "ranking",
-          "recommendation"
-        ],
-        "ml_hits": [
-          "transformers",
-          "lora",
-          "qlora",
-          "nlp"
-        ],
-        "production_hits": [
-          "production",
-          "deployed",
-          "serving",
-          "inference",
-          "shipped",
-          "scale",
-          "latency",
-          "monitoring",
-          "pipeline",
-          "kubernetes"
-        ],
-        "evaluation_hits": [
-          "ndcg",
-          "a b test"
-        ],
-        "product_hits": [
-          "product",
-          "fintech",
-          "marketplace",
-          "user"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -689,7 +373,14 @@
           "Weaviate",
           "LoRA",
           "Machine Learning",
-          "TensorFlow"
+          "TensorFlow",
+          "Elasticsearch",
+          "Pinecone",
+          "Qdrant",
+          "Vector Search",
+          "PEFT",
+          "Milvus",
+          "Sentence Transformers"
         ],
         "concerns": [
           "recruiter response 16%"
@@ -698,9 +389,7 @@
         "years": 8.0,
         "notice_days": 30,
         "response": 0.16,
-        "inactive_days": 100,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 100
       }
     },
     {
@@ -713,40 +402,6 @@
         "experience_score": 5.0,
         "behavior_modifier": 0.9489,
         "behavior_activity": 0.8784,
-        "role_hits": [
-          "ai engineer"
-        ],
-        "retrieval_hits": [
-          "embedding",
-          "embeddings",
-          "retrieval",
-          "semantic search",
-          "faiss",
-          "pinecone",
-          "elasticsearch",
-          "bm25",
-          "ranking",
-          "recommendation"
-        ],
-        "ml_hits": [
-          "transformers",
-          "nlp"
-        ],
-        "production_hits": [
-          "production",
-          "deployment",
-          "serving",
-          "monitoring",
-          "pipeline",
-          "mlflow",
-          "feature store"
-        ],
-        "evaluation_hits": [
-          "experiment"
-        ],
-        "product_hits": [
-          "user"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -757,7 +412,11 @@
           "Recommendation Systems",
           "Python",
           "Sentence Transformers",
-          "Vector Search"
+          "Vector Search",
+          "OpenSearch",
+          "QLoRA",
+          "LoRA",
+          "BM25"
         ],
         "concerns": [
           "no major availability concern"
@@ -766,9 +425,7 @@
         "years": 6.9,
         "notice_days": 30,
         "response": 0.81,
-        "inactive_days": 32,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 32
       }
     },
     {
@@ -781,43 +438,6 @@
         "experience_score": 1.06,
         "behavior_modifier": 0.9556,
         "behavior_activity": 0.8942,
-        "role_hits": [
-          "applied scientist"
-        ],
-        "retrieval_hits": [
-          "embedding",
-          "embeddings",
-          "retrieval",
-          "semantic search",
-          "dense retrieval",
-          "faiss",
-          "pinecone",
-          "bm25",
-          "reranking",
-          "ranking",
-          "recommendation"
-        ],
-        "ml_hits": [
-          "llm",
-          "transformers"
-        ],
-        "production_hits": [
-          "serving",
-          "scale",
-          "latency",
-          "monitoring",
-          "pipeline"
-        ],
-        "evaluation_hits": [
-          "ndcg",
-          "mrr",
-          "offline evaluation",
-          "recall"
-        ],
-        "product_hits": [
-          "product",
-          "consumer"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -828,7 +448,15 @@
           "Fine-tuning LLMs",
           "Qdrant",
           "NLP",
-          "OpenSearch"
+          "OpenSearch",
+          "Deep Learning",
+          "Machine Learning",
+          "BM25",
+          "Weaviate",
+          "Python",
+          "TensorFlow",
+          "pgvector",
+          "Elasticsearch"
         ],
         "concerns": [
           "no major availability concern"
@@ -837,9 +465,7 @@
         "years": 16.2,
         "notice_days": 30,
         "response": 0.81,
-        "inactive_days": 13,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 13
       }
     },
     {
@@ -852,40 +478,6 @@
         "experience_score": 5.0,
         "behavior_modifier": 0.942,
         "behavior_activity": 0.8619,
-        "role_hits": [
-          "ai engineer"
-        ],
-        "retrieval_hits": [
-          "embedding",
-          "embeddings",
-          "retrieval",
-          "pinecone",
-          "ranking",
-          "recommendation"
-        ],
-        "ml_hits": [
-          "lora",
-          "qlora",
-          "machine learning"
-        ],
-        "production_hits": [
-          "production",
-          "deployed",
-          "inference",
-          "shipped",
-          "latency",
-          "pipeline",
-          "kubernetes"
-        ],
-        "evaluation_hits": [
-          "a b test"
-        ],
-        "product_hits": [
-          "product",
-          "marketplace",
-          "consumer",
-          "user"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -896,7 +488,14 @@
           "LoRA",
           "Weaviate",
           "PEFT",
-          "BM25"
+          "BM25",
+          "Pinecone",
+          "Machine Learning",
+          "Information Retrieval",
+          "Qdrant",
+          "Embeddings",
+          "Sentence Transformers",
+          "Elasticsearch"
         ],
         "concerns": [
           "notice 45d"
@@ -905,9 +504,7 @@
         "years": 7.8,
         "notice_days": 45,
         "response": 0.76,
-        "inactive_days": 41,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 41
       }
     },
     {
@@ -920,33 +517,6 @@
         "experience_score": 5.0,
         "behavior_modifier": 0.9308,
         "behavior_activity": 0.8352,
-        "role_hits": [
-          "ml engineer",
-          "applied ml"
-        ],
-        "retrieval_hits": [
-          "retrieval",
-          "semantic search",
-          "faiss",
-          "elasticsearch",
-          "bm25"
-        ],
-        "ml_hits": [
-          "transformers",
-          "nlp"
-        ],
-        "production_hits": [
-          "production",
-          "monitoring",
-          "mlflow",
-          "feature store"
-        ],
-        "evaluation_hits": [
-          "experiment"
-        ],
-        "product_hits": [
-          "user"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -957,7 +527,12 @@
           "Hugging Face Transformers",
           "Weaviate",
           "Deep Learning",
-          "TensorFlow"
+          "TensorFlow",
+          "Embeddings",
+          "LoRA",
+          "pgvector",
+          "Pinecone",
+          "Machine Learning"
         ],
         "concerns": [
           "notice 120d"
@@ -966,9 +541,7 @@
         "years": 6.7,
         "notice_days": 120,
         "response": 0.72,
-        "inactive_days": 46,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 46
       }
     },
     {
@@ -981,41 +554,6 @@
         "experience_score": 5.0,
         "behavior_modifier": 0.7558,
         "behavior_activity": 0.4185,
-        "role_hits": [
-          "machine learning engineer"
-        ],
-        "retrieval_hits": [
-          "embedding",
-          "embeddings",
-          "retrieval",
-          "semantic search",
-          "dense retrieval",
-          "faiss",
-          "bm25",
-          "reranking",
-          "ranking"
-        ],
-        "ml_hits": [
-          "llm",
-          "transformers",
-          "machine learning"
-        ],
-        "production_hits": [
-          "serving",
-          "scale",
-          "latency",
-          "monitoring",
-          "pipeline"
-        ],
-        "evaluation_hits": [
-          "ndcg",
-          "mrr",
-          "offline evaluation",
-          "recall"
-        ],
-        "product_hits": [
-          "product"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -1026,7 +564,15 @@
           "Prompt Engineering",
           "PyTorch",
           "Qdrant",
-          "NLP"
+          "NLP",
+          "Weaviate",
+          "BM25",
+          "Fine-tuning LLMs",
+          "OpenSearch",
+          "Sentence Transformers",
+          "Deep Learning",
+          "pgvector",
+          "QLoRA"
         ],
         "concerns": [
           "last active 175 days before cutoff",
@@ -1036,9 +582,7 @@
         "years": 6.4,
         "notice_days": 30,
         "response": 0.07,
-        "inactive_days": 175,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 175
       }
     },
     {
@@ -1051,37 +595,6 @@
         "experience_score": 5.0,
         "behavior_modifier": 0.9411,
         "behavior_activity": 0.8597,
-        "role_hits": [
-          "machine learning engineer"
-        ],
-        "retrieval_hits": [
-          "embedding",
-          "embeddings",
-          "retrieval",
-          "dense retrieval",
-          "faiss",
-          "bm25",
-          "reranking",
-          "ranking"
-        ],
-        "ml_hits": [
-          "llm",
-          "machine learning"
-        ],
-        "production_hits": [
-          "serving",
-          "latency",
-          "pipeline"
-        ],
-        "evaluation_hits": [
-          "ndcg",
-          "mrr",
-          "offline evaluation",
-          "recall"
-        ],
-        "product_hits": [
-          "product"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -1092,7 +605,11 @@
           "Elasticsearch",
           "Machine Learning",
           "Information Retrieval",
-          "TensorFlow"
+          "TensorFlow",
+          "NLP",
+          "Sentence Transformers",
+          "pgvector",
+          "Qdrant"
         ],
         "concerns": [
           "notice 60d"
@@ -1101,9 +618,7 @@
         "years": 6.1,
         "notice_days": 60,
         "response": 0.88,
-        "inactive_days": 4,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 4
       }
     },
     {
@@ -1116,43 +631,6 @@
         "experience_score": 5.0,
         "behavior_modifier": 0.9169,
         "behavior_activity": 0.802,
-        "role_hits": [
-          "ai engineer"
-        ],
-        "retrieval_hits": [
-          "embedding",
-          "embeddings",
-          "retrieval",
-          "semantic search",
-          "faiss",
-          "pinecone",
-          "elasticsearch",
-          "bm25",
-          "ranking",
-          "recommendation"
-        ],
-        "ml_hits": [
-          "transformers"
-        ],
-        "production_hits": [
-          "production",
-          "deployment",
-          "shipped",
-          "monitoring",
-          "pipeline",
-          "mlflow",
-          "feature store"
-        ],
-        "evaluation_hits": [
-          "a b test",
-          "experiment"
-        ],
-        "product_hits": [
-          "product",
-          "fintech",
-          "e commerce",
-          "user"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -1163,7 +641,12 @@
           "BM25",
           "Prompt Engineering",
           "Embeddings",
-          "QLoRA"
+          "QLoRA",
+          "Fine-tuning LLMs",
+          "TensorFlow",
+          "Deep Learning",
+          "PyTorch",
+          "Semantic Search"
         ],
         "concerns": [
           "notice 90d"
@@ -1172,9 +655,7 @@
         "years": 6.3,
         "notice_days": 90,
         "response": 0.84,
-        "inactive_days": 20,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 20
       }
     },
     {
@@ -1187,43 +668,6 @@
         "experience_score": 5.0,
         "behavior_modifier": 0.7557,
         "behavior_activity": 0.4183,
-        "role_hits": [
-          "nlp engineer"
-        ],
-        "retrieval_hits": [
-          "embeddings",
-          "retrieval",
-          "dense retrieval",
-          "faiss",
-          "bm25",
-          "reranking",
-          "ranking",
-          "recommendation"
-        ],
-        "ml_hits": [
-          "llm",
-          "nlp"
-        ],
-        "production_hits": [
-          "production",
-          "serving",
-          "shipped",
-          "latency",
-          "pipeline"
-        ],
-        "evaluation_hits": [
-          "ndcg",
-          "mrr",
-          "offline evaluation",
-          "a b test",
-          "recall"
-        ],
-        "product_hits": [
-          "product",
-          "fintech",
-          "marketplace",
-          "user"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -1234,7 +678,14 @@
           "TensorFlow",
           "Machine Learning",
           "Hugging Face Transformers",
-          "QLoRA"
+          "QLoRA",
+          "pgvector",
+          "NLP",
+          "Elasticsearch",
+          "Vector Search",
+          "Milvus",
+          "PEFT",
+          "Semantic Search"
         ],
         "concerns": [
           "last active 201 days before cutoff",
@@ -1245,9 +696,7 @@
         "years": 6.8,
         "notice_days": 90,
         "response": 0.07,
-        "inactive_days": 201,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 201
       }
     },
     {
@@ -1260,35 +709,6 @@
         "experience_score": 5.0,
         "behavior_modifier": 0.9008,
         "behavior_activity": 0.7638,
-        "role_hits": [
-          "data scientist"
-        ],
-        "retrieval_hits": [
-          "embedding",
-          "embeddings",
-          "retrieval",
-          "semantic search",
-          "faiss",
-          "pinecone",
-          "elasticsearch",
-          "bm25",
-          "ranking",
-          "recommendation"
-        ],
-        "ml_hits": [
-          "transformers",
-          "machine learning"
-        ],
-        "production_hits": [
-          "deployment",
-          "serving",
-          "pipeline"
-        ],
-        "evaluation_hits": [],
-        "product_hits": [
-          "e commerce",
-          "user"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -1298,7 +718,13 @@
           "Hugging Face Transformers",
           "OpenSearch",
           "Information Retrieval",
-          "Pinecone"
+          "Pinecone",
+          "Machine Learning",
+          "Vector Search",
+          "NLP",
+          "QLoRA",
+          "Qdrant",
+          "Embeddings"
         ],
         "concerns": [
           "notice 60d"
@@ -1307,9 +733,7 @@
         "years": 6.6,
         "notice_days": 60,
         "response": 0.57,
-        "inactive_days": 33,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 33
       }
     },
     {
@@ -1322,35 +746,6 @@
         "experience_score": 5.0,
         "behavior_modifier": 0.9138,
         "behavior_activity": 0.7948,
-        "role_hits": [
-          "nlp engineer"
-        ],
-        "retrieval_hits": [
-          "retrieval",
-          "semantic search",
-          "faiss",
-          "elasticsearch",
-          "bm25",
-          "recommendation"
-        ],
-        "ml_hits": [
-          "transformers",
-          "nlp",
-          "machine learning"
-        ],
-        "production_hits": [
-          "production",
-          "monitoring",
-          "mlflow",
-          "feature store"
-        ],
-        "evaluation_hits": [
-          "experiment"
-        ],
-        "product_hits": [
-          "saas",
-          "user"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -1361,7 +756,9 @@
           "FAISS",
           "Milvus",
           "QLoRA",
-          "TensorFlow"
+          "TensorFlow",
+          "OpenSearch",
+          "Vector Search"
         ],
         "concerns": [
           "notice 120d"
@@ -1370,9 +767,7 @@
         "years": 7.4,
         "notice_days": 120,
         "response": 0.65,
-        "inactive_days": 45,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 45
       }
     },
     {
@@ -1385,37 +780,6 @@
         "experience_score": 5.0,
         "behavior_modifier": 0.9014,
         "behavior_activity": 0.7653,
-        "role_hits": [
-          "ml engineer",
-          "applied ml"
-        ],
-        "retrieval_hits": [
-          "retrieval",
-          "semantic search",
-          "faiss",
-          "elasticsearch",
-          "bm25",
-          "ranking"
-        ],
-        "ml_hits": [
-          "transformers"
-        ],
-        "production_hits": [
-          "production",
-          "monitoring",
-          "pipeline",
-          "mlflow",
-          "feature store"
-        ],
-        "evaluation_hits": [
-          "experiment"
-        ],
-        "product_hits": [
-          "product",
-          "saas",
-          "e commerce",
-          "user"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -1426,7 +790,11 @@
           "NLP",
           "Hugging Face Transformers",
           "Machine Learning",
-          "Vector Search"
+          "Vector Search",
+          "Sentence Transformers",
+          "Weaviate",
+          "OpenSearch",
+          "pgvector"
         ],
         "concerns": [
           "no major availability concern"
@@ -1435,9 +803,7 @@
         "years": 6.8,
         "notice_days": 30,
         "response": 0.41,
-        "inactive_days": 5,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 5
       }
     },
     {
@@ -1450,36 +816,6 @@
         "experience_score": 4.9,
         "behavior_modifier": 0.9629,
         "behavior_activity": 0.9117,
-        "role_hits": [
-          "ai engineer"
-        ],
-        "retrieval_hits": [
-          "embeddings",
-          "ranking",
-          "recommendation"
-        ],
-        "ml_hits": [
-          "lora",
-          "qlora"
-        ],
-        "production_hits": [
-          "production",
-          "deployed",
-          "inference",
-          "shipped",
-          "latency",
-          "pipeline",
-          "kubernetes"
-        ],
-        "evaluation_hits": [
-          "a b test"
-        ],
-        "product_hits": [
-          "product",
-          "marketplace",
-          "consumer",
-          "user"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -1490,7 +826,16 @@
           "FAISS",
           "TensorFlow",
           "OpenSearch",
-          "Weaviate"
+          "Weaviate",
+          "Sentence Transformers",
+          "QLoRA",
+          "NLP",
+          "Pinecone",
+          "Recommendation Systems",
+          "Deep Learning",
+          "Python",
+          "Prompt Engineering",
+          "Fine-tuning LLMs"
         ],
         "concerns": [
           "no major availability concern"
@@ -1499,9 +844,7 @@
         "years": 5.9,
         "notice_days": 30,
         "response": 0.8,
-        "inactive_days": 1,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 1
       }
     },
     {
@@ -1514,35 +857,6 @@
         "experience_score": 5.0,
         "behavior_modifier": 0.9238,
         "behavior_activity": 0.8187,
-        "role_hits": [
-          "ml engineer",
-          "applied ml"
-        ],
-        "retrieval_hits": [
-          "retrieval",
-          "semantic search",
-          "faiss",
-          "elasticsearch",
-          "bm25",
-          "ranking"
-        ],
-        "ml_hits": [
-          "transformers",
-          "nlp",
-          "machine learning"
-        ],
-        "production_hits": [
-          "shipped"
-        ],
-        "evaluation_hits": [
-          "a b test"
-        ],
-        "product_hits": [
-          "product",
-          "fintech",
-          "e commerce",
-          "user"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -1553,7 +867,13 @@
           "FAISS",
           "Recommendation Systems",
           "Hugging Face Transformers",
-          "QLoRA"
+          "QLoRA",
+          "NLP",
+          "LoRA",
+          "Vector Search",
+          "Elasticsearch",
+          "Prompt Engineering",
+          "pgvector"
         ],
         "concerns": [
           "notice 90d"
@@ -1562,9 +882,7 @@
         "years": 7.1,
         "notice_days": 90,
         "response": 0.61,
-        "inactive_days": 69,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 69
       }
     },
     {
@@ -1577,34 +895,6 @@
         "experience_score": 5.0,
         "behavior_modifier": 0.9497,
         "behavior_activity": 0.8802,
-        "role_hits": [
-          "nlp engineer"
-        ],
-        "retrieval_hits": [
-          "embedding",
-          "retrieval",
-          "pinecone",
-          "ranking",
-          "recommendation"
-        ],
-        "ml_hits": [
-          "lora",
-          "qlora",
-          "nlp",
-          "machine learning"
-        ],
-        "production_hits": [
-          "deployed",
-          "inference",
-          "latency",
-          "pipeline",
-          "kubernetes"
-        ],
-        "evaluation_hits": [],
-        "product_hits": [
-          "product",
-          "consumer"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -1614,7 +904,11 @@
           "TensorFlow",
           "OpenSearch",
           "FAISS",
-          "PEFT"
+          "PEFT",
+          "Embeddings",
+          "Weaviate",
+          "PyTorch",
+          "Semantic Search"
         ],
         "concerns": [
           "no major availability concern"
@@ -1623,9 +917,7 @@
         "years": 7.8,
         "notice_days": 15,
         "response": 0.89,
-        "inactive_days": 17,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 17
       }
     },
     {
@@ -1638,41 +930,6 @@
         "experience_score": 5.0,
         "behavior_modifier": 0.9096,
         "behavior_activity": 0.7847,
-        "role_hits": [
-          "data scientist"
-        ],
-        "retrieval_hits": [
-          "embedding",
-          "embeddings",
-          "retrieval",
-          "semantic search",
-          "faiss",
-          "pinecone",
-          "elasticsearch",
-          "bm25",
-          "ranking",
-          "recommendation"
-        ],
-        "ml_hits": [
-          "transformers"
-        ],
-        "production_hits": [
-          "production",
-          "deployment",
-          "shipped",
-          "monitoring",
-          "pipeline",
-          "mlflow",
-          "feature store"
-        ],
-        "evaluation_hits": [
-          "a b test",
-          "experiment"
-        ],
-        "product_hits": [
-          "product",
-          "user"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -1683,7 +940,12 @@
           "Prompt Engineering",
           "Deep Learning",
           "TensorFlow",
-          "Fine-tuning LLMs"
+          "Fine-tuning LLMs",
+          "Recommendation Systems",
+          "QLoRA",
+          "Semantic Search",
+          "Weaviate",
+          "Information Retrieval"
         ],
         "concerns": [
           "notice 90d"
@@ -1692,9 +954,7 @@
         "years": 7.4,
         "notice_days": 90,
         "response": 0.57,
-        "inactive_days": 43,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 43
       }
     },
     {
@@ -1707,36 +967,6 @@
         "experience_score": 5.0,
         "behavior_modifier": 0.9102,
         "behavior_activity": 0.7861,
-        "role_hits": [
-          "search engineer"
-        ],
-        "retrieval_hits": [
-          "embedding",
-          "embeddings",
-          "retrieval",
-          "semantic search",
-          "faiss",
-          "pinecone",
-          "elasticsearch",
-          "bm25",
-          "ranking"
-        ],
-        "ml_hits": [
-          "transformers",
-          "nlp",
-          "machine learning"
-        ],
-        "production_hits": [
-          "deployment",
-          "pipeline"
-        ],
-        "evaluation_hits": [],
-        "product_hits": [
-          "product",
-          "fintech",
-          "e commerce",
-          "user"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -1746,7 +976,13 @@
           "Embeddings",
           "QLoRA",
           "PEFT",
-          "Pinecone"
+          "Pinecone",
+          "Weaviate",
+          "Semantic Search",
+          "Python",
+          "Vector Search",
+          "pgvector",
+          "Deep Learning"
         ],
         "concerns": [
           "notice 120d"
@@ -1755,9 +991,7 @@
         "years": 7.8,
         "notice_days": 120,
         "response": 0.7,
-        "inactive_days": 67,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 67
       }
     },
     {
@@ -1770,35 +1004,6 @@
         "experience_score": 5.0,
         "behavior_modifier": 0.8814,
         "behavior_activity": 0.7176,
-        "role_hits": [
-          "ml engineer",
-          "applied ml"
-        ],
-        "retrieval_hits": [
-          "embedding",
-          "embeddings",
-          "pinecone",
-          "ranking",
-          "recommendation"
-        ],
-        "ml_hits": [],
-        "production_hits": [
-          "production",
-          "deployment",
-          "serving",
-          "monitoring",
-          "pipeline",
-          "mlflow",
-          "feature store"
-        ],
-        "evaluation_hits": [
-          "experiment"
-        ],
-        "product_hits": [
-          "product",
-          "saas",
-          "e commerce"
-        ],
         "evidence": [
           "retrieval/ranking",
           "production",
@@ -1808,7 +1013,12 @@
           "Vector Search",
           "Qdrant",
           "TensorFlow",
-          "Embeddings"
+          "Embeddings",
+          "pgvector",
+          "Pinecone",
+          "PEFT",
+          "OpenSearch",
+          "Weaviate"
         ],
         "concerns": [
           "no major availability concern"
@@ -1817,9 +1027,7 @@
         "years": 8.0,
         "notice_days": 30,
         "response": 0.42,
-        "inactive_days": 6,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 6
       }
     },
     {
@@ -1832,37 +1040,6 @@
         "experience_score": 4.44,
         "behavior_modifier": 0.9033,
         "behavior_activity": 0.7697,
-        "role_hits": [
-          "machine learning engineer"
-        ],
-        "retrieval_hits": [
-          "embedding",
-          "retrieval",
-          "semantic search",
-          "bm25",
-          "ranking"
-        ],
-        "ml_hits": [
-          "transformers",
-          "machine learning"
-        ],
-        "production_hits": [
-          "production",
-          "serving",
-          "shipped",
-          "scale",
-          "latency",
-          "monitoring",
-          "pipeline"
-        ],
-        "evaluation_hits": [
-          "ndcg"
-        ],
-        "product_hits": [
-          "product",
-          "consumer",
-          "user"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -1873,7 +1050,12 @@
           "LoRA",
           "Information Retrieval Systems",
           "Elasticsearch",
-          "Deep Learning"
+          "Deep Learning",
+          "QLoRA",
+          "OpenSearch",
+          "Python",
+          "Milvus",
+          "TensorFlow"
         ],
         "concerns": [
           "no major availability concern"
@@ -1882,9 +1064,7 @@
         "years": 8.8,
         "notice_days": 0,
         "response": 0.66,
-        "inactive_days": 48,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 48
       }
     },
     {
@@ -1897,38 +1077,6 @@
         "experience_score": 5.0,
         "behavior_modifier": 0.9274,
         "behavior_activity": 0.8271,
-        "role_hits": [
-          "recommendation systems"
-        ],
-        "retrieval_hits": [
-          "retrieval",
-          "semantic search",
-          "faiss",
-          "elasticsearch",
-          "bm25",
-          "ranking",
-          "recommendation"
-        ],
-        "ml_hits": [
-          "transformers"
-        ],
-        "production_hits": [
-          "production",
-          "monitoring",
-          "pipeline",
-          "mlflow",
-          "feature store"
-        ],
-        "evaluation_hits": [
-          "experiment"
-        ],
-        "product_hits": [
-          "product",
-          "saas",
-          "fintech",
-          "e commerce",
-          "user"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -1939,7 +1087,11 @@
           "Qdrant",
           "SQL",
           "Vector Search",
-          "Hugging Face Transformers"
+          "Hugging Face Transformers",
+          "QLoRA",
+          "Embeddings",
+          "Prompt Engineering",
+          "Milvus"
         ],
         "concerns": [
           "notice 120d"
@@ -1948,9 +1100,7 @@
         "years": 6.6,
         "notice_days": 120,
         "response": 0.94,
-        "inactive_days": 63,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 63
       }
     },
     {
@@ -1963,34 +1113,6 @@
         "experience_score": 5.0,
         "behavior_modifier": 0.9299,
         "behavior_activity": 0.8331,
-        "role_hits": [
-          "ml engineer",
-          "applied ml"
-        ],
-        "retrieval_hits": [
-          "embedding",
-          "embeddings",
-          "retrieval",
-          "semantic search",
-          "faiss",
-          "pinecone",
-          "elasticsearch",
-          "bm25",
-          "recommendation"
-        ],
-        "ml_hits": [
-          "transformers",
-          "machine learning"
-        ],
-        "production_hits": [
-          "deployment",
-          "pipeline"
-        ],
-        "evaluation_hits": [],
-        "product_hits": [
-          "e commerce",
-          "user"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -2000,7 +1122,10 @@
           "LoRA",
           "Recommendation Systems",
           "Sentence Transformers",
-          "TensorFlow"
+          "TensorFlow",
+          "Hugging Face Transformers",
+          "Python",
+          "Weaviate"
         ],
         "concerns": [
           "notice 90d"
@@ -2009,9 +1134,7 @@
         "years": 6.6,
         "notice_days": 90,
         "response": 0.78,
-        "inactive_days": 36,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 36
       }
     },
     {
@@ -2024,31 +1147,6 @@
         "experience_score": 4.7,
         "behavior_modifier": 0.8736,
         "behavior_activity": 0.6992,
-        "role_hits": [
-          "ml engineer",
-          "applied ml"
-        ],
-        "retrieval_hits": [
-          "embeddings",
-          "retrieval",
-          "semantic search",
-          "faiss",
-          "elasticsearch",
-          "bm25",
-          "ranking",
-          "recommendation"
-        ],
-        "ml_hits": [
-          "transformers"
-        ],
-        "production_hits": [
-          "serving",
-          "pipeline"
-        ],
-        "evaluation_hits": [],
-        "product_hits": [
-          "user"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -2058,7 +1156,12 @@
           "Recommendation Systems",
           "LoRA",
           "Fine-tuning LLMs",
-          "Deep Learning"
+          "Deep Learning",
+          "NLP",
+          "Information Retrieval",
+          "BM25",
+          "FAISS",
+          "Semantic Search"
         ],
         "concerns": [
           "notice 90d"
@@ -2067,9 +1170,7 @@
         "years": 5.7,
         "notice_days": 90,
         "response": 0.51,
-        "inactive_days": 24,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 24
       }
     },
     {
@@ -2082,39 +1183,6 @@
         "experience_score": 5.0,
         "behavior_modifier": 0.9024,
         "behavior_activity": 0.7676,
-        "role_hits": [
-          "nlp engineer"
-        ],
-        "retrieval_hits": [
-          "retrieval",
-          "semantic search",
-          "faiss",
-          "elasticsearch",
-          "bm25",
-          "ranking"
-        ],
-        "ml_hits": [
-          "transformers",
-          "nlp",
-          "machine learning"
-        ],
-        "production_hits": [
-          "production",
-          "shipped",
-          "monitoring",
-          "pipeline",
-          "mlflow",
-          "feature store"
-        ],
-        "evaluation_hits": [
-          "a b test",
-          "experiment"
-        ],
-        "product_hits": [
-          "product",
-          "e commerce",
-          "user"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -2125,7 +1193,8 @@
           "Prompt Engineering",
           "Deep Learning",
           "PyTorch",
-          "Information Retrieval"
+          "Information Retrieval",
+          "Elasticsearch"
         ],
         "concerns": [
           "no major availability concern"
@@ -2134,9 +1203,7 @@
         "years": 6.7,
         "notice_days": 30,
         "response": 0.83,
-        "inactive_days": 72,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 72
       }
     },
     {
@@ -2149,31 +1216,6 @@
         "experience_score": 5.0,
         "behavior_modifier": 0.9044,
         "behavior_activity": 0.7725,
-        "role_hits": [
-          "recommendation systems"
-        ],
-        "retrieval_hits": [
-          "embedding",
-          "embeddings",
-          "retrieval",
-          "semantic search",
-          "faiss",
-          "pinecone",
-          "elasticsearch",
-          "bm25",
-          "recommendation"
-        ],
-        "ml_hits": [
-          "transformers"
-        ],
-        "production_hits": [
-          "deployment",
-          "pipeline"
-        ],
-        "evaluation_hits": [],
-        "product_hits": [
-          "user"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -2183,7 +1225,12 @@
           "Weaviate",
           "Python",
           "Embeddings",
-          "PEFT"
+          "PEFT",
+          "BM25",
+          "LoRA",
+          "Sentence Transformers",
+          "QLoRA",
+          "OpenSearch"
         ],
         "concerns": [
           "no major availability concern"
@@ -2192,9 +1239,7 @@
         "years": 7.9,
         "notice_days": 30,
         "response": 0.62,
-        "inactive_days": 69,
-        "product_score": 0.0,
-        "suspicious_skills": 0
+        "inactive_days": 69
       }
     },
     {
@@ -2207,32 +1252,6 @@
         "experience_score": 5.0,
         "behavior_modifier": 0.9351,
         "behavior_activity": 0.8455,
-        "role_hits": [
-          "data scientist"
-        ],
-        "retrieval_hits": [
-          "embeddings",
-          "ranking",
-          "recommendation"
-        ],
-        "ml_hits": [],
-        "production_hits": [
-          "production",
-          "serving",
-          "shipped",
-          "monitoring",
-          "pipeline",
-          "mlflow",
-          "feature store"
-        ],
-        "evaluation_hits": [
-          "a b test",
-          "experiment"
-        ],
-        "product_hits": [
-          "product",
-          "user"
-        ],
         "evidence": [
           "retrieval/ranking",
           "production",
@@ -2242,7 +1261,11 @@
           "Milvus",
           "TensorFlow",
           "Python",
-          "OpenSearch"
+          "OpenSearch",
+          "Qdrant",
+          "Machine Learning",
+          "Recommendation Systems",
+          "pgvector"
         ],
         "concerns": [
           "notice 120d"
@@ -2251,9 +1274,7 @@
         "years": 6.5,
         "notice_days": 120,
         "response": 0.72,
-        "inactive_days": 14,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 14
       }
     },
     {
@@ -2266,32 +1287,6 @@
         "experience_score": 3.525,
         "behavior_modifier": 0.9144,
         "behavior_activity": 0.7963,
-        "role_hits": [
-          "ml engineer",
-          "applied ml"
-        ],
-        "retrieval_hits": [
-          "embeddings",
-          "retrieval",
-          "semantic search",
-          "faiss",
-          "elasticsearch",
-          "bm25",
-          "ranking",
-          "recommendation"
-        ],
-        "ml_hits": [
-          "transformers"
-        ],
-        "production_hits": [
-          "serving",
-          "pipeline"
-        ],
-        "evaluation_hits": [],
-        "product_hits": [
-          "fintech",
-          "user"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -2301,7 +1296,11 @@
           "pgvector",
           "Python",
           "Weaviate",
-          "Qdrant"
+          "Qdrant",
+          "Vector Search",
+          "Hugging Face Transformers",
+          "Semantic Search",
+          "Fine-tuning LLMs"
         ],
         "concerns": [
           "notice 60d"
@@ -2310,9 +1309,7 @@
         "years": 4.7,
         "notice_days": 60,
         "response": 0.87,
-        "inactive_days": 19,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 19
       }
     },
     {
@@ -2325,33 +1322,6 @@
         "experience_score": 4.9,
         "behavior_modifier": 0.9046,
         "behavior_activity": 0.773,
-        "role_hits": [
-          "nlp engineer"
-        ],
-        "retrieval_hits": [
-          "retrieval",
-          "semantic search",
-          "faiss",
-          "elasticsearch",
-          "bm25",
-          "recommendation"
-        ],
-        "ml_hits": [
-          "transformers",
-          "nlp"
-        ],
-        "production_hits": [
-          "production",
-          "monitoring",
-          "mlflow",
-          "feature store"
-        ],
-        "evaluation_hits": [
-          "experiment"
-        ],
-        "product_hits": [
-          "user"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -2362,7 +1332,13 @@
           "Pinecone",
           "Milvus",
           "Hugging Face Transformers",
-          "PEFT"
+          "PEFT",
+          "BM25",
+          "SQL",
+          "Fine-tuning LLMs",
+          "Machine Learning",
+          "Sentence Transformers",
+          "Embeddings"
         ],
         "concerns": [
           "notice 120d"
@@ -2371,9 +1347,7 @@
         "years": 5.9,
         "notice_days": 120,
         "response": 0.82,
-        "inactive_days": 41,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 41
       }
     },
     {
@@ -2386,38 +1360,6 @@
         "experience_score": 4.58,
         "behavior_modifier": 0.8155,
         "behavior_activity": 0.5607,
-        "role_hits": [
-          "ai engineer"
-        ],
-        "retrieval_hits": [
-          "embedding",
-          "embeddings",
-          "retrieval",
-          "dense retrieval",
-          "faiss",
-          "bm25",
-          "reranking",
-          "ranking"
-        ],
-        "ml_hits": [
-          "llm",
-          "nlp"
-        ],
-        "production_hits": [
-          "serving",
-          "latency",
-          "pipeline"
-        ],
-        "evaluation_hits": [
-          "ndcg",
-          "mrr",
-          "offline evaluation",
-          "recall"
-        ],
-        "product_hits": [
-          "product",
-          "consumer"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -2428,7 +1370,12 @@
           "Prompt Engineering",
           "Hugging Face Transformers",
           "Semantic Search",
-          "Qdrant"
+          "Qdrant",
+          "Fine-tuning LLMs",
+          "Vector Search",
+          "NLP",
+          "FAISS",
+          "Weaviate"
         ],
         "concerns": [
           "last active 139 days before cutoff",
@@ -2438,9 +1385,7 @@
         "years": 8.6,
         "notice_days": 30,
         "response": 0.11,
-        "inactive_days": 139,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 139
       }
     },
     {
@@ -2453,31 +1398,6 @@
         "experience_score": 5.0,
         "behavior_modifier": 0.9047,
         "behavior_activity": 0.773,
-        "role_hits": [
-          "ml engineer",
-          "applied ml"
-        ],
-        "retrieval_hits": [
-          "embeddings",
-          "retrieval",
-          "semantic search",
-          "faiss",
-          "elasticsearch",
-          "bm25",
-          "ranking",
-          "recommendation"
-        ],
-        "ml_hits": [
-          "transformers"
-        ],
-        "production_hits": [
-          "serving",
-          "pipeline"
-        ],
-        "evaluation_hits": [],
-        "product_hits": [
-          "user"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -2487,7 +1407,9 @@
           "Sentence Transformers",
           "Milvus",
           "Machine Learning",
-          "Fine-tuning LLMs"
+          "Fine-tuning LLMs",
+          "BM25",
+          "Pinecone"
         ],
         "concerns": [
           "notice 45d"
@@ -2496,9 +1418,7 @@
         "years": 6.2,
         "notice_days": 45,
         "response": 0.82,
-        "inactive_days": 48,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 48
       }
     },
     {
@@ -2511,32 +1431,6 @@
         "experience_score": 4.1,
         "behavior_modifier": 0.8971,
         "behavior_activity": 0.7549,
-        "role_hits": [
-          "ml engineer",
-          "applied ml"
-        ],
-        "retrieval_hits": [
-          "embedding",
-          "embeddings",
-          "retrieval",
-          "semantic search",
-          "faiss",
-          "pinecone",
-          "elasticsearch",
-          "bm25"
-        ],
-        "ml_hits": [
-          "transformers"
-        ],
-        "production_hits": [
-          "deployment",
-          "pipeline"
-        ],
-        "evaluation_hits": [],
-        "product_hits": [
-          "fintech",
-          "user"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -2546,7 +1440,13 @@
           "QLoRA",
           "Elasticsearch",
           "PyTorch",
-          "OpenSearch"
+          "OpenSearch",
+          "Information Retrieval",
+          "Weaviate",
+          "Deep Learning",
+          "PEFT",
+          "Milvus",
+          "Qdrant"
         ],
         "concerns": [
           "notice 60d"
@@ -2555,9 +1455,7 @@
         "years": 5.1,
         "notice_days": 60,
         "response": 0.66,
-        "inactive_days": 54,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 54
       }
     },
     {
@@ -2570,37 +1468,6 @@
         "experience_score": 5.0,
         "behavior_modifier": 0.9226,
         "behavior_activity": 0.8156,
-        "role_hits": [
-          "search engineer"
-        ],
-        "retrieval_hits": [
-          "embedding",
-          "embeddings",
-          "retrieval",
-          "semantic search",
-          "faiss",
-          "pinecone",
-          "elasticsearch",
-          "bm25",
-          "ranking"
-        ],
-        "ml_hits": [
-          "transformers",
-          "machine learning"
-        ],
-        "production_hits": [
-          "deployment",
-          "shipped",
-          "pipeline"
-        ],
-        "evaluation_hits": [
-          "a b test"
-        ],
-        "product_hits": [
-          "product",
-          "e commerce",
-          "user"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -2611,7 +1478,11 @@
           "Embeddings",
           "LoRA",
           "Information Retrieval",
-          "PEFT"
+          "PEFT",
+          "QLoRA",
+          "PyTorch",
+          "pgvector",
+          "NLP"
         ],
         "concerns": [
           "notice 120d"
@@ -2620,9 +1491,7 @@
         "years": 7.2,
         "notice_days": 120,
         "response": 0.57,
-        "inactive_days": 44,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 44
       }
     },
     {
@@ -2635,35 +1504,6 @@
         "experience_score": 5.0,
         "behavior_modifier": 0.9134,
         "behavior_activity": 0.7938,
-        "role_hits": [
-          "nlp engineer"
-        ],
-        "retrieval_hits": [
-          "embeddings",
-          "retrieval",
-          "semantic search",
-          "faiss",
-          "elasticsearch",
-          "bm25",
-          "ranking",
-          "recommendation"
-        ],
-        "ml_hits": [
-          "transformers",
-          "nlp",
-          "machine learning"
-        ],
-        "production_hits": [
-          "serving",
-          "pipeline"
-        ],
-        "evaluation_hits": [],
-        "product_hits": [
-          "product",
-          "saas",
-          "e commerce",
-          "user"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -2673,7 +1513,11 @@
           "Deep Learning",
           "Elasticsearch",
           "OpenSearch",
-          "SQL"
+          "SQL",
+          "QLoRA",
+          "Prompt Engineering",
+          "Hugging Face Transformers",
+          "Machine Learning"
         ],
         "concerns": [
           "notice 60d"
@@ -2682,9 +1526,7 @@
         "years": 6.8,
         "notice_days": 60,
         "response": 0.83,
-        "inactive_days": 36,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 36
       }
     },
     {
@@ -2697,33 +1539,6 @@
         "experience_score": 5.0,
         "behavior_modifier": 0.9208,
         "behavior_activity": 0.8114,
-        "role_hits": [
-          "search engineer"
-        ],
-        "retrieval_hits": [
-          "embeddings",
-          "retrieval",
-          "semantic search",
-          "faiss",
-          "elasticsearch",
-          "bm25",
-          "ranking",
-          "recommendation"
-        ],
-        "ml_hits": [
-          "transformers"
-        ],
-        "production_hits": [
-          "serving",
-          "pipeline"
-        ],
-        "evaluation_hits": [],
-        "product_hits": [
-          "product",
-          "saas",
-          "e commerce",
-          "user"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -2733,7 +1548,11 @@
           "Machine Learning",
           "Embeddings",
           "FAISS",
-          "Milvus"
+          "Milvus",
+          "Python",
+          "Semantic Search",
+          "QLoRA",
+          "Hugging Face Transformers"
         ],
         "concerns": [
           "notice 60d"
@@ -2742,9 +1561,7 @@
         "years": 6.0,
         "notice_days": 60,
         "response": 0.91,
-        "inactive_days": 32,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 32
       }
     },
     {
@@ -2757,30 +1574,6 @@
         "experience_score": 4.4,
         "behavior_modifier": 0.9221,
         "behavior_activity": 0.8144,
-        "role_hits": [
-          "nlp engineer"
-        ],
-        "retrieval_hits": [
-          "embeddings",
-          "ranking",
-          "recommendation"
-        ],
-        "ml_hits": [
-          "nlp",
-          "machine learning"
-        ],
-        "production_hits": [
-          "production",
-          "serving",
-          "monitoring",
-          "pipeline",
-          "mlflow",
-          "feature store"
-        ],
-        "evaluation_hits": [
-          "experiment"
-        ],
-        "product_hits": [],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -2791,7 +1584,11 @@
           "LoRA",
           "QLoRA",
           "Qdrant",
-          "Machine Learning"
+          "Machine Learning",
+          "pgvector",
+          "Semantic Search",
+          "Weaviate",
+          "OpenSearch"
         ],
         "concerns": [
           "notice 90d"
@@ -2800,9 +1597,7 @@
         "years": 5.4,
         "notice_days": 90,
         "response": 0.83,
-        "inactive_days": 57,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 57
       }
     },
     {
@@ -2815,33 +1610,6 @@
         "experience_score": 5.0,
         "behavior_modifier": 0.8011,
         "behavior_activity": 0.5265,
-        "role_hits": [
-          "machine learning engineer"
-        ],
-        "retrieval_hits": [
-          "embedding",
-          "retrieval",
-          "pinecone",
-          "ranking",
-          "recommendation"
-        ],
-        "ml_hits": [
-          "lora",
-          "qlora",
-          "machine learning"
-        ],
-        "production_hits": [
-          "deployed",
-          "inference",
-          "latency",
-          "pipeline",
-          "kubernetes"
-        ],
-        "evaluation_hits": [],
-        "product_hits": [
-          "product",
-          "consumer"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -2851,7 +1619,13 @@
           "OpenSearch",
           "Prompt Engineering",
           "Fine-tuning LLMs",
-          "Vector Search"
+          "Vector Search",
+          "BM25",
+          "PyTorch",
+          "Information Retrieval",
+          "Pinecone",
+          "TensorFlow",
+          "Deep Learning"
         ],
         "concerns": [
           "last active 176 days before cutoff",
@@ -2861,9 +1635,7 @@
         "years": 8.0,
         "notice_days": 15,
         "response": 0.12,
-        "inactive_days": 176,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 176
       }
     },
     {
@@ -2876,40 +1648,6 @@
         "experience_score": 5.0,
         "behavior_modifier": 0.8756,
         "behavior_activity": 0.7039,
-        "role_hits": [
-          "search engineer"
-        ],
-        "retrieval_hits": [
-          "embedding",
-          "embeddings",
-          "retrieval",
-          "semantic search",
-          "faiss",
-          "pinecone",
-          "elasticsearch",
-          "bm25",
-          "ranking",
-          "recommendation"
-        ],
-        "ml_hits": [
-          "transformers",
-          "nlp",
-          "machine learning"
-        ],
-        "production_hits": [
-          "deployment",
-          "serving",
-          "shipped",
-          "pipeline"
-        ],
-        "evaluation_hits": [
-          "a b test"
-        ],
-        "product_hits": [
-          "product",
-          "e commerce",
-          "user"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -2920,7 +1658,8 @@
           "Qdrant",
           "Python",
           "Hugging Face Transformers",
-          "pgvector"
+          "pgvector",
+          "Weaviate"
         ],
         "concerns": [
           "notice 45d"
@@ -2929,9 +1668,7 @@
         "years": 7.8,
         "notice_days": 45,
         "response": 0.63,
-        "inactive_days": 46,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 46
       }
     },
     {
@@ -2944,28 +1681,6 @@
         "experience_score": 5.0,
         "behavior_modifier": 0.9299,
         "behavior_activity": 0.8331,
-        "role_hits": [
-          "recommendation systems"
-        ],
-        "retrieval_hits": [
-          "embedding",
-          "embeddings",
-          "pinecone",
-          "recommendation"
-        ],
-        "ml_hits": [],
-        "production_hits": [
-          "production",
-          "deployment",
-          "monitoring",
-          "pipeline",
-          "mlflow",
-          "feature store"
-        ],
-        "evaluation_hits": [
-          "experiment"
-        ],
-        "product_hits": [],
         "evidence": [
           "retrieval/ranking",
           "production",
@@ -2975,7 +1690,11 @@
           "LoRA",
           "OpenSearch",
           "QLoRA",
-          "Recommendation Systems"
+          "Recommendation Systems",
+          "Fine-tuning LLMs",
+          "Vector Search",
+          "Sentence Transformers",
+          "Python"
         ],
         "concerns": [
           "no major availability concern"
@@ -2984,9 +1703,7 @@
         "years": 6.5,
         "notice_days": 30,
         "response": 0.79,
-        "inactive_days": 57,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 57
       }
     },
     {
@@ -2999,36 +1716,6 @@
         "experience_score": 4.8,
         "behavior_modifier": 0.8904,
         "behavior_activity": 0.7391,
-        "role_hits": [
-          "ai engineer"
-        ],
-        "retrieval_hits": [
-          "embedding",
-          "embeddings",
-          "retrieval",
-          "semantic search",
-          "faiss",
-          "pinecone",
-          "elasticsearch",
-          "bm25"
-        ],
-        "ml_hits": [
-          "transformers"
-        ],
-        "production_hits": [
-          "production",
-          "deployment",
-          "monitoring",
-          "pipeline",
-          "mlflow",
-          "feature store"
-        ],
-        "evaluation_hits": [
-          "experiment"
-        ],
-        "product_hits": [
-          "user"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -3039,7 +1726,9 @@
           "Machine Learning",
           "Recommendation Systems",
           "Pinecone",
-          "PyTorch"
+          "PyTorch",
+          "Hugging Face Transformers",
+          "Sentence Transformers"
         ],
         "concerns": [
           "notice 90d"
@@ -3048,9 +1737,7 @@
         "years": 5.8,
         "notice_days": 90,
         "response": 0.69,
-        "inactive_days": 52,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 52
       }
     },
     {
@@ -3063,29 +1750,6 @@
         "experience_score": 3.675,
         "behavior_modifier": 0.9155,
         "behavior_activity": 0.7987,
-        "role_hits": [
-          "ai engineer"
-        ],
-        "retrieval_hits": [
-          "embeddings",
-          "ranking",
-          "recommendation"
-        ],
-        "ml_hits": [],
-        "production_hits": [
-          "production",
-          "serving",
-          "monitoring",
-          "pipeline",
-          "mlflow",
-          "feature store"
-        ],
-        "evaluation_hits": [
-          "experiment"
-        ],
-        "product_hits": [
-          "saas"
-        ],
         "evidence": [
           "retrieval/ranking",
           "production",
@@ -3095,7 +1759,13 @@
           "Embeddings",
           "Hugging Face Transformers",
           "Elasticsearch",
-          "Prompt Engineering"
+          "Prompt Engineering",
+          "Python",
+          "TensorFlow",
+          "Weaviate",
+          "Vector Search",
+          "Recommendation Systems",
+          "OpenSearch"
         ],
         "concerns": [
           "notice 90d"
@@ -3104,9 +1774,7 @@
         "years": 4.9,
         "notice_days": 90,
         "response": 0.78,
-        "inactive_days": 71,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 71
       }
     },
     {
@@ -3119,32 +1787,6 @@
         "experience_score": 4.7,
         "behavior_modifier": 0.9335,
         "behavior_activity": 0.8417,
-        "role_hits": [
-          "ai engineer"
-        ],
-        "retrieval_hits": [
-          "embeddings",
-          "ranking",
-          "recommendation"
-        ],
-        "ml_hits": [],
-        "production_hits": [
-          "production",
-          "serving",
-          "shipped",
-          "monitoring",
-          "pipeline",
-          "mlflow",
-          "feature store"
-        ],
-        "evaluation_hits": [
-          "a b test",
-          "experiment"
-        ],
-        "product_hits": [
-          "product",
-          "user"
-        ],
         "evidence": [
           "retrieval/ranking",
           "production",
@@ -3154,7 +1796,13 @@
           "Information Retrieval",
           "PyTorch",
           "Python",
-          "NLP"
+          "NLP",
+          "LoRA",
+          "QLoRA",
+          "BM25",
+          "Sentence Transformers",
+          "Milvus",
+          "Vector Search"
         ],
         "concerns": [
           "no major availability concern"
@@ -3163,9 +1811,7 @@
         "years": 5.7,
         "notice_days": 30,
         "response": 0.94,
-        "inactive_days": 5,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 5
       }
     },
     {
@@ -3178,35 +1824,6 @@
         "experience_score": 5.0,
         "behavior_modifier": 0.9051,
         "behavior_activity": 0.774,
-        "role_hits": [
-          "recommendation systems"
-        ],
-        "retrieval_hits": [
-          "embedding",
-          "embeddings",
-          "pinecone",
-          "ranking",
-          "recommendation"
-        ],
-        "ml_hits": [
-          "machine learning"
-        ],
-        "production_hits": [
-          "production",
-          "deployment",
-          "monitoring",
-          "pipeline",
-          "mlflow",
-          "feature store"
-        ],
-        "evaluation_hits": [
-          "experiment"
-        ],
-        "product_hits": [
-          "product",
-          "saas",
-          "e commerce"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -3217,7 +1834,11 @@
           "LoRA",
           "Elasticsearch",
           "OpenSearch",
-          "BM25"
+          "BM25",
+          "Embeddings",
+          "pgvector",
+          "Recommendation Systems",
+          "PyTorch"
         ],
         "concerns": [
           "no major availability concern"
@@ -3226,9 +1847,7 @@
         "years": 6.7,
         "notice_days": 30,
         "response": 0.52,
-        "inactive_days": 13,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 13
       }
     },
     {
@@ -3241,30 +1860,6 @@
         "experience_score": 4.5,
         "behavior_modifier": 0.9398,
         "behavior_activity": 0.8567,
-        "role_hits": [
-          "ml engineer",
-          "applied ml"
-        ],
-        "retrieval_hits": [
-          "embedding",
-          "embeddings",
-          "pinecone"
-        ],
-        "ml_hits": [
-          "nlp"
-        ],
-        "production_hits": [
-          "production",
-          "deployment",
-          "monitoring",
-          "pipeline",
-          "mlflow",
-          "feature store"
-        ],
-        "evaluation_hits": [
-          "experiment"
-        ],
-        "product_hits": [],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -3275,7 +1870,11 @@
           "Prompt Engineering",
           "Machine Learning",
           "Weaviate",
-          "Information Retrieval"
+          "Information Retrieval",
+          "Semantic Search",
+          "Vector Search",
+          "TensorFlow",
+          "Elasticsearch"
         ],
         "concerns": [
           "notice 90d"
@@ -3284,9 +1883,7 @@
         "years": 5.5,
         "notice_days": 90,
         "response": 0.77,
-        "inactive_days": 60,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 60
       }
     },
     {
@@ -3299,30 +1896,6 @@
         "experience_score": 5.0,
         "behavior_modifier": 0.9004,
         "behavior_activity": 0.7629,
-        "role_hits": [
-          "machine learning engineer"
-        ],
-        "retrieval_hits": [
-          "ranking"
-        ],
-        "ml_hits": [
-          "nlp",
-          "machine learning"
-        ],
-        "production_hits": [
-          "production",
-          "monitoring",
-          "pipeline",
-          "mlflow",
-          "feature store"
-        ],
-        "evaluation_hits": [
-          "experiment"
-        ],
-        "product_hits": [
-          "product",
-          "e commerce"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -3333,7 +1906,13 @@
           "LoRA",
           "pgvector",
           "PyTorch",
-          "Information Retrieval"
+          "Information Retrieval",
+          "OpenSearch",
+          "QLoRA",
+          "FAISS",
+          "Elasticsearch",
+          "Python",
+          "NLP"
         ],
         "concerns": [
           "no major availability concern"
@@ -3342,9 +1921,7 @@
         "years": 7.1,
         "notice_days": 30,
         "response": 0.53,
-        "inactive_days": 3,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 3
       }
     },
     {
@@ -3357,35 +1934,6 @@
         "experience_score": 4.5,
         "behavior_modifier": 0.9085,
         "behavior_activity": 0.7822,
-        "role_hits": [
-          "recommendation systems"
-        ],
-        "retrieval_hits": [
-          "embedding",
-          "embeddings",
-          "pinecone",
-          "ranking",
-          "recommendation"
-        ],
-        "ml_hits": [],
-        "production_hits": [
-          "production",
-          "deployment",
-          "shipped",
-          "monitoring",
-          "pipeline",
-          "mlflow",
-          "feature store"
-        ],
-        "evaluation_hits": [
-          "a b test",
-          "experiment"
-        ],
-        "product_hits": [
-          "product",
-          "e commerce",
-          "user"
-        ],
         "evidence": [
           "retrieval/ranking",
           "production",
@@ -3395,7 +1943,12 @@
           "LoRA",
           "Pinecone",
           "Sentence Transformers",
-          "Embeddings"
+          "Embeddings",
+          "Information Retrieval",
+          "Fine-tuning LLMs",
+          "Milvus",
+          "NLP",
+          "FAISS"
         ],
         "concerns": [
           "notice 60d"
@@ -3404,9 +1957,7 @@
         "years": 5.5,
         "notice_days": 60,
         "response": 0.56,
-        "inactive_days": 24,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 24
       }
     },
     {
@@ -3419,34 +1970,6 @@
         "experience_score": 5.0,
         "behavior_modifier": 0.8873,
         "behavior_activity": 0.7317,
-        "role_hits": [
-          "ai engineer"
-        ],
-        "retrieval_hits": [
-          "embeddings",
-          "retrieval",
-          "semantic search",
-          "faiss",
-          "elasticsearch",
-          "bm25",
-          "ranking",
-          "recommendation"
-        ],
-        "ml_hits": [
-          "transformers"
-        ],
-        "production_hits": [
-          "serving",
-          "shipped",
-          "pipeline"
-        ],
-        "evaluation_hits": [
-          "a b test"
-        ],
-        "product_hits": [
-          "product",
-          "user"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -3457,7 +1980,10 @@
           "TensorFlow",
           "Weaviate",
           "FAISS",
-          "Prompt Engineering"
+          "Prompt Engineering",
+          "Elasticsearch",
+          "Semantic Search",
+          "Recommendation Systems"
         ],
         "concerns": [
           "no major availability concern"
@@ -3466,9 +1992,7 @@
         "years": 6.4,
         "notice_days": 15,
         "response": 0.86,
-        "inactive_days": 71,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 71
       }
     },
     {
@@ -3481,26 +2005,6 @@
         "experience_score": 5.0,
         "behavior_modifier": 0.8644,
         "behavior_activity": 0.6772,
-        "role_hits": [
-          "machine learning engineer"
-        ],
-        "retrieval_hits": [
-          "embedding",
-          "embeddings",
-          "pinecone",
-          "ranking",
-          "recommendation"
-        ],
-        "ml_hits": [
-          "machine learning"
-        ],
-        "production_hits": [
-          "deployment",
-          "serving",
-          "pipeline"
-        ],
-        "evaluation_hits": [],
-        "product_hits": [],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -3510,7 +2014,14 @@
           "Weaviate",
           "TensorFlow",
           "Qdrant",
-          "Semantic Search"
+          "Semantic Search",
+          "Vector Search",
+          "Fine-tuning LLMs",
+          "Sentence Transformers",
+          "BM25",
+          "Milvus",
+          "Machine Learning",
+          "Hugging Face Transformers"
         ],
         "concerns": [
           "notice 120d"
@@ -3519,9 +2030,7 @@
         "years": 6.0,
         "notice_days": 120,
         "response": 0.49,
-        "inactive_days": 30,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 30
       }
     },
     {
@@ -3534,31 +2043,6 @@
         "experience_score": 5.0,
         "behavior_modifier": 0.8623,
         "behavior_activity": 0.6721,
-        "role_hits": [
-          "machine learning engineer"
-        ],
-        "retrieval_hits": [
-          "retrieval",
-          "semantic search",
-          "faiss",
-          "elasticsearch",
-          "bm25",
-          "ranking"
-        ],
-        "ml_hits": [
-          "transformers",
-          "machine learning"
-        ],
-        "production_hits": [
-          "pipeline"
-        ],
-        "evaluation_hits": [],
-        "product_hits": [
-          "product",
-          "fintech",
-          "e commerce",
-          "user"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -3568,7 +2052,14 @@
           "Elasticsearch",
           "Hugging Face Transformers",
           "Embeddings",
-          "Recommendation Systems"
+          "Recommendation Systems",
+          "Machine Learning",
+          "Python",
+          "NLP",
+          "OpenSearch",
+          "LoRA",
+          "Sentence Transformers",
+          "Information Retrieval"
         ],
         "concerns": [
           "notice 90d"
@@ -3577,9 +2068,7 @@
         "years": 6.0,
         "notice_days": 90,
         "response": 0.51,
-        "inactive_days": 53,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 53
       }
     },
     {
@@ -3592,33 +2081,6 @@
         "experience_score": 4.8,
         "behavior_modifier": 0.9251,
         "behavior_activity": 0.8217,
-        "role_hits": [
-          "recommendation systems"
-        ],
-        "retrieval_hits": [
-          "ranking",
-          "recommendation"
-        ],
-        "ml_hits": [
-          "machine learning"
-        ],
-        "production_hits": [
-          "production",
-          "shipped",
-          "monitoring",
-          "pipeline",
-          "mlflow",
-          "feature store"
-        ],
-        "evaluation_hits": [
-          "a b test",
-          "experiment"
-        ],
-        "product_hits": [
-          "product",
-          "e commerce",
-          "user"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -3629,7 +2091,14 @@
           "FAISS",
           "Vector Search",
           "LoRA",
-          "Milvus"
+          "Milvus",
+          "OpenSearch",
+          "Sentence Transformers",
+          "Pinecone",
+          "Python",
+          "PEFT",
+          "Weaviate",
+          "Embeddings"
         ],
         "concerns": [
           "notice 90d"
@@ -3638,9 +2107,7 @@
         "years": 5.8,
         "notice_days": 90,
         "response": 0.75,
-        "inactive_days": 17,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 17
       }
     },
     {
@@ -3653,32 +2120,6 @@
         "experience_score": 4.2,
         "behavior_modifier": 0.888,
         "behavior_activity": 0.7332,
-        "role_hits": [
-          "nlp engineer"
-        ],
-        "retrieval_hits": [
-          "embeddings",
-          "retrieval",
-          "semantic search",
-          "faiss",
-          "elasticsearch",
-          "bm25",
-          "ranking",
-          "recommendation"
-        ],
-        "ml_hits": [
-          "transformers",
-          "nlp",
-          "machine learning"
-        ],
-        "production_hits": [
-          "serving",
-          "pipeline"
-        ],
-        "evaluation_hits": [],
-        "product_hits": [
-          "user"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -3688,7 +2129,11 @@
           "OpenSearch",
           "Elasticsearch",
           "Semantic Search",
-          "Python"
+          "Python",
+          "Fine-tuning LLMs",
+          "Hugging Face Transformers",
+          "Sentence Transformers",
+          "Qdrant"
         ],
         "concerns": [
           "notice 45d"
@@ -3697,9 +2142,7 @@
         "years": 5.2,
         "notice_days": 45,
         "response": 0.47,
-        "inactive_days": 24,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 24
       }
     },
     {
@@ -3712,32 +2155,6 @@
         "experience_score": 5.0,
         "behavior_modifier": 0.8872,
         "behavior_activity": 0.7315,
-        "role_hits": [
-          "recommendation systems"
-        ],
-        "retrieval_hits": [
-          "embeddings",
-          "retrieval",
-          "semantic search",
-          "faiss",
-          "elasticsearch",
-          "bm25",
-          "ranking",
-          "recommendation"
-        ],
-        "ml_hits": [
-          "transformers"
-        ],
-        "production_hits": [
-          "serving",
-          "pipeline"
-        ],
-        "evaluation_hits": [],
-        "product_hits": [
-          "product",
-          "e commerce",
-          "user"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -3747,7 +2164,12 @@
           "Recommendation Systems",
           "Qdrant",
           "OpenSearch",
-          "Embeddings"
+          "Embeddings",
+          "PEFT",
+          "Sentence Transformers",
+          "LoRA",
+          "BM25",
+          "Elasticsearch"
         ],
         "concerns": [
           "notice 120d"
@@ -3756,9 +2178,7 @@
         "years": 7.7,
         "notice_days": 120,
         "response": 0.52,
-        "inactive_days": 65,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 65
       }
     },
     {
@@ -3771,28 +2191,6 @@
         "experience_score": 3.15,
         "behavior_modifier": 0.9083,
         "behavior_activity": 0.7816,
-        "role_hits": [
-          "search engineer"
-        ],
-        "retrieval_hits": [
-          "embedding",
-          "embeddings",
-          "pinecone",
-          "ranking",
-          "recommendation"
-        ],
-        "ml_hits": [
-          "machine learning"
-        ],
-        "production_hits": [
-          "deployment",
-          "serving",
-          "pipeline"
-        ],
-        "evaluation_hits": [],
-        "product_hits": [
-          "e commerce"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -3802,7 +2200,14 @@
           "PEFT",
           "Semantic Search",
           "Fine-tuning LLMs",
-          "TensorFlow"
+          "TensorFlow",
+          "Information Retrieval",
+          "Milvus",
+          "Deep Learning",
+          "Qdrant",
+          "FAISS",
+          "NLP",
+          "pgvector"
         ],
         "concerns": [
           "no major availability concern"
@@ -3811,9 +2216,7 @@
         "years": 4.2,
         "notice_days": 15,
         "response": 0.48,
-        "inactive_days": 5,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 5
       }
     },
     {
@@ -3826,31 +2229,6 @@
         "experience_score": 5.0,
         "behavior_modifier": 0.8887,
         "behavior_activity": 0.735,
-        "role_hits": [
-          "machine learning engineer"
-        ],
-        "retrieval_hits": [
-          "retrieval",
-          "semantic search",
-          "faiss",
-          "elasticsearch",
-          "bm25",
-          "ranking"
-        ],
-        "ml_hits": [
-          "transformers",
-          "machine learning"
-        ],
-        "production_hits": [
-          "shipped"
-        ],
-        "evaluation_hits": [
-          "a b test"
-        ],
-        "product_hits": [
-          "product",
-          "user"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -3861,7 +2239,13 @@
           "BM25",
           "FAISS",
           "Embeddings",
-          "PyTorch"
+          "PyTorch",
+          "LoRA",
+          "Python",
+          "Information Retrieval",
+          "pgvector",
+          "Fine-tuning LLMs",
+          "Recommendation Systems"
         ],
         "concerns": [
           "notice 120d"
@@ -3870,9 +2254,7 @@
         "years": 7.2,
         "notice_days": 120,
         "response": 0.6,
-        "inactive_days": 43,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 43
       }
     },
     {
@@ -3885,26 +2267,6 @@
         "experience_score": 5.0,
         "behavior_modifier": 0.9456,
         "behavior_activity": 0.8704,
-        "role_hits": [
-          "nlp engineer"
-        ],
-        "retrieval_hits": [
-          "embedding",
-          "embeddings",
-          "pinecone",
-          "ranking",
-          "recommendation"
-        ],
-        "ml_hits": [
-          "nlp"
-        ],
-        "production_hits": [
-          "deployment",
-          "serving",
-          "pipeline"
-        ],
-        "evaluation_hits": [],
-        "product_hits": [],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -3914,7 +2276,10 @@
           "QLoRA",
           "Semantic Search",
           "FAISS",
-          "PyTorch"
+          "PyTorch",
+          "Python",
+          "Embeddings",
+          "Fine-tuning LLMs"
         ],
         "concerns": [
           "no major availability concern"
@@ -3923,9 +2288,7 @@
         "years": 6.6,
         "notice_days": 30,
         "response": 0.88,
-        "inactive_days": 60,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 60
       }
     },
     {
@@ -3938,28 +2301,6 @@
         "experience_score": 5.0,
         "behavior_modifier": 0.8738,
         "behavior_activity": 0.6995,
-        "role_hits": [
-          "ml engineer",
-          "applied ml"
-        ],
-        "retrieval_hits": [
-          "embeddings",
-          "ranking",
-          "recommendation"
-        ],
-        "ml_hits": [],
-        "production_hits": [
-          "production",
-          "serving",
-          "monitoring",
-          "pipeline",
-          "mlflow",
-          "feature store"
-        ],
-        "evaluation_hits": [
-          "experiment"
-        ],
-        "product_hits": [],
         "evidence": [
           "retrieval/ranking",
           "production",
@@ -3969,7 +2310,12 @@
           "Weaviate",
           "pgvector",
           "TensorFlow",
-          "Information Retrieval"
+          "Information Retrieval",
+          "OpenSearch",
+          "LoRA",
+          "Deep Learning",
+          "FAISS",
+          "Prompt Engineering"
         ],
         "concerns": [
           "no major availability concern"
@@ -3978,9 +2324,7 @@
         "years": 7.4,
         "notice_days": 30,
         "response": 0.53,
-        "inactive_days": 41,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 41
       }
     },
     {
@@ -3993,34 +2337,6 @@
         "experience_score": 2.175,
         "behavior_modifier": 0.913,
         "behavior_activity": 0.793,
-        "role_hits": [
-          "machine learning engineer"
-        ],
-        "retrieval_hits": [
-          "embedding",
-          "retrieval",
-          "pinecone",
-          "ranking",
-          "recommendation"
-        ],
-        "ml_hits": [
-          "lora",
-          "qlora",
-          "machine learning"
-        ],
-        "production_hits": [
-          "deployed",
-          "inference",
-          "latency",
-          "pipeline",
-          "kubernetes"
-        ],
-        "evaluation_hits": [],
-        "product_hits": [
-          "product",
-          "fintech",
-          "consumer"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -4030,7 +2346,13 @@
           "Python",
           "QLoRA",
           "PEFT",
-          "Machine Learning"
+          "Machine Learning",
+          "PyTorch",
+          "Milvus",
+          "FAISS",
+          "TensorFlow",
+          "Weaviate",
+          "Information Retrieval"
         ],
         "concerns": [
           "notice 60d"
@@ -4039,9 +2361,7 @@
         "years": 2.9,
         "notice_days": 60,
         "response": 0.75,
-        "inactive_days": 47,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 47
       }
     },
     {
@@ -4054,34 +2374,6 @@
         "experience_score": 4.8,
         "behavior_modifier": 0.89,
         "behavior_activity": 0.7382,
-        "role_hits": [
-          "recommendation systems"
-        ],
-        "retrieval_hits": [
-          "retrieval",
-          "semantic search",
-          "faiss",
-          "elasticsearch",
-          "bm25",
-          "ranking",
-          "recommendation"
-        ],
-        "ml_hits": [
-          "transformers",
-          "machine learning"
-        ],
-        "production_hits": [
-          "shipped",
-          "pipeline"
-        ],
-        "evaluation_hits": [
-          "a b test"
-        ],
-        "product_hits": [
-          "product",
-          "e commerce",
-          "user"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -4092,7 +2384,9 @@
           "Pinecone",
           "Recommendation Systems",
           "TensorFlow",
-          "pgvector"
+          "pgvector",
+          "Embeddings",
+          "Sentence Transformers"
         ],
         "concerns": [
           "no major availability concern"
@@ -4101,9 +2395,7 @@
         "years": 5.8,
         "notice_days": 15,
         "response": 0.6,
-        "inactive_days": 55,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 55
       }
     },
     {
@@ -4116,32 +2408,6 @@
         "experience_score": 4.7,
         "behavior_modifier": 0.9085,
         "behavior_activity": 0.7822,
-        "role_hits": [
-          "machine learning engineer"
-        ],
-        "retrieval_hits": [
-          "embedding",
-          "embeddings",
-          "pinecone",
-          "ranking"
-        ],
-        "ml_hits": [
-          "nlp",
-          "machine learning"
-        ],
-        "production_hits": [
-          "deployment",
-          "shipped",
-          "pipeline"
-        ],
-        "evaluation_hits": [
-          "a b test"
-        ],
-        "product_hits": [
-          "product",
-          "e commerce",
-          "user"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -4152,7 +2418,13 @@
           "Hugging Face Transformers",
           "pgvector",
           "Weaviate",
-          "Recommendation Systems"
+          "Recommendation Systems",
+          "OpenSearch",
+          "Qdrant",
+          "Vector Search",
+          "Elasticsearch",
+          "BM25",
+          "PyTorch"
         ],
         "concerns": [
           "notice 60d"
@@ -4161,9 +2433,7 @@
         "years": 5.7,
         "notice_days": 60,
         "response": 0.58,
-        "inactive_days": 10,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 10
       }
     },
     {
@@ -4176,35 +2446,6 @@
         "experience_score": 4.2,
         "behavior_modifier": 0.8735,
         "behavior_activity": 0.6987,
-        "role_hits": [
-          "ml engineer",
-          "applied ml"
-        ],
-        "retrieval_hits": [
-          "embedding",
-          "embeddings",
-          "retrieval",
-          "semantic search",
-          "faiss",
-          "pinecone",
-          "elasticsearch",
-          "bm25",
-          "ranking"
-        ],
-        "ml_hits": [
-          "transformers"
-        ],
-        "production_hits": [
-          "deployment",
-          "pipeline"
-        ],
-        "evaluation_hits": [],
-        "product_hits": [
-          "product",
-          "saas",
-          "e commerce",
-          "user"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -4214,7 +2455,10 @@
           "pgvector",
           "FAISS",
           "Vector Search",
-          "PEFT"
+          "PEFT",
+          "Fine-tuning LLMs",
+          "NLP",
+          "Elasticsearch"
         ],
         "concerns": [
           "no major availability concern"
@@ -4223,9 +2467,7 @@
         "years": 5.2,
         "notice_days": 30,
         "response": 0.52,
-        "inactive_days": 45,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 45
       }
     },
     {
@@ -4238,31 +2480,6 @@
         "experience_score": 3.525,
         "behavior_modifier": 0.9491,
         "behavior_activity": 0.8788,
-        "role_hits": [
-          "machine learning engineer"
-        ],
-        "retrieval_hits": [
-          "embedding",
-          "embeddings",
-          "retrieval",
-          "semantic search",
-          "faiss",
-          "pinecone",
-          "elasticsearch",
-          "bm25"
-        ],
-        "ml_hits": [
-          "transformers",
-          "machine learning"
-        ],
-        "production_hits": [
-          "deployment",
-          "pipeline"
-        ],
-        "evaluation_hits": [],
-        "product_hits": [
-          "user"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -4272,7 +2489,10 @@
           "FAISS",
           "LoRA",
           "Python",
-          "PEFT"
+          "PEFT",
+          "Milvus",
+          "Deep Learning",
+          "Recommendation Systems"
         ],
         "concerns": [
           "no major availability concern"
@@ -4281,9 +2501,7 @@
         "years": 4.7,
         "notice_days": 15,
         "response": 0.84,
-        "inactive_days": 3,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 3
       }
     },
     {
@@ -4296,30 +2514,6 @@
         "experience_score": 5.0,
         "behavior_modifier": 0.9265,
         "behavior_activity": 0.825,
-        "role_hits": [
-          "recommendation systems"
-        ],
-        "retrieval_hits": [
-          "embedding",
-          "embeddings",
-          "pinecone",
-          "ranking",
-          "recommendation"
-        ],
-        "ml_hits": [
-          "nlp"
-        ],
-        "production_hits": [
-          "deployment",
-          "serving",
-          "pipeline"
-        ],
-        "evaluation_hits": [],
-        "product_hits": [
-          "product",
-          "fintech",
-          "e commerce"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -4329,7 +2523,13 @@
           "FAISS",
           "Milvus",
           "PEFT",
-          "QLoRA"
+          "QLoRA",
+          "Semantic Search",
+          "Weaviate",
+          "Prompt Engineering",
+          "Information Retrieval",
+          "Machine Learning",
+          "Qdrant"
         ],
         "concerns": [
           "notice 60d"
@@ -4338,9 +2538,7 @@
         "years": 8.0,
         "notice_days": 60,
         "response": 0.77,
-        "inactive_days": 51,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 51
       }
     },
     {
@@ -4353,27 +2551,6 @@
         "experience_score": 4.58,
         "behavior_modifier": 0.9518,
         "behavior_activity": 0.8853,
-        "role_hits": [
-          "machine learning engineer"
-        ],
-        "retrieval_hits": [
-          "embedding",
-          "retrieval",
-          "pinecone",
-          "ranking",
-          "recommendation"
-        ],
-        "ml_hits": [
-          "machine learning"
-        ],
-        "production_hits": [
-          "pipeline"
-        ],
-        "evaluation_hits": [],
-        "product_hits": [
-          "product",
-          "consumer"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -4383,7 +2560,15 @@
           "Pinecone",
           "QLoRA",
           "Hugging Face Transformers",
-          "TensorFlow"
+          "TensorFlow",
+          "LoRA",
+          "Prompt Engineering",
+          "BM25",
+          "Elasticsearch",
+          "pgvector",
+          "Deep Learning",
+          "Python",
+          "NLP"
         ],
         "concerns": [
           "notice 90d"
@@ -4392,9 +2577,7 @@
         "years": 8.6,
         "notice_days": 90,
         "response": 0.83,
-        "inactive_days": 13,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 13
       }
     },
     {
@@ -4407,32 +2590,6 @@
         "experience_score": 4.2,
         "behavior_modifier": 0.9389,
         "behavior_activity": 0.8545,
-        "role_hits": [
-          "data scientist"
-        ],
-        "retrieval_hits": [
-          "embedding",
-          "embeddings",
-          "retrieval",
-          "semantic search",
-          "faiss",
-          "pinecone",
-          "elasticsearch",
-          "bm25"
-        ],
-        "ml_hits": [
-          "transformers",
-          "nlp"
-        ],
-        "production_hits": [
-          "deployment",
-          "pipeline"
-        ],
-        "evaluation_hits": [],
-        "product_hits": [
-          "fintech",
-          "user"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -4442,7 +2599,10 @@
           "OpenSearch",
           "NLP",
           "Semantic Search",
-          "Fine-tuning LLMs"
+          "Fine-tuning LLMs",
+          "Pinecone",
+          "QLoRA",
+          "Recommendation Systems"
         ],
         "concerns": [
           "notice 120d"
@@ -4451,9 +2611,7 @@
         "years": 5.2,
         "notice_days": 120,
         "response": 0.91,
-        "inactive_days": 44,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 44
       }
     },
     {
@@ -4466,31 +2624,6 @@
         "experience_score": 4.7,
         "behavior_modifier": 0.905,
         "behavior_activity": 0.7738,
-        "role_hits": [
-          "data scientist"
-        ],
-        "retrieval_hits": [
-          "embedding",
-          "embeddings",
-          "retrieval",
-          "semantic search",
-          "faiss",
-          "pinecone",
-          "elasticsearch",
-          "bm25"
-        ],
-        "ml_hits": [
-          "transformers"
-        ],
-        "production_hits": [
-          "deployment",
-          "pipeline"
-        ],
-        "evaluation_hits": [],
-        "product_hits": [
-          "fintech",
-          "user"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -4500,7 +2633,12 @@
           "TensorFlow",
           "QLoRA",
           "FAISS",
-          "Sentence Transformers"
+          "Sentence Transformers",
+          "NLP",
+          "PyTorch",
+          "Pinecone",
+          "Vector Search",
+          "Recommendation Systems"
         ],
         "concerns": [
           "notice 90d"
@@ -4509,9 +2647,7 @@
         "years": 5.7,
         "notice_days": 90,
         "response": 0.77,
-        "inactive_days": 7,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 7
       }
     },
     {
@@ -4524,30 +2660,6 @@
         "experience_score": 5.0,
         "behavior_modifier": 0.8884,
         "behavior_activity": 0.7343,
-        "role_hits": [
-          "ml engineer",
-          "applied ml"
-        ],
-        "retrieval_hits": [
-          "ranking"
-        ],
-        "ml_hits": [],
-        "production_hits": [
-          "production",
-          "shipped",
-          "monitoring",
-          "mlflow",
-          "feature store"
-        ],
-        "evaluation_hits": [
-          "a b test",
-          "experiment"
-        ],
-        "product_hits": [
-          "product",
-          "fintech",
-          "user"
-        ],
         "evidence": [
           "retrieval/ranking",
           "production",
@@ -4557,7 +2669,13 @@
           "Sentence Transformers",
           "Milvus",
           "LoRA",
-          "Embeddings"
+          "Embeddings",
+          "NLP",
+          "Vector Search",
+          "BM25",
+          "TensorFlow",
+          "PEFT",
+          "Qdrant"
         ],
         "concerns": [
           "no major availability concern"
@@ -4566,9 +2684,7 @@
         "years": 6.6,
         "notice_days": 15,
         "response": 0.74,
-        "inactive_days": 28,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 28
       }
     },
     {
@@ -4581,33 +2697,6 @@
         "experience_score": 1.105,
         "behavior_modifier": 0.8869,
         "behavior_activity": 0.7308,
-        "role_hits": [
-          "nlp engineer"
-        ],
-        "retrieval_hits": [
-          "retrieval",
-          "semantic search",
-          "faiss",
-          "elasticsearch",
-          "bm25",
-          "recommendation"
-        ],
-        "ml_hits": [
-          "transformers",
-          "nlp"
-        ],
-        "production_hits": [
-          "production",
-          "monitoring",
-          "mlflow",
-          "feature store"
-        ],
-        "evaluation_hits": [
-          "experiment"
-        ],
-        "product_hits": [
-          "user"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -4618,7 +2707,10 @@
           "PyTorch",
           "Prompt Engineering",
           "QLoRA",
-          "Embeddings"
+          "Embeddings",
+          "Milvus",
+          "BM25",
+          "PEFT"
         ],
         "concerns": [
           "no major availability concern"
@@ -4627,9 +2719,7 @@
         "years": 16.1,
         "notice_days": 30,
         "response": 0.41,
-        "inactive_days": 49,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 49
       }
     },
     {
@@ -4642,32 +2732,6 @@
         "experience_score": 5.0,
         "behavior_modifier": 0.9253,
         "behavior_activity": 0.8222,
-        "role_hits": [
-          "recommendation systems"
-        ],
-        "retrieval_hits": [
-          "embedding",
-          "embeddings",
-          "pinecone",
-          "ranking",
-          "recommendation"
-        ],
-        "ml_hits": [
-          "nlp"
-        ],
-        "production_hits": [
-          "deployment",
-          "shipped",
-          "pipeline"
-        ],
-        "evaluation_hits": [
-          "a b test"
-        ],
-        "product_hits": [
-          "product",
-          "e commerce",
-          "user"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -4678,7 +2742,10 @@
           "QLoRA",
           "Hugging Face Transformers",
           "Machine Learning",
-          "Qdrant"
+          "Qdrant",
+          "PEFT",
+          "Python",
+          "Information Retrieval"
         ],
         "concerns": [
           "notice 60d"
@@ -4687,9 +2754,7 @@
         "years": 7.7,
         "notice_days": 60,
         "response": 0.72,
-        "inactive_days": 30,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 30
       }
     },
     {
@@ -4702,33 +2767,6 @@
         "experience_score": 5.0,
         "behavior_modifier": 0.9495,
         "behavior_activity": 0.8798,
-        "role_hits": [
-          "search engineer"
-        ],
-        "retrieval_hits": [
-          "embedding",
-          "embeddings",
-          "pinecone",
-          "ranking"
-        ],
-        "ml_hits": [
-          "machine learning"
-        ],
-        "production_hits": [
-          "deployment",
-          "shipped",
-          "pipeline"
-        ],
-        "evaluation_hits": [
-          "a b test"
-        ],
-        "product_hits": [
-          "product",
-          "saas",
-          "e commerce",
-          "consumer",
-          "user"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -4739,7 +2777,11 @@
           "PyTorch",
           "Milvus",
           "Deep Learning",
-          "Semantic Search"
+          "Semantic Search",
+          "Weaviate",
+          "BM25",
+          "Python",
+          "QLoRA"
         ],
         "concerns": [
           "notice 45d"
@@ -4748,9 +2790,7 @@
         "years": 7.6,
         "notice_days": 45,
         "response": 0.94,
-        "inactive_days": 6,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 6
       }
     },
     {
@@ -4763,30 +2803,6 @@
         "experience_score": 3.225,
         "behavior_modifier": 0.9529,
         "behavior_activity": 0.8879,
-        "role_hits": [
-          "machine learning engineer"
-        ],
-        "retrieval_hits": [
-          "embedding",
-          "embeddings",
-          "pinecone",
-          "ranking"
-        ],
-        "ml_hits": [
-          "machine learning"
-        ],
-        "production_hits": [
-          "deployment",
-          "shipped",
-          "pipeline"
-        ],
-        "evaluation_hits": [
-          "a b test"
-        ],
-        "product_hits": [
-          "product",
-          "user"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -4797,7 +2813,13 @@
           "Recommendation Systems",
           "Semantic Search",
           "Elasticsearch",
-          "Milvus"
+          "Milvus",
+          "Python",
+          "Hugging Face Transformers",
+          "Qdrant",
+          "QLoRA",
+          "Machine Learning",
+          "Vector Search"
         ],
         "concerns": [
           "notice 120d"
@@ -4806,9 +2828,7 @@
         "years": 4.3,
         "notice_days": 120,
         "response": 0.91,
-        "inactive_days": 7,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 7
       }
     },
     {
@@ -4821,37 +2841,6 @@
         "experience_score": 2.25,
         "behavior_modifier": 0.903,
         "behavior_activity": 0.7691,
-        "role_hits": [
-          "machine learning engineer"
-        ],
-        "retrieval_hits": [
-          "embeddings",
-          "retrieval",
-          "semantic search",
-          "faiss",
-          "elasticsearch",
-          "bm25",
-          "ranking",
-          "recommendation"
-        ],
-        "ml_hits": [
-          "transformers",
-          "machine learning"
-        ],
-        "production_hits": [
-          "serving",
-          "shipped",
-          "pipeline"
-        ],
-        "evaluation_hits": [
-          "a b test"
-        ],
-        "product_hits": [
-          "product",
-          "saas",
-          "e commerce",
-          "user"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -4862,7 +2851,12 @@
           "Deep Learning",
           "Pinecone",
           "Fine-tuning LLMs",
-          "Milvus"
+          "Milvus",
+          "Sentence Transformers",
+          "Information Retrieval",
+          "NLP",
+          "PyTorch",
+          "FAISS"
         ],
         "concerns": [
           "notice 90d"
@@ -4871,9 +2865,7 @@
         "years": 3.0,
         "notice_days": 90,
         "response": 0.57,
-        "inactive_days": 45,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 45
       }
     },
     {
@@ -4886,34 +2878,6 @@
         "experience_score": 5.0,
         "behavior_modifier": 0.9293,
         "behavior_activity": 0.8317,
-        "role_hits": [
-          "ml engineer",
-          "applied ml"
-        ],
-        "retrieval_hits": [
-          "embedding",
-          "embeddings",
-          "pinecone",
-          "ranking",
-          "recommendation"
-        ],
-        "ml_hits": [
-          "machine learning"
-        ],
-        "production_hits": [
-          "deployment",
-          "shipped",
-          "pipeline"
-        ],
-        "evaluation_hits": [
-          "a b test"
-        ],
-        "product_hits": [
-          "product",
-          "saas",
-          "e commerce",
-          "user"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -4924,7 +2888,8 @@
           "Pinecone",
           "Milvus",
           "PyTorch",
-          "BM25"
+          "BM25",
+          "Recommendation Systems"
         ],
         "concerns": [
           "notice 120d"
@@ -4933,9 +2898,7 @@
         "years": 7.4,
         "notice_days": 120,
         "response": 0.76,
-        "inactive_days": 38,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 38
       }
     },
     {
@@ -4948,33 +2911,6 @@
         "experience_score": 5.0,
         "behavior_modifier": 0.932,
         "behavior_activity": 0.8381,
-        "role_hits": [
-          "ai engineer"
-        ],
-        "retrieval_hits": [
-          "embedding",
-          "embeddings",
-          "pinecone",
-          "ranking"
-        ],
-        "ml_hits": [
-          "machine learning"
-        ],
-        "production_hits": [
-          "production",
-          "deployment",
-          "monitoring",
-          "pipeline",
-          "mlflow",
-          "feature store"
-        ],
-        "evaluation_hits": [
-          "experiment"
-        ],
-        "product_hits": [
-          "product",
-          "e commerce"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -4985,7 +2921,10 @@
           "Hugging Face Transformers",
           "PEFT",
           "QLoRA",
-          "Machine Learning"
+          "Machine Learning",
+          "Qdrant",
+          "TensorFlow",
+          "Recommendation Systems"
         ],
         "concerns": [
           "notice 45d"
@@ -4994,9 +2933,7 @@
         "years": 7.6,
         "notice_days": 45,
         "response": 0.62,
-        "inactive_days": 34,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 34
       }
     },
     {
@@ -5009,27 +2946,6 @@
         "experience_score": 4.3,
         "behavior_modifier": 0.8854,
         "behavior_activity": 0.7272,
-        "role_hits": [
-          "data scientist"
-        ],
-        "retrieval_hits": [
-          "embeddings",
-          "ranking",
-          "recommendation"
-        ],
-        "ml_hits": [],
-        "production_hits": [
-          "production",
-          "serving",
-          "monitoring",
-          "pipeline",
-          "mlflow",
-          "feature store"
-        ],
-        "evaluation_hits": [
-          "experiment"
-        ],
-        "product_hits": [],
         "evidence": [
           "retrieval/ranking",
           "production",
@@ -5039,7 +2955,12 @@
           "OpenSearch",
           "PyTorch",
           "Semantic Search",
-          "Vector Search"
+          "Vector Search",
+          "pgvector",
+          "Qdrant",
+          "Elasticsearch",
+          "Fine-tuning LLMs",
+          "Python"
         ],
         "concerns": [
           "notice 45d"
@@ -5048,9 +2969,7 @@
         "years": 5.3,
         "notice_days": 45,
         "response": 0.55,
-        "inactive_days": 24,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 24
       }
     },
     {
@@ -5063,36 +2982,6 @@
         "experience_score": 3.525,
         "behavior_modifier": 0.9066,
         "behavior_activity": 0.7776,
-        "role_hits": [
-          "machine learning engineer"
-        ],
-        "retrieval_hits": [
-          "embeddings",
-          "retrieval",
-          "semantic search",
-          "faiss",
-          "elasticsearch",
-          "bm25",
-          "ranking",
-          "recommendation"
-        ],
-        "ml_hits": [
-          "transformers",
-          "machine learning"
-        ],
-        "production_hits": [
-          "serving",
-          "shipped",
-          "pipeline"
-        ],
-        "evaluation_hits": [
-          "a b test"
-        ],
-        "product_hits": [
-          "product",
-          "fintech",
-          "user"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -5103,7 +2992,9 @@
           "LoRA",
           "TensorFlow",
           "Weaviate",
-          "Sentence Transformers"
+          "Sentence Transformers",
+          "Fine-tuning LLMs",
+          "Machine Learning"
         ],
         "concerns": [
           "notice 60d"
@@ -5112,9 +3003,7 @@
         "years": 4.7,
         "notice_days": 60,
         "response": 0.73,
-        "inactive_days": 65,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 65
       }
     },
     {
@@ -5127,30 +3016,6 @@
         "experience_score": 5.0,
         "behavior_modifier": 0.9057,
         "behavior_activity": 0.7754,
-        "role_hits": [
-          "ai engineer"
-        ],
-        "retrieval_hits": [
-          "retrieval",
-          "semantic search",
-          "faiss",
-          "elasticsearch",
-          "bm25",
-          "ranking"
-        ],
-        "ml_hits": [
-          "transformers",
-          "machine learning"
-        ],
-        "production_hits": [
-          "pipeline"
-        ],
-        "evaluation_hits": [],
-        "product_hits": [
-          "product",
-          "e commerce",
-          "user"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -5160,7 +3025,11 @@
           "PyTorch",
           "QLoRA",
           "Fine-tuning LLMs",
-          "FAISS"
+          "FAISS",
+          "Qdrant",
+          "LoRA",
+          "BM25",
+          "NLP"
         ],
         "concerns": [
           "no major availability concern"
@@ -5169,9 +3038,7 @@
         "years": 6.8,
         "notice_days": 30,
         "response": 0.77,
-        "inactive_days": 30,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 30
       }
     },
     {
@@ -5184,31 +3051,6 @@
         "experience_score": 5.0,
         "behavior_modifier": 0.9462,
         "behavior_activity": 0.8719,
-        "role_hits": [
-          "recommendation systems"
-        ],
-        "retrieval_hits": [
-          "retrieval",
-          "semantic search",
-          "faiss",
-          "elasticsearch",
-          "bm25",
-          "ranking",
-          "recommendation"
-        ],
-        "ml_hits": [
-          "transformers",
-          "machine learning"
-        ],
-        "production_hits": [
-          "pipeline"
-        ],
-        "evaluation_hits": [],
-        "product_hits": [
-          "product",
-          "e commerce",
-          "user"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -5218,7 +3060,9 @@
           "Weaviate",
           "Python",
           "Recommendation Systems",
-          "TensorFlow"
+          "TensorFlow",
+          "Hugging Face Transformers",
+          "PEFT"
         ],
         "concerns": [
           "notice 90d"
@@ -5227,9 +3071,7 @@
         "years": 6.6,
         "notice_days": 90,
         "response": 0.79,
-        "inactive_days": 33,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 33
       }
     },
     {
@@ -5242,31 +3084,6 @@
         "experience_score": 3.675,
         "behavior_modifier": 0.9137,
         "behavior_activity": 0.7945,
-        "role_hits": [
-          "recommendation systems"
-        ],
-        "retrieval_hits": [
-          "ranking",
-          "recommendation"
-        ],
-        "ml_hits": [
-          "nlp"
-        ],
-        "production_hits": [
-          "production",
-          "shipped",
-          "monitoring",
-          "mlflow",
-          "feature store"
-        ],
-        "evaluation_hits": [
-          "a b test",
-          "experiment"
-        ],
-        "product_hits": [
-          "product",
-          "user"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -5277,7 +3094,12 @@
           "Embeddings",
           "Semantic Search",
           "LoRA",
-          "Milvus"
+          "Milvus",
+          "Hugging Face Transformers",
+          "Vector Search",
+          "QLoRA",
+          "OpenSearch",
+          "Fine-tuning LLMs"
         ],
         "concerns": [
           "notice 90d"
@@ -5286,76 +3108,12 @@
         "years": 4.9,
         "notice_days": 90,
         "response": 0.8,
-        "inactive_days": 36,
-        "product_score": 0.8,
-        "suspicious_skills": 0
-      }
-    },
-    {
-      "candidate_id": "CAND_0067866",
-      "rank": 86,
-      "raw_score": 25.65174366,
-      "features": {
-        "raw_score": 25.65174366,
-        "fit_score": 18.9278,
-        "experience_score": 5.0,
-        "behavior_modifier": 0.9374,
-        "behavior_activity": 0.851,
-        "role_hits": [
-          "software engineer"
-        ],
-        "retrieval_hits": [
-          "ranking",
-          "recommendation"
-        ],
-        "ml_hits": [
-          "pytorch",
-          "fine tuning",
-          "fine tuning",
-          "nlp"
-        ],
-        "production_hits": [
-          "production",
-          "deployment",
-          "serving",
-          "model serving",
-          "api",
-          "feature store"
-        ],
-        "evaluation_hits": [],
-        "product_hits": [
-          "product",
-          "startup",
-          "saas",
-          "fintech",
-          "platform"
-        ],
-        "evidence": [
-          "retrieval/ranking",
-          "ML/LLM",
-          "production"
-        ],
-        "matched_skills": [
-          "Embeddings",
-          "pgvector",
-          "Elasticsearch",
-          "LoRA"
-        ],
-        "concerns": [
-          "notice 45d"
-        ],
-        "title": "Senior Software Engineer (ML)",
-        "years": 6.4,
-        "notice_days": 45,
-        "response": 0.79,
-        "inactive_days": 5,
-        "product_score": 0.5333333333333334,
-        "suspicious_skills": 0
+        "inactive_days": 36
       }
     },
     {
       "candidate_id": "CAND_0044222",
-      "rank": 87,
+      "rank": 86,
       "raw_score": 25.65055769,
       "features": {
         "raw_score": 25.65055769,
@@ -5363,30 +3121,6 @@
         "experience_score": 5.0,
         "behavior_modifier": 0.9174,
         "behavior_activity": 0.8034,
-        "role_hits": [
-          "ai engineer"
-        ],
-        "retrieval_hits": [
-          "retrieval",
-          "semantic search",
-          "faiss",
-          "elasticsearch",
-          "bm25",
-          "ranking"
-        ],
-        "ml_hits": [
-          "transformers"
-        ],
-        "production_hits": [
-          "shipped"
-        ],
-        "evaluation_hits": [
-          "a b test"
-        ],
-        "product_hits": [
-          "product",
-          "user"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -5397,7 +3131,13 @@
           "Vector Search",
           "OpenSearch",
           "Qdrant",
-          "Weaviate"
+          "Weaviate",
+          "NLP",
+          "BM25",
+          "Deep Learning",
+          "Hugging Face Transformers",
+          "Fine-tuning LLMs",
+          "QLoRA"
         ],
         "concerns": [
           "notice 60d"
@@ -5406,14 +3146,12 @@
         "years": 7.7,
         "notice_days": 60,
         "response": 0.6,
-        "inactive_days": 12,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 12
       }
     },
     {
       "candidate_id": "CAND_0036184",
-      "rank": 88,
+      "rank": 87,
       "raw_score": 25.63058741,
       "features": {
         "raw_score": 25.63058741,
@@ -5421,26 +3159,6 @@
         "experience_score": 5.0,
         "behavior_modifier": 0.9474,
         "behavior_activity": 0.8747,
-        "role_hits": [
-          "recommendation systems"
-        ],
-        "retrieval_hits": [
-          "retrieval",
-          "semantic search",
-          "faiss",
-          "elasticsearch",
-          "bm25",
-          "recommendation"
-        ],
-        "ml_hits": [
-          "transformers"
-        ],
-        "production_hits": [],
-        "evaluation_hits": [],
-        "product_hits": [
-          "fintech",
-          "user"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM"
@@ -5449,7 +3167,13 @@
           "QLoRA",
           "FAISS",
           "Hugging Face Transformers",
-          "Semantic Search"
+          "Semantic Search",
+          "Embeddings",
+          "Vector Search",
+          "Pinecone",
+          "Prompt Engineering",
+          "PyTorch",
+          "Sentence Transformers"
         ],
         "concerns": [
           "no major availability concern"
@@ -5458,14 +3182,12 @@
         "years": 6.0,
         "notice_days": 30,
         "response": 0.9,
-        "inactive_days": 1,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 1
       }
     },
     {
       "candidate_id": "CAND_0062247",
-      "rank": 89,
+      "rank": 88,
       "raw_score": 25.60158358,
       "features": {
         "raw_score": 25.60158358,
@@ -5473,30 +3195,6 @@
         "experience_score": 5.0,
         "behavior_modifier": 0.9163,
         "behavior_activity": 0.8007,
-        "role_hits": [
-          "ai engineer"
-        ],
-        "retrieval_hits": [
-          "retrieval",
-          "semantic search",
-          "faiss",
-          "elasticsearch",
-          "bm25",
-          "ranking"
-        ],
-        "ml_hits": [
-          "transformers",
-          "nlp"
-        ],
-        "production_hits": [
-          "pipeline"
-        ],
-        "evaluation_hits": [],
-        "product_hits": [
-          "product",
-          "e commerce",
-          "user"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -5506,7 +3204,11 @@
           "Pinecone",
           "Vector Search",
           "Qdrant",
-          "PEFT"
+          "PEFT",
+          "Hugging Face Transformers",
+          "Information Retrieval",
+          "Deep Learning",
+          "BM25"
         ],
         "concerns": [
           "no major availability concern"
@@ -5515,14 +3217,12 @@
         "years": 7.3,
         "notice_days": 30,
         "response": 0.78,
-        "inactive_days": 34,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 34
       }
     },
     {
       "candidate_id": "CAND_0049538",
-      "rank": 90,
+      "rank": 89,
       "raw_score": 25.40504843,
       "features": {
         "raw_score": 25.40504843,
@@ -5530,30 +3230,6 @@
         "experience_score": 4.8,
         "behavior_modifier": 0.9178,
         "behavior_activity": 0.8043,
-        "role_hits": [
-          "ml engineer",
-          "applied ml"
-        ],
-        "retrieval_hits": [
-          "ranking",
-          "recommendation"
-        ],
-        "ml_hits": [],
-        "production_hits": [
-          "production",
-          "monitoring",
-          "pipeline",
-          "mlflow",
-          "feature store"
-        ],
-        "evaluation_hits": [
-          "experiment"
-        ],
-        "product_hits": [
-          "product",
-          "saas",
-          "e commerce"
-        ],
         "evidence": [
           "retrieval/ranking",
           "production",
@@ -5563,7 +3239,12 @@
           "OpenSearch",
           "Vector Search",
           "Milvus",
-          "QLoRA"
+          "QLoRA",
+          "Embeddings",
+          "Deep Learning",
+          "Recommendation Systems",
+          "Elasticsearch",
+          "PyTorch"
         ],
         "concerns": [
           "no major availability concern"
@@ -5572,14 +3253,12 @@
         "years": 5.8,
         "notice_days": 30,
         "response": 0.72,
-        "inactive_days": 0,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 0
       }
     },
     {
       "candidate_id": "CAND_0030348",
-      "rank": 91,
+      "rank": 90,
       "raw_score": 25.38168708,
       "features": {
         "raw_score": 25.38168708,
@@ -5587,31 +3266,6 @@
         "experience_score": 3.375,
         "behavior_modifier": 0.8945,
         "behavior_activity": 0.7487,
-        "role_hits": [
-          "machine learning engineer"
-        ],
-        "retrieval_hits": [
-          "embeddings",
-          "retrieval",
-          "semantic search",
-          "faiss",
-          "elasticsearch",
-          "bm25",
-          "ranking",
-          "recommendation"
-        ],
-        "ml_hits": [
-          "transformers",
-          "machine learning"
-        ],
-        "production_hits": [
-          "serving",
-          "pipeline"
-        ],
-        "evaluation_hits": [],
-        "product_hits": [
-          "user"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -5621,7 +3275,10 @@
           "Deep Learning",
           "PyTorch",
           "Embeddings",
-          "Vector Search"
+          "Vector Search",
+          "Elasticsearch",
+          "pgvector",
+          "Python"
         ],
         "concerns": [
           "notice 45d"
@@ -5630,14 +3287,12 @@
         "years": 4.5,
         "notice_days": 45,
         "response": 0.54,
-        "inactive_days": 58,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 58
       }
     },
     {
       "candidate_id": "CAND_0009691",
-      "rank": 92,
+      "rank": 91,
       "raw_score": 25.16606545,
       "features": {
         "raw_score": 25.16606545,
@@ -5645,24 +3300,6 @@
         "experience_score": 5.0,
         "behavior_modifier": 0.9226,
         "behavior_activity": 0.8158,
-        "role_hits": [
-          "ml engineer",
-          "applied ml"
-        ],
-        "retrieval_hits": [
-          "embeddings",
-          "ranking",
-          "recommendation"
-        ],
-        "ml_hits": [
-          "nlp"
-        ],
-        "production_hits": [
-          "serving",
-          "pipeline"
-        ],
-        "evaluation_hits": [],
-        "product_hits": [],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -5672,7 +3309,12 @@
           "Prompt Engineering",
           "Recommendation Systems",
           "Fine-tuning LLMs",
-          "LoRA"
+          "LoRA",
+          "Pinecone",
+          "Sentence Transformers",
+          "QLoRA",
+          "Qdrant",
+          "FAISS"
         ],
         "concerns": [
           "notice 120d"
@@ -5681,14 +3323,12 @@
         "years": 6.2,
         "notice_days": 120,
         "response": 0.64,
-        "inactive_days": 11,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 11
       }
     },
     {
       "candidate_id": "CAND_0042029",
-      "rank": 93,
+      "rank": 92,
       "raw_score": 25.1254419,
       "features": {
         "raw_score": 25.1254419,
@@ -5696,31 +3336,6 @@
         "experience_score": 5.0,
         "behavior_modifier": 0.8955,
         "behavior_activity": 0.7513,
-        "role_hits": [
-          "data scientist"
-        ],
-        "retrieval_hits": [
-          "embedding",
-          "embeddings",
-          "pinecone",
-          "ranking"
-        ],
-        "ml_hits": [
-          "machine learning"
-        ],
-        "production_hits": [
-          "deployment",
-          "shipped",
-          "pipeline"
-        ],
-        "evaluation_hits": [
-          "a b test"
-        ],
-        "product_hits": [
-          "product",
-          "e commerce",
-          "user"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -5731,7 +3346,11 @@
           "PyTorch",
           "NLP",
           "Elasticsearch",
-          "Embeddings"
+          "Embeddings",
+          "OpenSearch",
+          "Weaviate",
+          "Deep Learning",
+          "Hugging Face Transformers"
         ],
         "concerns": [
           "notice 45d"
@@ -5740,14 +3359,12 @@
         "years": 6.5,
         "notice_days": 45,
         "response": 0.67,
-        "inactive_days": 44,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 44
       }
     },
     {
       "candidate_id": "CAND_0058688",
-      "rank": 94,
+      "rank": 93,
       "raw_score": 25.11673463,
       "features": {
         "raw_score": 25.11673463,
@@ -5755,29 +3372,6 @@
         "experience_score": 5.0,
         "behavior_modifier": 0.9132,
         "behavior_activity": 0.7934,
-        "role_hits": [
-          "ai engineer"
-        ],
-        "retrieval_hits": [
-          "embeddings",
-          "ranking",
-          "recommendation"
-        ],
-        "ml_hits": [],
-        "production_hits": [
-          "production",
-          "serving",
-          "monitoring",
-          "pipeline",
-          "mlflow",
-          "feature store"
-        ],
-        "evaluation_hits": [
-          "experiment"
-        ],
-        "product_hits": [
-          "consumer"
-        ],
         "evidence": [
           "retrieval/ranking",
           "production",
@@ -5787,7 +3381,10 @@
           "Embeddings",
           "TensorFlow",
           "Information Retrieval",
-          "Milvus"
+          "Milvus",
+          "Machine Learning",
+          "QLoRA",
+          "Semantic Search"
         ],
         "concerns": [
           "no major availability concern"
@@ -5796,14 +3393,12 @@
         "years": 6.7,
         "notice_days": 15,
         "response": 0.74,
-        "inactive_days": 60,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 60
       }
     },
     {
       "candidate_id": "CAND_0026532",
-      "rank": 95,
+      "rank": 94,
       "raw_score": 25.11340462,
       "features": {
         "raw_score": 25.11340462,
@@ -5811,30 +3406,6 @@
         "experience_score": 3.6,
         "behavior_modifier": 0.877,
         "behavior_activity": 0.707,
-        "role_hits": [
-          "recommendation systems"
-        ],
-        "retrieval_hits": [
-          "embeddings",
-          "retrieval",
-          "semantic search",
-          "faiss",
-          "elasticsearch",
-          "bm25",
-          "ranking",
-          "recommendation"
-        ],
-        "ml_hits": [
-          "transformers"
-        ],
-        "production_hits": [
-          "serving",
-          "pipeline"
-        ],
-        "evaluation_hits": [],
-        "product_hits": [
-          "user"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -5844,7 +3415,13 @@
           "Prompt Engineering",
           "pgvector",
           "LoRA",
-          "PEFT"
+          "PEFT",
+          "Embeddings",
+          "Semantic Search",
+          "Information Retrieval",
+          "Pinecone",
+          "FAISS",
+          "Milvus"
         ],
         "concerns": [
           "notice 90d"
@@ -5853,9 +3430,40 @@
         "years": 4.8,
         "notice_days": 90,
         "response": 0.52,
-        "inactive_days": 60,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 60
+      }
+    },
+    {
+      "candidate_id": "CAND_0067866",
+      "rank": 95,
+      "raw_score": 24.94867339,
+      "features": {
+        "raw_score": 24.94867339,
+        "fit_score": 18.1778,
+        "experience_score": 5.0,
+        "behavior_modifier": 0.9374,
+        "behavior_activity": 0.851,
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production"
+        ],
+        "matched_skills": [
+          "Embeddings",
+          "pgvector",
+          "Elasticsearch",
+          "LoRA",
+          "PEFT",
+          "Qdrant"
+        ],
+        "concerns": [
+          "notice 45d"
+        ],
+        "title": "Senior Software Engineer (ML)",
+        "years": 6.4,
+        "notice_days": 45,
+        "response": 0.79,
+        "inactive_days": 5
       }
     },
     {
@@ -5868,37 +3476,6 @@
         "experience_score": 0.745,
         "behavior_modifier": 0.9209,
         "behavior_activity": 0.8116,
-        "role_hits": [
-          "ai engineer"
-        ],
-        "retrieval_hits": [
-          "embedding",
-          "embeddings",
-          "retrieval",
-          "semantic search",
-          "faiss",
-          "pinecone",
-          "elasticsearch",
-          "bm25",
-          "ranking",
-          "recommendation"
-        ],
-        "ml_hits": [
-          "transformers",
-          "machine learning"
-        ],
-        "production_hits": [
-          "deployment",
-          "serving",
-          "pipeline"
-        ],
-        "evaluation_hits": [],
-        "product_hits": [
-          "product",
-          "fintech",
-          "e commerce",
-          "user"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -5908,7 +3485,12 @@
           "Information Retrieval",
           "FAISS",
           "SQL",
-          "OpenSearch"
+          "OpenSearch",
+          "Embeddings",
+          "Prompt Engineering",
+          "Fine-tuning LLMs",
+          "Milvus",
+          "Deep Learning"
         ],
         "concerns": [
           "notice 60d"
@@ -5917,75 +3499,12 @@
         "years": 16.9,
         "notice_days": 60,
         "response": 0.72,
-        "inactive_days": 60,
-        "product_score": 0.8,
-        "suspicious_skills": 0
-      }
-    },
-    {
-      "candidate_id": "CAND_0040178",
-      "rank": 97,
-      "raw_score": 24.80353098,
-      "features": {
-        "raw_score": 24.80353098,
-        "fit_score": 18.5246,
-        "experience_score": 4.0,
-        "behavior_modifier": 0.8819,
-        "behavior_activity": 0.7188,
-        "role_hits": [
-          "ml engineer"
-        ],
-        "retrieval_hits": [
-          "ranking",
-          "recommendation"
-        ],
-        "ml_hits": [
-          "pytorch",
-          "fine tuning",
-          "fine tuning",
-          "nlp"
-        ],
-        "production_hits": [
-          "production",
-          "deployment",
-          "serving",
-          "model serving",
-          "api",
-          "feature store"
-        ],
-        "evaluation_hits": [],
-        "product_hits": [
-          "product",
-          "startup",
-          "e commerce",
-          "platform"
-        ],
-        "evidence": [
-          "retrieval/ranking",
-          "ML/LLM",
-          "production"
-        ],
-        "matched_skills": [
-          "Weaviate",
-          "Fine-tuning LLMs",
-          "Vector Search",
-          "Prompt Engineering"
-        ],
-        "concerns": [
-          "notice 60d"
-        ],
-        "title": "ML Engineer",
-        "years": 5.0,
-        "notice_days": 60,
-        "response": 0.55,
-        "inactive_days": 78,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 60
       }
     },
     {
       "candidate_id": "CAND_0076251",
-      "rank": 98,
+      "rank": 97,
       "raw_score": 24.80175608,
       "features": {
         "raw_score": 24.80175608,
@@ -5993,33 +3512,6 @@
         "experience_score": 5.0,
         "behavior_modifier": 0.8694,
         "behavior_activity": 0.6891,
-        "role_hits": [
-          "search engineer"
-        ],
-        "retrieval_hits": [
-          "retrieval",
-          "semantic search",
-          "faiss",
-          "elasticsearch",
-          "bm25"
-        ],
-        "ml_hits": [
-          "transformers",
-          "machine learning"
-        ],
-        "production_hits": [
-          "production",
-          "monitoring",
-          "mlflow",
-          "feature store"
-        ],
-        "evaluation_hits": [
-          "experiment"
-        ],
-        "product_hits": [
-          "fintech",
-          "user"
-        ],
         "evidence": [
           "retrieval/ranking",
           "ML/LLM",
@@ -6030,7 +3522,9 @@
           "Fine-tuning LLMs",
           "Hugging Face Transformers",
           "Weaviate",
-          "Elasticsearch"
+          "Elasticsearch",
+          "Semantic Search",
+          "PEFT"
         ],
         "concerns": [
           "notice 60d"
@@ -6039,14 +3533,12 @@
         "years": 7.6,
         "notice_days": 60,
         "response": 0.51,
-        "inactive_days": 42,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 42
       }
     },
     {
       "candidate_id": "CAND_0041568",
-      "rank": 99,
+      "rank": 98,
       "raw_score": 24.67399015,
       "features": {
         "raw_score": 24.67399015,
@@ -6054,27 +3546,6 @@
         "experience_score": 4.2,
         "behavior_modifier": 0.8704,
         "behavior_activity": 0.6913,
-        "role_hits": [
-          "search engineer"
-        ],
-        "retrieval_hits": [
-          "embedding",
-          "embeddings",
-          "pinecone",
-          "ranking",
-          "recommendation"
-        ],
-        "ml_hits": [],
-        "production_hits": [
-          "deployment",
-          "serving",
-          "pipeline"
-        ],
-        "evaluation_hits": [],
-        "product_hits": [
-          "product",
-          "e commerce"
-        ],
         "evidence": [
           "retrieval/ranking",
           "production"
@@ -6083,7 +3554,14 @@
           "PEFT",
           "Weaviate",
           "Vector Search",
-          "TensorFlow"
+          "TensorFlow",
+          "BM25",
+          "Semantic Search",
+          "Recommendation Systems",
+          "Hugging Face Transformers",
+          "Qdrant",
+          "Pinecone",
+          "Deep Learning"
         ],
         "concerns": [
           "notice 90d"
@@ -6092,14 +3570,12 @@
         "years": 5.2,
         "notice_days": 90,
         "response": 0.52,
-        "inactive_days": 51,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 51
       }
     },
     {
       "candidate_id": "CAND_0081852",
-      "rank": 100,
+      "rank": 99,
       "raw_score": 24.66349738,
       "features": {
         "raw_score": 24.66349738,
@@ -6107,29 +3583,6 @@
         "experience_score": 4.9,
         "behavior_modifier": 0.924,
         "behavior_activity": 0.8191,
-        "role_hits": [
-          "data scientist"
-        ],
-        "retrieval_hits": [
-          "embedding",
-          "embeddings",
-          "pinecone"
-        ],
-        "ml_hits": [],
-        "production_hits": [
-          "production",
-          "deployment",
-          "monitoring",
-          "pipeline",
-          "mlflow",
-          "feature store"
-        ],
-        "evaluation_hits": [
-          "experiment"
-        ],
-        "product_hits": [
-          "e commerce"
-        ],
         "evidence": [
           "retrieval/ranking",
           "production",
@@ -6139,7 +3592,9 @@
           "Semantic Search",
           "Milvus",
           "pgvector",
-          "Weaviate"
+          "Weaviate",
+          "Vector Search",
+          "LoRA"
         ],
         "concerns": [
           "notice 45d"
@@ -6148,9 +3603,44 @@
         "years": 5.9,
         "notice_days": 45,
         "response": 0.44,
-        "inactive_days": 4,
-        "product_score": 0.8,
-        "suspicious_skills": 0
+        "inactive_days": 4
+      }
+    },
+    {
+      "candidate_id": "CAND_0024620",
+      "rank": 100,
+      "raw_score": 24.56593968,
+      "features": {
+        "raw_score": 24.56593968,
+        "fit_score": 20.0152,
+        "experience_score": 4.9,
+        "behavior_modifier": 0.8914,
+        "behavior_activity": 0.7414,
+        "evidence": [
+          "retrieval/ranking",
+          "ML/LLM",
+          "production",
+          "evaluation"
+        ],
+        "matched_skills": [
+          "Semantic Search",
+          "BM25",
+          "Information Retrieval",
+          "Prompt Engineering",
+          "Python",
+          "PEFT",
+          "Recommendation Systems",
+          "Elasticsearch",
+          "QLoRA"
+        ],
+        "concerns": [
+          "notice 45d"
+        ],
+        "title": "AI Engineer",
+        "years": 5.9,
+        "notice_days": 45,
+        "response": 0.41,
+        "inactive_days": 45
       }
     }
   ]

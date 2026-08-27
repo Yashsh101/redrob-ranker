@@ -44,7 +44,7 @@ def build_reasoning(candidate: dict[str, Any], features: dict[str, Any], rank: i
     if variant == 0:
         return f"{lead}: {title} with {years:.1f} years; profile evidence covers {evidence} and named skills include {matched}. Signals: {signals}; concern: {concern}."
     if variant == 1:
-        return f"{lead} for the Senior AI Engineer role because the career history shows {evidence} and the profile lists {matched}; {years:.1f} years of experience. Availability signals: {signals}; watchout: {concern}."
+        return f"{lead} for the AI Engineer role because the career history shows {evidence} and the profile lists {matched}; {years:.1f} years of experience. Availability signals: {signals}; watchout: {concern}."
     if variant == 2:
         return f"{lead}: current title is {title}, with {years:.1f} years and evidence of {evidence}; relevant listed skills: {matched}. The main qualification concern is {concern}; recruiter response is {features['response']:.0%}."
     return f"{lead} based on {evidence} in the career record rather than keyword count alone; current title {title}, {years:.1f} years, skills {matched}. Behaviour: {signals}; caveat: {concern}."
@@ -67,7 +67,7 @@ def discover_as_of(path: Path) -> dt.date:
 
 
 def run_cli() -> None:
-    parser = argparse.ArgumentParser(description="Rank Redrob candidates for the India Runs Track 1 Senior AI Engineer JD.")
+    parser = argparse.ArgumentParser(description="Rank Redrob candidates for the India Runs Track 1 AI Engineer JD.")
     parser.add_argument("--candidates", required=True, type=Path)
     parser.add_argument("--out", required=True, type=Path)
     parser.add_argument("--topk", type=int, default=300)
