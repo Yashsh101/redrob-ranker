@@ -1,18 +1,38 @@
-# RedRob India Runs Ranker 2026 — Senior AI Engineer
+# RedRob India Runs Ranker 2026 — AI Engineer
 
 [![Engineering Readiness](https://img.shields.io/badge/Engineering%20Readiness-9%2F10-success)](docs/reports/INDIA_RUNS_UPGRADE_REPORT.md)
 [![Compliance](https://img.shields.io/badge/Compliance-Official%20Validator-blue)](scripts/validate.py)
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 
-An evidence-backed, production-grade candidate discovery and ranking system engineered for the **India Runs 2026 Track 1 Challenge**. This system identifies top-tier talent for a Founding Team **Senior AI Engineer** role by analyzing 100,000 profiles across technical fit, career history, and behavioral reliability.
+An evidence-backed, production-grade candidate discovery and ranking system engineered for the **India Runs 2026 Track 1 Challenge**. This system identifies top-tier talent for an **AI Engineer** role by analyzing 100,000 profiles across technical fit, career history, and behavioral reliability.
 
 ## 🚀 Key Engineering Highlights
 
-- **JD-Specific Scoring Engine**: Beyond keyword matching, the system uses semantic signal groups for Retrieval/Ranking, Production ML, and Evaluation literacy.
+- **JD-Specific Scoring Engine**: Beyond simple keyword matching, the system uses semantic signal groups for Retrieval/Ranking, Production ML, and Evaluation literacy.
 - **Trap-Resistant Architecture**: Implements proactive guards against off-domain title traps, "Expert" skill anomalies, and career history inconsistencies.
 - **Behavioral Intelligence**: Integrates platform engagement (response rates, activity recency) as a dynamic modifier to technical fit.
 - **High-Performance Streaming**: Processes the entire 100k candidate dataset in **~204 seconds** using **< 25MB RAM** (CPU-only, standard library).
 - **Explainable AI (XAI)**: Generates 100% unique, factual, and rank-consistent reasoning for every shortlisted candidate.
+
+## 🏗️ System Architecture
+
+The ranker is designed to be **CPU-only, deterministic, and offline**. It follows a structured pipeline to transform raw JSONL records into a high-confidence shortlist:
+
+```mermaid
+flowchart TD
+    A[candidates.jsonl] --> B[Stream JSONL]
+    B --> C[Validate candidate ID]
+    C --> D[Title-trap guard]
+    D --> E[Build profile, skills, career, education text]
+    E --> F[Role and retrieval evidence]
+    F --> G[Production, evaluation, and product signals]
+    G --> H[Behavioral availability modifier]
+    H --> I[Experience, location, trust, anti-signal penalties]
+    I --> J[Bounded top-k min-heap]
+    J --> K[Deterministic sort]
+    K --> L[Top 100 + score normalization]
+    L --> M[Specific reasoning + submission.csv]
+```
 
 ## 📁 Project Structure
 
@@ -59,7 +79,7 @@ python -m pytest
 ```
 
 ## 📊 Ranking Methodology
-The system uses a multi-dimensional weighted model:
+The system uses a multi-dimensional weighted model to ensure the best fit for the **AI Engineer** position:
 - **Technical Fit (60%)**: Career-weighted evidence of RAG, Vector Search, and MLOps.
 - **Experience (20%)**: Non-linear curve peaking at the ideal 6–8 year band.
 - **Behavioral (20%) Modifier**: Activity recency, recruiter response rate, and profile completeness.
