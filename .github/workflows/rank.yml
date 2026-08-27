@@ -1,0 +1,56 @@
+name: Auto-Rank Candidates
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'rank.py'
+      - 'candidates.jsonl'
+  workflow_dispatch:
+    inputs:
+      topk:
+        description: 'Heap size for candidate buffer (default 300)'
+        required: false
+        default: '300'
+
+jobs:
+  rank:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run ranker
+        run: |
+          if [ -f candidates.jsonl ]; then
+            python rank.py \
+              --candidates candidates.jsonl \
+              --out submission.csv \
+              --topk ${{ github.event.inputs.topk || '300' }}
+          else
+            echo "candidates.jsonl not found — skipping rank step (expected for CI without data)"
+          fi
+
+      - name: Validate submission
+        run: |
+          if [ -f submission.csv ] && [ -f validate_submission.py ]; then
+            python validate_submission.py submission.csv
+          else
+            echo "Skipping validation (no submission.csv or validator)"
+          fi
+
+      - name: Upload submission artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: submission-csv
+          path: submission.csv
+          if-no-files-found: warn
