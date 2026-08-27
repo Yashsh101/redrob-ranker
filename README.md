@@ -120,16 +120,9 @@ The test suite covers invalid numeric values, title disqualification, experience
 
 ## Continuous Integration
 
-`.github/workflows/rank.yml` runs on pushes and pull requests affecting the ranker, validator, tests, candidate data, or workflow. It:
+`.github/workflows/rank.yml` currently runs on pushes to `main` that change `rank.py` or `candidates.jsonl`, and it supports manual dispatch with a configurable `topk` value. It sets up Python 3.11, installs `requirements.txt`, runs the ranker when `candidates.jsonl` is present, conditionally runs `validate_submission.py` when both the output and validator are present, and uploads `submission.csv` as an artifact.
 
-1. Sets up Python 3.11.
-2. Installs development requirements.
-3. Runs `pytest`.
-4. Validates the committed `submission.csv` when present.
-5. If `candidates.jsonl` is available, regenerates the output and validates the normalized score range.
-6. Uploads the resulting CSV as a workflow artifact.
-
-The raw challenge dataset is not committed, so the repository's normal CI path tests the code and validates the checked-in output artifact; a full dataset ranking run requires the challenge input file.
+The workflow does not run the local pytest suite because the GitHub token used for this repository cannot create or update workflow files without the `workflow` scope. The stricter pytest-and-validation workflow was prepared locally but was not pushed. The raw challenge dataset is not committed, so a full dataset ranking run still requires the challenge input file.
 
 ## Repository Structure
 
