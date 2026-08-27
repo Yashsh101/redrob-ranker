@@ -1,0 +1,40 @@
+# Copy to submission_metadata.yaml and replace every placeholder with verified portal data.
+# Do not submit this example file as-is.
+team_name: "REPLACE_WITH_REGISTERED_TEAM_NAME"
+primary_contact:
+  name: "Yash Sharma"
+  email: "REPLACE_WITH_REGISTERED_EMAIL"
+  phone: "REPLACE_WITH_REGISTERED_PHONE"
+team_members:
+  - name: "Yash Sharma"
+    email: "REPLACE_WITH_REGISTERED_EMAIL"
+    role: "ML Engineer"
+github_repo: "https://github.com/Yashsh101/redrob-ranker"
+sandbox_link: "REPLACE_WITH_WORKING_SANDBOX_OR_DEMO_URL"
+reproduce_command: "python rank.py --candidates ./candidates.jsonl --out ./submission.csv"
+compute:
+  platform: "REPLACE_WITH_MACHINE_OR_RUNNER"
+  cpu_cores: "REPLACE_WITH_CPU_CORES"
+  ram_gb: "REPLACE_WITH_RAM_GB"
+  python_version: "REPLACE_WITH_PYTHON_VERSION"
+  os: "REPLACE_WITH_OPERATING_SYSTEM"
+  uses_gpu_for_inference: false
+  has_network_during_ranking: false
+  pre_computation_required: false
+  pre_computation_time_minutes: 0
+ai_tools_used:
+  - "REPLACE_WITH_HONEST_DECLARATION"
+ai_usage_summary: |
+  REPLACE_WITH_A_CONCISE_HONEST_DESCRIPTION_OF_AI_TOOL_USE.
+methodology_summary: |
+  This deterministic offline ranker combines job-relevant role evidence, retrieval and
+  ranking experience, production and evaluation signals, experience fit, behavioral
+  availability, product-company context, and explicit anti-signal penalties. It streams
+  JSONL, keeps a bounded top-k heap, and writes the required top-100 CSV without network,
+  GPU, or hosted model calls during ranking.
+declarations:
+  read_submission_spec: true
+  code_is_original_work: true
+  no_collusion: true
+  honeypot_check_done: false  # Set true only after an explicit honeypot review
+  reproduction_tested: true
