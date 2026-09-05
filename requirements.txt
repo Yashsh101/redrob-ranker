@@ -1,5 +1,3 @@
-# No third-party dependencies required.
-# rank.py uses only Python standard library modules:
-#   json, csv, argparse, heapq, re, math
-#
-# Python >= 3.10 recommended (uses list[...] type hints natively).
+rank_bm25
+numpy
+python-dateutil
