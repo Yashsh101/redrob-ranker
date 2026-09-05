@@ -101,3 +101,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 Built with 💡 for the **India Runs 2026** challenge by [Yash Sharma](https://yashsharma01.vercel.app/).
+
+## v3 Scoring Upgrade
+
+The ranker now combines BM25 relevance with structured skill depth, platform assessments, experience, availability, GitHub activity, education tier, product-industry tilt, recency, recruiter demand, certifications, completeness, and technical co-occurrence signals. Scores are normalized to 0–1 after deterministic `(-score, candidate_id)` sorting. BM25 is complete; offline calibration is the next improvement. No network or neural inference is used during ranking.

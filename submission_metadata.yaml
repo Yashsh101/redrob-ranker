@@ -1,0 +1,17 @@
+team_name: "yash-sharma-redrob-ranker"
+github_repo: "https://github.com/Yashsh101/redrob-ranker"
+reproduce_command: "python rank.py --candidates candidates.jsonl --out submission.csv"
+python_version: "3.11"
+uses_gpu_for_inference: false
+has_network_during_ranking: false
+pre_computation_required: false
+ai_tools_used:
+  - "Claude"
+  - "Manus"
+declarations:
+  read_submission_spec: true
+  code_is_original_work: true
+  no_collusion: true
+  honeypot_check_done: true
+  reproduction_tested: true
+sandbox_link: "https://huggingface.co/spaces/Yashsh101/redrob-ranker"
