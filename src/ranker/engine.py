@@ -12,6 +12,10 @@ SERVICE_INDUSTRIES = {"it services", "outsourcing", "bpo", "consulting", "staffi
 PRODUCT_INDUSTRIES = {"technology", "saas", "artificial intelligence", "machine learning", "research", "internet", "software", "software products", "fintech", "edtech", "healthtech", "e commerce", "marketplace"}
 VARIANTS = {"hugging face": "huggingface", "hf transformers": "huggingface", "lang chain": "langchain", "llama index": "llamaindex", "open ai": "openai", "weights and biases": "wandb", "weights biases": "wandb", "scikit learn": "scikitlearn", "gpt 4": "gpt4", "chroma db": "chromadb"}
 PROFICIENCY = {"beginner": 0.25, "intermediate": 0.5, "advanced": 0.75, "expert": 1.0}
+STRONG_AI_TITLES = ("machine learning", "ml engineer", "ai engineer", "data scientist", "nlp engineer", "llm engineer", "deep learning", "computer vision", "mlops", "research scientist", "applied scientist", "recommendation", "ranking engineer", "search engineer", "ai researcher", "ml researcher", "data engineer", "analytics engineer")
+WEAK_AI_TITLES = ("backend engineer", "software engineer", "platform engineer", "infrastructure", "cloud engineer")
+OFF_DOMAIN_TITLES = ("java developer", "frontend", "android", "ios", "mobile developer", "qa engineer", "quality assurance", "test engineer", "devops", "sre", "network engineer", "security engineer", "ui developer", "ux designer", "product manager", "scrum master", "agile coach", "business analyst", "hr", "sales", "marketing", "accountant", "civil", "mechanical", "electrical", "content writer", "graphic designer", "customer support", "operations manager", "recruiter", "talent acquisition")
+AI_ROLE_TERMS = ("machine learning", "deep learning", "neural", "nlp", "llm", "transformer", "embedding", "model training", "model deployment", "inference", "recommendation system", "ranking", "search", "computer vision", "data science", "mlops", "feature engineering", "model", "ai ")
 
 def normalize_text(value: Any) -> str:
     text = re.sub(r"[^a-z0-9+#.-]+", " ", str(value or "").lower()).strip()
@@ -37,6 +41,16 @@ def full_text(c):
     for s in c.get("skills", []) or []: parts += [s.get("name", ""), s.get("proficiency", "")]
     for x in c.get("certifications", []) or []: parts += [x.get("name", ""), x.get("issuer", "")]
     return normalize_text(" ".join(map(str, parts)))
+
+def domain_score(c):
+    title = normalize_text(profile(c).get("current_title", ""))
+    title_signal = 1.0 if any(t in title for t in STRONG_AI_TITLES) else 0.5 if any(t in title for t in WEAK_AI_TITLES) else 0.0 if any(t in title for t in OFF_DOMAIN_TITLES) else 0.3
+    total_months = sum(max(0.0, safe_float(r.get("duration_months"))) for r in c.get("career_history", []) or [])
+    ai_months = sum(max(0.0, safe_float(r.get("duration_months"))) for r in c.get("career_history", []) or [] if any(t in normalize_text(f"{r.get('title','')} {r.get('description','')}") for t in AI_ROLE_TERMS))
+    career_signal = min(ai_months / max(total_months, 1.0), 1.0)
+    ai_skill_count = sum(1 for s in c.get("skills", []) or [] if normalize_text(s.get("proficiency", "")) in ("advanced", "expert") and any(t in normalize_text(s.get("name", "")) for t in AI_TERMS))
+    skill_signal = min(ai_skill_count / 5.0, 1.0)
+    return 0.40 * title_signal + 0.35 * career_signal + 0.25 * skill_signal
 
 def is_disqualified(c): return any(has_term(profile(c).get("current_title", ""), t) for t in ANTI_DOMAIN_TERMS)
 
@@ -89,8 +103,8 @@ def score_candidate(c, as_of: dt.date, bm25_points=0.0):
     demand = min(math.log1p(max(0,safe_float(s.get("saved_by_recruiters_30d")))*0.5),2); cert_terms = ("tensorflow","google ml","aws ml","deeplearning","coursera","fast ai","huggingface","machine learning","ai")
     cert = min(0.3*sum(any(has_term(f"{x.get('name','')} {x.get('issuer','')}",t) for t in cert_terms) for x in c.get("certifications",[]) or []),1.5); complete = min(max(safe_float(s.get("profile_completeness_score")),0)/100,1)
     text = full_text(c); co = 2.0 if has_term(text,"rag") and (has_term(text,"deploy") or has_term(text,"production")) else 0.0; co += 2.0 if has_term(text,"llm") and has_term(text,"fine tuning") and has_term(text,"production") else 0.0
-    tilt = product_tilt(c); years = safe_float(p.get("years_of_experience")); raw = bm25_points+skills+assessment+experience_score(years)+availability+github+edu+tilt+recency+demand+cert+complete+co
-    features = {"title":p.get("current_title","") or "Unknown title","years":years,"matched_skills":matched,"assessment_avg":assessment_avg,"response":behavior["response"],"notice_days":behavior["notice_days"],"interview":behavior["interview"],"github":github,"education_tier":edu_tier,"product_tilt":tilt,"raw_score":raw}
+    tilt = product_tilt(c); years = safe_float(p.get("years_of_experience")); raw = bm25_points+skills+assessment+experience_score(years)+availability+github+edu+tilt+recency+demand+cert+complete+co; domain = domain_score(c); raw *= 0.2 + 0.8 * domain
+    features = {"title":p.get("current_title","") or "Unknown title","years":years,"matched_skills":matched,"assessment_avg":assessment_avg,"response":behavior["response"],"notice_days":behavior["notice_days"],"interview":behavior["interview"],"github":github,"education_tier":edu_tier,"product_tilt":tilt,"domain_score":domain,"raw_score":raw}
     return round(raw,8), features
 
 def normalise_scores(entries):
