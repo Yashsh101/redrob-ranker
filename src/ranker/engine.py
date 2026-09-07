@@ -42,6 +42,20 @@ def full_text(c):
     for x in c.get("certifications", []) or []: parts += [x.get("name", ""), x.get("issuer", "")]
     return normalize_text(" ".join(map(str, parts)))
 
+def fast_domain_score(c):
+    title = normalize_text(profile(c).get("current_title", ""))
+    off = ("java", "frontend", "android", "ios", "qa ", "quality", "devops", "sre", "network", "security engineer", "hr ", "recruiter", "sales", "marketing", "accountant", "content writer", "graphic", "civil", "mechanical", "electrical", "customer support", "operations manager", "project manager", "scrum", "product owner", "ui developer", "ux designer", "teacher", "nurse")
+    strong = ("machine learning", "ml engineer", "ai engineer", "data scientist", "nlp", "llm", "deep learning", "computer vision", "mlops", "research scientist", "applied scientist", "recommendation", "ranking", "search engineer", "ai researcher", "ml researcher")
+    weak = ("data engineer", "analytics engineer", "backend", "software engineer", "platform", "cloud engineer", "data analyst", "bi engineer")
+    if any(t in title for t in off): title_signal = 0.05
+    elif any(t in title for t in strong): title_signal = 1.0
+    elif any(t in title for t in weak): title_signal = 0.5
+    else: title_signal = 0.25
+    ai_names = ("pytorch", "tensorflow", "keras", "huggingface", "transformers", "bert", "gpt", "llm", "rag", "langchain", "faiss", "nlp", "computer vision", "deep learning", "machine learning", "xgboost", "lightgbm", "sklearn", "scikit", "embedding", "vector", "recommendation", "ranking", "mlflow", "wandb", "spark ml", "fine-tuning", "reinforcement")
+    advanced = sum(1 for s in c.get("skills", []) or [] if normalize_text(s.get("proficiency", "")) in ("advanced", "expert") and any(a in normalize_text(s.get("name", "")) for a in ai_names))
+    skill_signal = min(advanced / 4.0, 1.0); yoe = safe_float(profile(c).get("years_of_experience")); yoe_signal = 1.0 if 3 <= yoe <= 12 else 0.6
+    return 0.50 * title_signal + 0.35 * skill_signal + 0.15 * yoe_signal
+
 def domain_score(c):
     title = normalize_text(profile(c).get("current_title", ""))
     title_signal = 1.0 if any(t in title for t in STRONG_AI_TITLES) else 0.5 if any(t in title for t in WEAK_AI_TITLES) else 0.0 if any(t in title for t in OFF_DOMAIN_TITLES) else 0.3
