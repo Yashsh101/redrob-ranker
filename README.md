@@ -11,7 +11,7 @@ An evidence-backed, production-grade candidate discovery and ranking system engi
 - **JD-Specific Scoring Engine**: Beyond simple keyword matching, the system uses semantic signal groups for Retrieval/Ranking, Production ML, and Evaluation literacy.
 - **Trap-Resistant Architecture**: Implements proactive guards against off-domain title traps, "Expert" skill anomalies, and career history inconsistencies.
 - **Behavioral Intelligence**: Integrates platform engagement (response rates, activity recency) as a dynamic modifier to technical fit.
-- **High-Performance Streaming**: Processes the entire 100k candidate dataset in **~204 seconds** using **< 25MB RAM** (CPU-only, standard library).
+- **High-Performance Ranking**: Processes the entire 100k candidate dataset in a fresh local benchmark in **71.8 seconds** using **1.85GB peak RSS** (CPU-only, offline). These are local benchmark results, not organizer scores.
 - **Explainable AI (XAI)**: Generates 100% unique, factual, and rank-consistent reasoning for every shortlisted candidate.
 
 ## 🏗️ System Architecture
@@ -92,8 +92,8 @@ Detailed methodology is available in the [Ranking Methodology Report](docs/repor
 | :--- | :---: | :--- |
 | **Format** | ✅ | Exactly 100 rows, unique IDs, ranks 1–100 |
 | **Compute** | ✅ | CPU-only, Offline, No network calls |
-| **Time** | ✅ | 204.6s (Limit: 300s) |
-| **Memory** | ✅ | 21.45MB (Limit: 16GB) |
+| **Time** | ✅ | 71.8s local benchmark (Limit: 300s) |
+| **Memory** | ✅ | 1.85GB peak RSS local benchmark (Limit: 16GB) |
 | **Validator** | ✅ | Passes official organizer check |
 
 ## 📝 License
