@@ -7,7 +7,7 @@ import json
 import sys
 import time
 from pathlib import Path
-from .engine import AI_TERMS, build_reasoning, candidate_id, domain_score, fast_domain_score, full_text, normalise_scores, score_candidate, signals, parse_date
+from .engine import AI_TERMS, build_reasoning, candidate_id, fast_domain_score, full_text, normalise_scores, score_candidate, signals, parse_date
 
 PRE_FILTER_K = 10000
 
