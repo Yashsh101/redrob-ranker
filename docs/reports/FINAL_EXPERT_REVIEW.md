@@ -1,7 +1,7 @@
 # Final Expert Review & Rating Report
 
 **Repository:** `Yashsh101/redrob-ranker`
-**Audited commit:** `c39b70d`
+**Audited commit:** `b5bad9c`
 **Audit scope:** source structure, tests, committed submission, validator, dependency declarations, and benchmark evidence.
 
 ## Executive verdict
