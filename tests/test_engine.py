@@ -6,6 +6,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
 
 from ranker.engine import (
+    is_off_domain_title,
     is_disqualified,
     score_candidate,
     safe_float,
@@ -90,6 +91,8 @@ def test_safe_float_handles_invalid_values():
 
 def test_title_guard_disqualifies_off_domain_titles():
     assert is_disqualified(candidate("Sales Executive")) is True
+    assert is_off_domain_title("DevOps Engineer") is True
+    assert is_off_domain_title("Software Engineer") is False
     assert is_disqualified(candidate("Applied ML Engineer")) is False
 
 def test_experience_curve_peaks_at_ideal_band():

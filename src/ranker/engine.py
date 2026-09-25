@@ -58,9 +58,13 @@ def fast_domain_score(c):
     skill_signal = min(advanced / 4.0, 1.0); yoe = safe_float(profile(c).get("years_of_experience")); yoe_signal = 1.0 if 3 <= yoe <= 12 else 0.6
     return 0.50 * title_signal + 0.35 * skill_signal + 0.15 * yoe_signal
 
+def is_off_domain_title(title: Any) -> bool:
+    normalized = normalize_text(title)
+    return any(has_term(normalized, term) for term in OFF_DOMAIN_TITLES)
+
 def domain_score(c):
     title = normalize_text(profile(c).get("current_title", ""))
-    if any(t in title for t in OFF_DOMAIN_TITLES): return 0.02
+    if is_off_domain_title(title): return 0.02
     title_signal = 1.0 if any(t in title for t in STRONG_AI_TITLES) else 0.5 if any(t in title for t in WEAK_AI_TITLES) else 0.0 if any(t in title for t in OFF_DOMAIN_TITLES) else 0.3
     total_months = sum(max(0.0, safe_float(r.get("duration_months"))) for r in c.get("career_history", []) or [])
     ai_months = sum(max(0.0, safe_float(r.get("duration_months"))) for r in c.get("career_history", []) or [] if any(t in normalize_text(f"{r.get('title','')} {r.get('description','')}") for t in AI_ROLE_TERMS))
@@ -69,7 +73,9 @@ def domain_score(c):
     skill_signal = min(ai_skill_count / 5.0, 1.0)
     return 0.40 * title_signal + 0.35 * career_signal + 0.25 * skill_signal
 
-def is_disqualified(c): return any(has_term(profile(c).get("current_title", ""), t) for t in ANTI_DOMAIN_TERMS)
+def is_disqualified(c):
+    title = profile(c).get("current_title", "")
+    return is_off_domain_title(title) or any(has_term(title, t) for t in ANTI_DOMAIN_TERMS)
 
 def experience_score(years):
     points = [(0, 0.0), (1, 1.0), (3, 3.8), (5, 6.0), (7, 6.2), (9, 5.8), (12, 4.5), (16, 3.0), (20, 1.5)]

@@ -7,7 +7,7 @@ import json
 import sys
 import time
 from pathlib import Path
-from .engine import AI_TERMS, build_reasoning, candidate_id, fast_domain_score, full_text, normalise_scores, score_candidate, signals, parse_date
+from .engine import AI_TERMS, build_reasoning, candidate_id, fast_domain_score, full_text, is_disqualified, normalise_scores, score_candidate, signals, parse_date
 
 PRE_FILTER_K = 10000
 
@@ -25,6 +25,7 @@ def bm25_scores(candidates):
     return BM25Okapi(corpus).get_scores(query).tolist()
 
 def rank_candidates(candidates, as_of, limit=None, prefilter_k=PRE_FILTER_K):
+    candidates = [c for c in candidates if candidate_id(c) and not is_disqualified(c)]
     if len(candidates) < 500:
         survivors = list(candidates)
     else:
