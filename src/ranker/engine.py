@@ -1,9 +1,12 @@
 from __future__ import annotations
+
 import datetime as dt
+import itertools
 import math
 import re
+from collections.abc import Iterable
 from functools import lru_cache
-from typing import Any, Iterable
+from typing import Any
 
 ROLE_TERMS = ["ai engineer", "ml engineer", "machine learning engineer", "applied ml", "applied scientist", "nlp engineer", "research engineer", "search engineer", "recommendation engineer", "software engineer", "backend engineer", "data scientist", "data engineer"]
 AI_TERMS = ["ai", "ml", "machine learning", "deep learning", "llm", "genai", "generative ai", "nlp", "python", "pytorch", "tensorflow", "transformers", "huggingface", "fine tuning", "lora", "qlora", "peft", "prompt engineering", "rag", "retrieval", "embedding", "embeddings", "vector search", "vector database", "semantic search", "faiss", "pinecone", "weaviate", "qdrant", "milvus", "pgvector", "elasticsearch", "opensearch", "bm25", "reranking", "ranking", "recommendation", "fastapi", "docker", "kubernetes", "mlops", "mlflow", "airflow", "model serving", "inference", "evaluation", "precision", "recall", "ndcg", "mrr", "map"]
@@ -81,7 +84,7 @@ def experience_score(years):
     points = [(0, 0.0), (1, 1.0), (3, 3.8), (5, 6.0), (7, 6.2), (9, 5.8), (12, 4.5), (16, 3.0), (20, 1.5)]
     y = max(0.0, years)
     if y >= 20: return 0.8
-    for (x1, v1), (x2, v2) in zip(points, points[1:]):
+    for (x1, v1), (x2, v2) in itertools.pairwise(points):
         if x1 <= y <= x2: return v1 + (v2-v1) * (y-x1)/(x2-x1)
     return 0.0
 

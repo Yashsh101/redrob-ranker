@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import itertools
 import re
 import sys
 from pathlib import Path
@@ -98,7 +99,7 @@ def validate_submission(
             if missing:
                 errors.append(f"submitted candidate IDs not found in candidate file: {missing[:5]}")
     by_rank.sort()
-    for previous, current in zip(by_rank, by_rank[1:]):
+    for previous, current in itertools.pairwise(by_rank):
         if previous[1] < current[1]:
             errors.append(f"score must be non-increasing: rank {previous[0]} < rank {current[0]}")
         if previous[1] == current[1] and previous[2] > current[2]:

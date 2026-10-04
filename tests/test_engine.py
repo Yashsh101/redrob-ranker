@@ -6,15 +6,17 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
 
 from ranker.engine import (
-    is_off_domain_title,
     is_disqualified,
-    score_candidate,
+    is_off_domain_title,
     safe_float,
+    score_candidate,
 )
 from ranker.main import (
     build_reasoning,
     normalise_scores,
+    rank_candidates,
 )
+
 
 def candidate(title: str = "ML Engineer", *, technical: bool = True, years: float = 7.0) -> dict:
     return {
@@ -116,7 +118,7 @@ def test_normalise_scores_returns_zero_to_one():
 def test_reasoning_is_deterministic_and_contains_real_candidate_signals():
     record = candidate()
     as_of = dt.date(2026, 5, 27)
-    score, features = score_candidate(record, as_of)
+    _, features = score_candidate(record, as_of)
     first = build_reasoning(record, features, 1, 1.0)
     second = build_reasoning(record, features, 1, 1.0)
     assert first == second
@@ -138,3 +140,14 @@ def test_stale_and_low_response_signals_are_reflected_in_features():
     
     assert features["response"] == 0.05
     assert score < score_candidate(candidate(), as_of)[0]
+
+def test_rank_candidates_honors_limit():
+    records = []
+    for index in range(3):
+        record = candidate()
+        record["candidate_id"] = f"CAND_{index + 1:07d}"
+        records.append(record)
+
+    ranked = rank_candidates(records, dt.date(2026, 5, 27), limit=2)
+
+    assert len(ranked) == 2

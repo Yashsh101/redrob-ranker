@@ -6,6 +6,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent / "scripts"))
 
 from evaluate import average_precision, dcg, ndcg
 
+
 def test_dcg_and_ndcg_are_bounded_and_order_sensitive():
     labels = [3.0, 2.0, 0.0]
     assert dcg(labels, 3) > 0

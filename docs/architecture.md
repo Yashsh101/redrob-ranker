@@ -22,4 +22,4 @@ The engine uses a multi-factor scoring model:
 ## Performance & Reproducibility
 - **Offline**: No network calls are made during the ranking process.
 - **Deterministic**: Ties are handled by candidate ID to ensure consistent results.
-- **Efficient**: Uses a streaming JSONL reader and a min-heap to process 100,000 candidates in under 4 minutes with < 25MB RAM.
+- **Bounded pre-filtering**: Uses a streaming JSONL reader and a min-heap before BM25 scoring; runtime and peak memory must be measured with the released dataset and documented benchmark environment.

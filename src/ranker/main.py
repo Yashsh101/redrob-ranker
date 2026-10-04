@@ -1,4 +1,5 @@
 from __future__ import annotations
+
 import argparse
 import csv
 import datetime as dt
@@ -7,7 +8,19 @@ import json
 import sys
 import time
 from pathlib import Path
-from .engine import AI_TERMS, build_reasoning, candidate_id, fast_domain_score, full_text, is_disqualified, normalise_scores, score_candidate, signals, parse_date
+
+from .engine import (
+    AI_TERMS,
+    build_reasoning,
+    candidate_id,
+    fast_domain_score,
+    full_text,
+    is_disqualified,
+    normalise_scores,
+    parse_date,
+    score_candidate,
+    signals,
+)
 
 PRE_FILTER_K = 10000
 
@@ -57,7 +70,7 @@ def discover_as_of(candidates):
 
 def run_cli():
     parser = argparse.ArgumentParser(description="Rank Redrob candidates for the India Runs AI Engineer role.")
-    parser.add_argument("--candidates", type=Path); parser.add_argument("--out", type=Path); parser.add_argument("--topk", type=int, default=300); parser.add_argument("--prefilter-k", type=int, default=PRE_FILTER_K); parser.add_argument("--as-of-date", type=dt.date.fromisoformat); parser.add_argument("--sample", action="store_true")
+    parser.add_argument("--candidates", type=Path); parser.add_argument("--out", type=Path); parser.add_argument("--topk", type=int, default=100, help="number of ranked rows to write (100 for challenge submissions)"); parser.add_argument("--prefilter-k", type=int, default=PRE_FILTER_K); parser.add_argument("--as-of-date", type=dt.date.fromisoformat); parser.add_argument("--sample", action="store_true")
     args = parser.parse_args(); start = time.monotonic()
     if not args.candidates: args.candidates = Path("sample_candidates.json") if args.sample else None
     if not args.candidates or not args.candidates.is_file(): parser.error("candidate file not found; pass --candidates PATH")
@@ -65,6 +78,6 @@ def run_cli():
         candidates = json.loads(args.candidates.read_text(encoding="utf-8")); ranked = rank_candidates(candidates, args.as_of_date or dt.date(2026, 5, 31), prefilter_k=args.prefilter_k); write_output(ranked, args.out or Path("test_sample.csv")); print(f"Sample complete: ranked={len(ranked)}, output={args.out or Path('test_sample.csv')}"); return
     if not args.out: parser.error("--out is required")
     if args.topk < 100 or args.prefilter_k < 100: parser.error("--topk and --prefilter-k must be at least 100")
-    candidates = list(stream_jsonl(args.candidates)); ranked = rank_candidates(candidates, args.as_of_date or discover_as_of(candidates), 100, args.prefilter_k)
+    candidates = list(stream_jsonl(args.candidates)); ranked = rank_candidates(candidates, args.as_of_date or discover_as_of(candidates), args.topk, args.prefilter_k)
     if len(ranked) < 100: raise SystemExit(f"Only {len(ranked)} eligible candidates; 100 required")
-    write_output(ranked, args.out); print(f"[stage2] scoring done in {time.monotonic()-start:.1f}s", file=sys.stderr); print(f"Completed: scanned={len(candidates):,}, output=100")
+    write_output(ranked, args.out); print(f"[stage2] scoring done in {time.monotonic()-start:.1f}s", file=sys.stderr); print(f"Completed: scanned={len(candidates):,}, output={len(ranked)}")

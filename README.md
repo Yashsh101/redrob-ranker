@@ -1,107 +1,115 @@
-# RedRob India Runs Ranker 2026 — AI Engineer
+# RedRob Ranker
 
-[![Engineering Readiness](https://img.shields.io/badge/Engineering%20Readiness-9%2F10-success)](docs/reports/INDIA_RUNS_UPGRADE_REPORT.md)
-[![Compliance](https://img.shields.io/badge/Compliance-Official%20Validator-blue)](scripts/validate.py)
+[![CI](https://github.com/Yashsh101/redrob-ranker/actions/workflows/ci.yml/badge.svg)](https://github.com/Yashsh101/redrob-ranker/actions/workflows/ci.yml)
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 
-An evidence-backed, production-grade candidate discovery and ranking system engineered for the **India Runs 2026 Track 1 Challenge**. This system identifies top-tier talent for an **AI Engineer** role by analyzing 100,000 profiles across technical fit, career history, and behavioral reliability.
+Offline, deterministic candidate ranking for the **India Runs 2026 Track 1 AI Engineer challenge**. It reads candidate JSONL, combines BM25 relevance with structured signals and guardrails, and writes a reproducible ranked CSV.
 
-## 🚀 Key Engineering Highlights
+## Problem
 
-- **JD-Specific Scoring Engine**: Beyond simple keyword matching, the system uses semantic signal groups for Retrieval/Ranking, Production ML, and Evaluation literacy.
-- **Trap-Resistant Architecture**: Implements proactive guards against off-domain title traps, "Expert" skill anomalies, and career history inconsistencies.
-- **Behavioral Intelligence**: Integrates platform engagement (response rates, activity recency) as a dynamic modifier to technical fit.
-- **High-Performance Ranking**: Processes the entire 100k candidate dataset in a fresh local benchmark in **71.8 seconds** using **1.85GB peak RSS** (CPU-only, offline). These are local benchmark results, not organizer scores.
-- **Explainable AI (XAI)**: Generates 100% unique, factual, and rank-consistent reasoning for every shortlisted candidate.
+Keyword-only ranking can reward title traps, shallow skill mentions, and incomplete profiles. This project makes the ranking logic inspectable: retrieval evidence, experience, availability, profile completeness, and anti-signal penalties are explicit in code and diagnostics.
 
-## 🏗️ System Architecture
+## Demo / Output
 
-The ranker is designed to be **CPU-only, deterministic, and offline**. It follows a structured pipeline to transform raw JSONL records into a high-confidence shortlist:
+The committed example output is [`data/output/submission.csv`](data/output/submission.csv). It contains the challenge-shaped top-100 output and can be checked locally with the repository validator. No public hosted demo is claimed; the ranker is intentionally offline.
+
+## Architecture
 
 ```mermaid
-flowchart TD
-    A[candidates.jsonl] --> B[Stream JSONL]
-    B --> C[Validate candidate ID]
-    C --> D[Title-trap guard]
-    D --> E[Build profile, skills, career, education text]
-    E --> F[Role and retrieval evidence]
-    F --> G[Production, evaluation, and product signals]
-    G --> H[Behavioral availability modifier]
-    H --> I[Experience, location, trust, anti-signal penalties]
-    I --> J[Bounded top-k min-heap]
-    J --> K[Deterministic sort]
-    K --> L[Top 100 + score normalization]
-    L --> M[Specific reasoning + submission.csv]
+flowchart LR
+  A[candidates.jsonl] --> B[Stream + validate IDs]
+  B --> C[Title / anomaly guards]
+  C --> D[BM25 + structured signals]
+  D --> E[Experience, behavior, trust penalties]
+  E --> F[Bounded top-k heap]
+  F --> G[Deterministic sort]
+  G --> H[submission.csv + diagnostics]
 ```
 
-## 📁 Project Structure
+See [`docs/architecture.md`](docs/architecture.md) and [`docs/reports/RANKING_METHODOLOGY.md`](docs/reports/RANKING_METHODOLOGY.md).
 
-```text
-redrob-ranker/
-├── src/ranker/         # Core Engine: Scoring logic and JD alignment
-├── scripts/            # Tooling: Official validation and evaluation scripts
-├── tests/              # Reliability: Comprehensive unit and metric tests
-├── docs/               # Intelligence: Architecture, methodology, and audit reports
-├── data/output/        # Artifacts: Final submission and diagnostics
-├── rank.py             # Entry Point: Standardized root execution script
-├── pyproject.toml      # Configuration: Modern Python packaging
-└── README.md           # Documentation
-```
+### Key engineering decisions
 
-## 🛠️ Getting Started
+- **Offline and CPU-only:** no network calls or hosted model dependency during ranking.
+- **Deterministic:** ties use `(-score, candidate_id)` ordering.
+- **Bounded selection:** a min-heap limits retained candidates before final sorting.
+- **Explainability:** each result includes score components and ranking evidence.
+- **Challenge safety:** validation is separate from ranking and checks output shape, IDs, ranks, and normalized scores.
 
-### Prerequisites
-- Python 3.10+
-- `pytest` (for development)
+## Quickstart
 
-### Installation
+### 1. Clone
+
 ```bash
 git clone https://github.com/Yashsh101/redrob-ranker.git
 cd redrob-ranker
-pip install -e ".[dev]"
 ```
 
-### Usage
+### 2. Configure
 
-**1. Run the Ranker**
 ```bash
-python rank.py --candidates /path/to/candidates.jsonl --out data/output/submission.csv
+python3 -m venv .venv
+. .venv/bin/activate
+python -m pip install --upgrade pip
+python -m pip install -e ".[dev]"
+cp .env.example .env
 ```
 
-**2. Validate Submission**
+No secret or external service is required. The released challenge dataset is not included; use a local JSONL file with the expected candidate schema.
+
+### 3. Run
+
 ```bash
+python rank.py --candidates /path/to/candidates.jsonl --out data/output/submission.csv --topk 100
 python scripts/validate.py data/output/submission.csv --require-normalized
 ```
 
-**3. Run Test Suite**
+## Verification commands
+
 ```bash
-python -m pytest
+ruff check .
+pytest --cov=ranker --cov-report=term-missing
+python -m build
+python scripts/validate.py data/output/submission.csv --require-normalized
 ```
 
-## 📊 Ranking Methodology
-The system uses a multi-dimensional weighted model to ensure the best fit for the **AI Engineer** position:
-- **Technical Fit (60%)**: Career-weighted evidence of RAG, Vector Search, and MLOps.
-- **Experience (20%)**: Non-linear curve peaking at the ideal 6–8 year band.
-- **Behavioral (20%) Modifier**: Activity recency, recruiter response rate, and profile completeness.
+The same install, lint, test, package-build, and output-validation gates run in [GitHub Actions](.github/workflows/ci.yml).
 
-Detailed methodology is available in the [Ranking Methodology Report](docs/reports/RANKING_METHODOLOGY.md).
+## Evaluation
 
-## ⚖️ Official Compliance
+- **Dataset:** The organizer’s released candidate JSONL and labels are required for end-to-end challenge evaluation; they are not committed here.
+- **Implemented metrics:** `scripts/evaluate.py` computes nDCG@10, nDCG@50, MAP, P@10, and a documented composite when a labeled file is available.
+- **Reproduction:**
 
-| Requirement | Status | Verification |
-| :--- | :---: | :--- |
-| **Format** | ✅ | Exactly 100 rows, unique IDs, ranks 1–100 |
-| **Compute** | ✅ | CPU-only, Offline, No network calls |
-| **Time** | ✅ | 71.8s local benchmark (Limit: 300s) |
-| **Memory** | ✅ | 1.85GB peak RSS local benchmark (Limit: 16GB) |
-| **Validator** | ✅ | Passes official organizer check |
+  ```bash
+  python scripts/evaluate.py \
+    --submission data/output/submission.csv \
+    --labels /path/to/labels.csv
+  ```
 
-## 📝 License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+- **Baseline:** No benchmark baseline is claimed until the released dataset and label file are available in the same environment.
+- **Current status:** Repository tests and committed-output validation pass locally. Official challenge score, runtime, and peak memory are **pending verification**.
 
----
-Built with 💡 for the **India Runs 2026** challenge by [Yash Sharma](https://yashsharma01.vercel.app/).
+## Failure cases and limitations
 
-## v3 Scoring Upgrade
+- Malformed JSONL, missing candidate IDs, duplicate IDs, and invalid output rows are rejected by validation.
+- Missing or sparse profile fields reduce signal quality; the system does not infer facts absent from the input.
+- The behavioral modifier depends on fields present in the challenge data and is not a measure of candidate quality outside that task.
+- BM25 and hand-authored weights are interpretable but require calibration against labeled outcomes.
+- No network, live enrichment, fairness audit, or production access-control layer is included.
 
-The ranker now combines BM25 relevance with structured skill depth, platform assessments, experience, availability, GitHub activity, education tier, product-industry tilt, recency, recruiter demand, certifications, completeness, and technical co-occurrence signals. Scores are normalized to 0–1 after deterministic `(-score, candidate_id)` sorting. BM25 is complete; offline calibration is the next improvement. No network or neural inference is used during ranking.
+## Security and deployment status
+
+The ranker processes local files and does not transmit candidate data. Treat candidate JSONL, diagnostics, and generated submissions as sensitive. Do not commit private datasets or credentials. `.env.example` documents that no runtime secret is needed.
+
+**Deployment:** local/offline CLI only. No hosted API or live demo is claimed.
+
+## Roadmap / pending verification
+
+1. Run the organizer-labeled dataset through `scripts/evaluate.py` and publish the resulting metrics with the dataset provenance.
+2. Add a reproducible runtime and peak-memory benchmark for the released dataset.
+3. Add end-to-end CLI fixtures for malformed JSONL, duplicate IDs, and output-file failures.
+
+## License
+
+MIT — see [`LICENSE`](LICENSE).
