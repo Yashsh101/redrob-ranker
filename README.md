@@ -1,6 +1,5 @@
 # RedRob Ranker
 
-[![CI](https://github.com/Yashsh101/redrob-ranker/actions/workflows/ci.yml/badge.svg)](https://github.com/Yashsh101/redrob-ranker/actions/workflows/ci.yml)
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 
 Offline, deterministic candidate ranking for the **India Runs 2026 Track 1 AI Engineer challenge**. It reads candidate JSONL, combines BM25 relevance with structured signals and guardrails, and writes a reproducible ranked CSV.
@@ -73,7 +72,6 @@ python -m build
 python scripts/validate.py data/output/submission.csv --require-normalized
 ```
 
-The same install, lint, test, package-build, and output-validation gates run in [GitHub Actions](.github/workflows/ci.yml).
 
 ## Evaluation
 
