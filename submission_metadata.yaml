@@ -14,4 +14,3 @@ declarations:
   no_collusion: true
   honeypot_check_done: true
   reproduction_tested: true
-sandbox_link: "https://huggingface.co/spaces/Yashsh101/redrob-ranker"
